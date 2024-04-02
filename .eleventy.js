@@ -94,6 +94,8 @@ function getAnchorAttributes(filePath, linkTitle) {
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setBase("./digital-garden-obsidian"); // added by me
+  
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
   });
