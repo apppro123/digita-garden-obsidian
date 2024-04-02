@@ -1,1 +1,1 @@
-{"homeAlias":"/","nodes":{"/":{"id":0,"title":"Test","url":"/","group":"none","home":true,"outBound":[],"neighbors":[],"backLinks":[],"noteIcon":"","hide":false,"size":0}},"links":[]}
+{"homeAlias":"/","nodes":{"/test-1/":{"id":0,"title":"Test 1","url":"/test-1/","group":"none","home":false,"outBound":["/"],"neighbors":["/"],"backLinks":[],"noteIcon":"","hide":false,"size":1},"/":{"id":1,"title":"Test","url":"/","group":"none","home":true,"outBound":[],"neighbors":["/test-1/"],"backLinks":["/test-1/"],"noteIcon":"","hide":false,"size":1}},"links":[{"source":0,"target":1}]}
