@@ -3,4 +3,4 @@
 ---
 
 First published digital garden site :)
-Edit 1
+Edit 2
