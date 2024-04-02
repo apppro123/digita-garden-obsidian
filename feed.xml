@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://apppro123.github.io/digital-garden-obsidian/">
+    <title>Digital Garden</title>
+    <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
+    <link href="https://apppro123.github.io/digital-garden-obsidian/" >
+    <updated>2024-04-02T10:10:05Z</updated>
+    <id>https://apppro123.github.io/digital-garden-obsidian/</id>
+        <entry>
+            <title>
+                Test
+                
+            </title>
+            <updated>2024-04-02T10:09:52Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//</id>
+            <content type="html">
+                &lt;p&gt;First published digital garden site :)&lt;br /&gt;
+Edit 2&lt;/p&gt;
+
+            </content>
+            <link href="https://apppro123.github.io/digital-garden-obsidian//" >
+        </entry>
+</feed>
