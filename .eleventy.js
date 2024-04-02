@@ -8,6 +8,8 @@ const { parse } = require("node-html-parser");
 const htmlMinifier = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy"); // added by me for github pages (https://www.11ty.dev/docs/config/#change-base-file-name-for-data-files)
+
 const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
 const {
   userMarkdownSetup,
@@ -93,9 +95,9 @@ function getAnchorAttributes(filePath, linkTitle) {
 
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.setBase("./digital-garden-obsidian"); // added by me
-  
+module.exports = function (eleventyConfig) {  
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin); // added by me
+
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
   });
@@ -554,5 +556,6 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
+    pathPrefix: "/eleventy-base-blog/", // added by me
   };
 };
