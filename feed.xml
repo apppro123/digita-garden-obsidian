@@ -3,20 +3,20 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-02T12:14:26Z</updated>
+    <updated>2024-04-02T12:30:33Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
                 Test
                 
             </title>
-            <updated>2024-04-02T12:14:11Z</updated>
-            <id>https://apppro123.github.io/digital-garden-obsidian//</id>
+            <updated>2024-04-02T12:30:22Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//eleventy-base-blog/</id>
             <content type="html">
                 &lt;p&gt;First published digital garden site :)&lt;br /&gt;
 Edit 3&lt;/p&gt;
 
             </content>
-            <link href="https://apppro123.github.io/digital-garden-obsidian//" >
+            <link href="https://apppro123.github.io/digital-garden-obsidian//eleventy-base-blog/" >
         </entry>
 </feed>
