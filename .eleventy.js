@@ -556,6 +556,6 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
-    pathPrefix: "/eleventy-base-blog/", // added by me
+    pathPrefix: "/digital-garden-obsidian/", // added by me
   };
 };
