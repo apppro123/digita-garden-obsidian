@@ -82,55 +82,15 @@
     
     
       
-    
-    <div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
-
-        <div x-show.important="!isDesktop" style="display: none;">
-            <nav class="navbar">
-    <div class="navbar-inner">
-        <span style="font-size: 1.5rem; margin-right: 10px;" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
-        
-        <a href="/digital-garden-obsidian/" style="text-decoration: none;">
-            <h1 style="margin: 15px !important;">Digital Garden</h1>
-        </a>
-        
-    </div>
-    
-    
-</nav>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="/digital-garden-obsidian/" style="text-decoration: none;">
+                <h1 style="margin: 15px !important;">Digital Garden</h1>
+            </a>
         </div>
         
-        <div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none;" class="fullpage-overlay"></div>
-
-      <nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display: none;">
-        
-         <a href="/digital-garden-obsidian/" style="text-decoration: none;">
-               <h1 style="text-align:center;">Digital Garden</h1>
-         </a>
-         
-        
-         <div class="folder" x-data="{isOpen: true}">
+    </nav>
     
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/test-1/">Test 1 </a>
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">Test </a>
-                </div>
-            
-        </div>
-        
-    </div>
-      </nav>
-    </div>
-
     
     
     <main class="content cm-s-obsidian ">
