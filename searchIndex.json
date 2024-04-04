@@ -1,7 +1,7 @@
 [
 {
 		"title": "WS L1",
-		"date":"Wed Apr 03 2024 21:47:09 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Apr 04 2024 16:49:26 GMT+0000 (Coordinated Universal Time)",
 		"url":"/semester4/ws/lectures/ws-l1/",
 		"content": "Definitions\n\n[!info] #Def 1.2 Grundraum ( #aka Ereignisraum) ( #english sample space)\nΩ≠∅ ist die Menge alle möglichen Ergebnisse des betrachteten Zufallsexperiments.\n\nDie Elemente w∈Ω heissen Elementarereigniss #aka Ausgänge des Experiments #english outcomes\nWir sagen, dass ein Ereignis A eintritt, falls das realisierte Elementarereignis ω in A liegt d.h. ω∈A\n\n[!info] #Def 1.4 Die Potenzmenge ( #english power set)\nvon Ω, P(Ω) oder 2Ω, ist die Menge aller Teilmengen von Ω.\n\nEin prinzipielles Ereignis ( #english event) ist eine Teilmenge A⊆Ω, also eine Kollektion von Elementarereignissen\nDie Klasse aller (beobachtbaren) Ereignisse bezeichnen wir mit F. Das ist eine Teilmenge der Potenzmenge von Ω\n\nFalls Ω endlich oder abzählbar, dann ist oft F=P(Ω), und das ist ein diskreter Wahrscheinlichkeitsraum.\nFalls Ω überabzählbar, muss F eine echte Teilklasse von P(Ω) sein\nIn jedem Fall muss F gewisse Axiome erfüllen\n\n[!Info] #Def 1.5 σ-Algebra (manchmal σ-field)\nEin Mengensystem F⊆P(Ω) nennt man eine σ-Algebra, wenn\n\nΩ∈F\nfür jedes A∈F auch das Komplement A∁∈F ist\nfür jede Folge (An)n∈N mit An∈F,n∈N, auch die Vereinigung ∪n∈NAn∈F ist\n\n[!info] #Def 1.9 Wahrscheinlichkeitsmass ( #english probability measure)\nSei Ω ein Grundraum und sei F eine σ-Algebra. Eine Abbildung\nP:F→[0,1],mit A↦P[A]heisst Wahrscheinlichkeitsmass auf (Ω,F), wenn die folgenden Axiome erfüllt sind\n\nNormiertheit: P[Ω]=1\nσ-Additivität: P[∪n∈NAn]=∑n=1∞P[An] für paarweis disjunkte Mengen An, d.h. An∩Am=∅ für alle n≠m\n\n[!info] #Proposition 1.10\nFür ein Wahrscheinlichkeitsmass P auf (Ω,F) und Mengen A,B∈F gelten folgende Aussagen:\n\nP[A∁]=1−P[A], und insbesondere P[∅]=0\nMonotonie: wenn A⊆B, dann P[A]≤P[B]\nAdditionsregel: P[A]+P[B]=P[A∪B]+P[A∩B]\n\n[!info] #Def 1.12 Wahrscheinlichkeitsraum\nSei Ω ein Grundraum, F eine σ-Algebra und P ein Wahrscheinlichkeitsmass auf (Ω,F). Das Tripel (Ω,F,P) heisst Wahrscheinlichkeitsmass ( #english probability space)\n\n[!info] #disclaimer 1.13 Messbarer Raum ( #english measurable space)\nAllgemein verwenden wir in der Masstheorie folgende Terminologie:\n\nFür eine σ-Algebra A auf einer Grundmenge Ω wird das Paar (Ω,A) ein messbarer Raum genannt.\nElemente A∈A, also Teilmengen A⊂Ω, die wir messen wollen, heissen messbare Mengen ( #english measurable sets).\nAuf messbaren Räumen (bzw. den σ-Algebren) lassen sich Masse ( #english measures) μ definieren. Diese sind im Allgemeinen nicht auf 1 nomiert. Man verlangt staddessen μ(∅)=0.\nDas Tripel $(\\Omega,\\cal{A},\\mu) $ heisst Massraum ( #english measure space).\nIst das Mass normiert, μ(Ω)=1, dann ist das Mass ein Wahrscheinlichkeitsmass und der Messraum wird zum Wahrscheinlichkeitsraum.\n\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">Diskrete Wahrscheinlichkeit</a>",
 		"tags": ["Def", "aka", "english", "aka", "english", "Def", "english", "english", "Def", "Def", "english", "Proposition", "Def", "english", "disclaimer", "english", "english", "english", "english", "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "Test 1",
-		"date":"Wed Apr 03 2024 21:47:09 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Apr 04 2024 16:49:26 GMT+0000 (Coordinated Universal Time)",
 		"url":"/test-1/",
 		"content": "First published digital garden site :)\nEdit 4\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/\">Test</a>",
 		"tags": [ "note"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "Test",
-		"date":"Wed Apr 03 2024 21:47:09 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Apr 04 2024 16:49:26 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "First published digital garden site :)\nEdit 3",
 		"tags": [ "note","gardenEntry"]
