@@ -3,14 +3,14 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-04T16:51:39Z</updated>
+    <updated>2024-04-04T16:51:42Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
                 Test
                 
             </title>
-            <updated>2024-04-04T16:51:28Z</updated>
+            <updated>2024-04-04T16:51:31Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/</id>
             <content type="html">
                 &lt;p&gt;First published digital garden site :)&lt;br /&gt;
@@ -24,7 +24,7 @@ Edit 3&lt;/p&gt;
                 Test 1
                 
             </title>
-            <updated>2024-04-04T16:51:28Z</updated>
+            <updated>2024-04-04T16:51:31Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/test-1/</id>
             <content type="html">
                 &lt;p&gt;First published digital garden site :)&lt;br /&gt;
@@ -39,7 +39,7 @@ Edit 4&lt;br /&gt;
                 WS L1
                 
             </title>
-            <updated>2024-04-04T16:51:28Z</updated>
+            <updated>2024-04-04T16:51:31Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions&lt;/h2&gt;
@@ -114,10 +114,267 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
         </entry>
         <entry>
             <title>
+                DF L4
+                
+            </title>
+            <updated>2024-04-04T16:51:31Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l4/</id>
+            <content type="html">
+                &lt;h2 id=&quot;decentralised-exchange&quot; tabindex=&quot;-1&quot;&gt;Decentralised Exchange&lt;/h2&gt;
+&lt;p&gt;(Example LOB Dex)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;(Dis) advantages&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;No KYC/AML&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;no fees paid to the exchange&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;no impermanent loss&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;fees for deposit, withdraw, trade creation/cancel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;slow execution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;not fully decentralised (mediating server)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;trading &lt;strong&gt;volume&lt;/strong&gt;: around 70 billion (recent months)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Why?&lt;/strong&gt; &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240322154927.png&quot; alt=&quot;Pasted image 20240322154927.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;systems-architecture-img-src-img-user-semester4-df-attachments-pasted-20image-2020240322155034-png-alt-pasted-image-20240322155034-png&quot; tabindex=&quot;-1&quot;&gt;Systems Architecture &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240322155034.png&quot; alt=&quot;Pasted image 20240322155034.png&quot; /&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;automated-market-maker&quot; tabindex=&quot;-1&quot;&gt;Automated market maker&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#short&quot;&gt;#short&lt;/a&gt; AMM&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Liquidity pool&lt;/strong&gt; idea: Let a smart contract do the market making. &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240322155519.png&quot; alt=&quot;Pasted image 20240322155519.png&quot; /&gt; &lt;strong&gt;liquidity provider (LP)&lt;/strong&gt; token: &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240322155644.png&quot; alt=&quot;Pasted image 20240322155644.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula&lt;/strong&gt;: &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240322155719.png&quot; alt=&quot;Pasted image 20240322155719.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;properties
+&lt;ul&gt;
+&lt;li&gt;instant liquidity, irrespective of the trade size&lt;/li&gt;
+&lt;li&gt;purchase of asset X increases price of X and decreases the price of Y&lt;/li&gt;
+&lt;li&gt;ratio of asset X and Y sets the price&lt;/li&gt;
+&lt;li&gt;known as constant product ( &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#short&quot;&gt;#short&lt;/a&gt; CP) AMM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(dis)advantages&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;no order book maintenance: but arbitrage required&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;simple implementation for CP AMM: low gas costs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;danger of impermanent loss/coin de-peg: total loss of funds possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;high slippage for low liquidity markets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;users vulnerable to sandwich attacks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Example: &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240322160005.png&quot; alt=&quot;Pasted image 20240322160005.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;slippage&quot; tabindex=&quot;-1&quot;&gt;Slippage&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;(un)expected &lt;strong&gt;increase or decrease&lt;/strong&gt; in price based on trading volume and available liquidity&lt;/li&gt;
+&lt;li&gt;effects
+&lt;ul&gt;
+&lt;li&gt;worse/better execution price&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;possible to introduce a slippage protection by configuring a threshold to prevent unacceptable slippage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;impermanent-loss-img-src-img-user-semester4-df-attachments-pasted-20image-2020240322160344-png-alt-pasted-image-20240322160344-png&quot; tabindex=&quot;-1&quot;&gt;Impermanent loss &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240322160344.png&quot; alt=&quot;Pasted image 20240322160344.png&quot; /&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#short&quot;&gt;#short&lt;/a&gt; IL&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;impermanent == not permanet: realised upon withdraw only&lt;/li&gt;
+&lt;li&gt;can result in total loss
+&lt;ul&gt;
+&lt;li&gt;trading fees may compensate&lt;/li&gt;
+&lt;li&gt;liquidity mining may compensate&lt;/li&gt;
+&lt;li&gt;similar to a de-peg of stablecoin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;exchange-transaction-propagation-img-src-img-user-semester4-df-attachments-pasted-20image-2020240323083048-png-alt-pasted-image-20240323083048-png&quot; tabindex=&quot;-1&quot;&gt;Exchange Transaction propagation &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240323083048.png&quot; alt=&quot;Pasted image 20240323083048.png&quot; /&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;stablecoin-amm-pros-cons&quot; tabindex=&quot;-1&quot;&gt;Stablecoin AMM pros/cons&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;better prices for bigger volumes i.e. more liquidity
+&lt;ul&gt;
+&lt;li&gt;example shows significant differences among exchanges &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240323084451.png&quot; alt=&quot;Pasted image 20240323084451.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;potentially higher gas costs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;danger of a de-peg of a stablecoin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;pegged/stablecoin prices move in expectation together &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240323084533.png&quot; alt=&quot;Pasted image 20240323084533.png&quot; /&gt;
+&lt;ul&gt;
+&lt;li&gt;exchange rate should ideally remain 1:1&lt;/li&gt;
+&lt;li&gt;default CP AMM is not optimised for such cases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;what-if-a-coin-gets&quot; tabindex=&quot;-1&quot;&gt;What if a coin gets&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;de-pug&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;as bank run in CeFi: no money returned&lt;/li&gt;
+&lt;li&gt;&amp;quot;bank run&amp;quot; in DeFi
+&lt;ul&gt;
+&lt;li&gt;pool may get &lt;strong&gt;blacklisted&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;first come, first served&lt;/li&gt;
+&lt;li&gt;pool formula penalises destabilising a pool&lt;/li&gt;
+&lt;li&gt;increasingly worse price for late-comers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;blacklisted&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;e.g. USDT and USDC have built-in code to
+&lt;ul&gt;
+&lt;li&gt;blacklist addresses&lt;/li&gt;
+&lt;li&gt;destroy coins&lt;/li&gt;
+&lt;li&gt;e.g. USDT blacklisted 500+ accounts, destroyed 50M+ USDT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;amm-arbitrage&quot; tabindex=&quot;-1&quot;&gt;AMM arbitrage&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;beginning: &lt;strong&gt;multiple markets&lt;/strong&gt; with
+&lt;ul&gt;
+&lt;li&gt;the &lt;strong&gt;same assets&lt;/strong&gt; X and Y&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;different prices&lt;/strong&gt; for X and Y&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;prices are &lt;strong&gt;synchronised&lt;/strong&gt; by &amp;quot;arbitrageurs&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;they gain profit from price difference: also referred to as &amp;quot;spread&amp;quot;&lt;/li&gt;
+&lt;li&gt;requires to perform at least one transaction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;e.g. &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240323085059.png&quot; alt=&quot;Pasted image 20240323085059.png&quot; /&gt;
+&lt;ul&gt;
+&lt;li&gt;arbitrageur can also do it with a flash loan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;how to &lt;strong&gt;detect&lt;/strong&gt; arbitrage/profitable opportunities?
+&lt;ul&gt;
+&lt;li&gt;Bellman Ford Algorithm
+&lt;ul&gt;
+&lt;li&gt;Negative cycle detection&lt;/li&gt;
+&lt;li&gt;Works among multiple markets&lt;/li&gt;
+&lt;li&gt;Used in traditional finance and DeFi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Theorem Solver (SMT tools aim to solve the satisfiability modulo theories ( &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#short&quot;&gt;#short&lt;/a&gt; SMT) problem)
+&lt;ul&gt;
+&lt;li&gt;Needs to encode the DeFi model&lt;/li&gt;
+&lt;li&gt;Apply heuristics for path pruning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;quiz&quot; tabindex=&quot;-1&quot;&gt;Quiz&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Which of the following properties is NOT a desired property for AMM?
+&lt;ul&gt;
+&lt;li&gt;no pool fees [correct bc. AMM pool should have some fees]&lt;/li&gt;
+&lt;li&gt;instant liquidity, irrespective of the trade size&lt;/li&gt;
+&lt;li&gt;purchase of an asset decreases the asset supply in AMM, and increases its market price&lt;/li&gt;
+&lt;li&gt;the expected increase or decrease in price is based on the trading volume and available liquidity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Which of the following is a property for a typical on-chain order book
+&lt;ul&gt;
+&lt;li&gt;no fees for order placements&lt;/li&gt;
+&lt;li&gt;front running resistance&lt;/li&gt;
+&lt;li&gt;impermanent loss [the is no impermanent loss in an order book bc. market makers can fill the orders and thus liquidity cannot just be removed; this is rather in an AMM]&lt;/li&gt;
+&lt;li&gt;non-custodian ( &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#german&quot;&gt;#german&lt;/a&gt; Verwalter/Aufseher) settlement [correct bc. swapping of assets is non-custodial meaning you own your coins with your private key, there is no custodian doing the settlement]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Which of the following statements is incorrect
+&lt;ul&gt;
+&lt;li&gt;Unexpected slippage can only cause a worse execution price [correct]&lt;/li&gt;
+&lt;li&gt;unexpected slippage is caused by price change after a trade has been broadcast but before it has been confirmed&lt;/li&gt;
+&lt;li&gt;trades can configure a slippage protection threshold to limit the total slippage (expected + unexpected)&lt;/li&gt;
+&lt;li&gt;The concept of slippage is typically unavoidable in financial markets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What is TURE about impermanent loss?
+&lt;ul&gt;
+&lt;li&gt;impermanent loss cannot result in the total loss of funds.&lt;/li&gt;
+&lt;li&gt;Trading fees can never compensate the impermanent loss.&lt;/li&gt;
+&lt;li&gt;Impermanent loss is impermanent bc. it&#39;s only realised upon a withdrawal from a liquidity pool. [correct]&lt;/li&gt;
+&lt;li&gt;Impermanent loss is only a fictive accounting phenomenon and never materialises in a loss.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Back-running describes the process where an adversary attempts to execute its own transaction immediately after the victim&#39;s transaction executes. For example, given two exchange markets A and B, both trading ETH/USD at a price of 1000. If a victim&#39;s trad (with a as price of 100GWei) is expected to push exchange A&#39;s price to 1100 ETH/USD, the adversay can attempt to back-run the victim to perform arbitrage between A and Ab. Which of the following method will have the highest back-running success rate?
+&lt;ul&gt;
+&lt;li&gt;Broadcast the back-running transaction immediately after the victim&#39;s transaction with 99GWei&lt;/li&gt;
+&lt;li&gt;Broadcast the back-running transaction immediately after the victim&#39;s transaction, with 100GWei&lt;/li&gt;
+&lt;li&gt;Send a private back-running transaction to private relayer services, and bribe the miners to perform the back-run&lt;/li&gt;
+&lt;li&gt;(i) broadcast the back-running transaction immediately after the victim with 100GWei, and also (ii) send the transaction to private relayer services and bribe the miners&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l4/" >
+        </entry>
+        <entry>
+            <title>
                 DF L3
                 
             </title>
-            <updated>2024-04-04T16:51:28Z</updated>
+            <updated>2024-04-04T16:51:31Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;df-and-cf-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183404-png-alt-pasted-image-20240312183404-png&quot; tabindex=&quot;-1&quot;&gt;DF and CF &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183404.png&quot; alt=&quot;Pasted image 20240312183404.png&quot; /&gt;&lt;/h2&gt;
@@ -221,7 +478,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L2
                 
             </title>
-            <updated>2024-04-04T16:51:28Z</updated>
+            <updated>2024-04-04T16:51:31Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/</id>
             <content type="html">
                 &lt;p&gt;[[Ethereum and DeFi Glossary.pdf]]&lt;/p&gt;
@@ -283,7 +540,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L1
                 
             </title>
-            <updated>2024-04-04T16:51:28Z</updated>
+            <updated>2024-04-04T16:51:31Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l1/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimer&quot;&gt;#disclaimer&lt;/a&gt; Not examrelevant!&lt;/p&gt;
