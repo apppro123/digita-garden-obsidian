@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Test</title>
+    <title>DF L2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -81,6 +81,7 @@
   <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section ">
     
     
+    
       
     
     <div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
@@ -150,7 +151,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l2/">DF L2 </a>
+                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l2/">DF L2 </a>
                 </div>
             
         </div>
@@ -248,7 +249,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">Test </a>
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">Test </a>
                 </div>
             
         </div>
@@ -258,21 +259,69 @@
     </div>
 
     
+
     
+
     <main class="content cm-s-obsidian ">
       <header>
-      
-
-      <div class="header-meta">
         
-      </div>
+        <div class="header-meta">
+          </div>
       
       
       </header>
       
       
-      <p>First published digital garden site :)<br>
-Edit 3</p>
+      <p>[[Ethereum and DeFi Glossary.pdf]]</p>
+<h2 id="quiz" tabindex="-1">Quiz</h2>
+<ol>
+<li>A valid signed transaction of an account can be used to computer
+<ol>
+<li>the private key of the account</li>
+<li>the address of the account [true]</li>
+<li>(both are true)</li>
+<li>(both are false)</li>
+</ol>
+</li>
+<li>Running a node in the Ethereum network
+<ol>
+<li>will earn you money</li>
+<li>will cost you proof-of-work mining energy</li>
+<li>needs an excellent internet connection (because you constantly need to be connected to 5'000 other nodes)</li>
+<li>(none of the above) [true]</li>
+</ol>
+</li>
+<li>An Ethereum smart contract can be programmed to
+<ol>
+<li>interact with a normal (not Ethereum) computer program through remote procedure calls.</li>
+<li>automatically run every hour.</li>
+<li>(both are ture)</li>
+<li>(both are false) [true]</li>
+</ol>
+</li>
+<li>Layer 2 protocols
+<ol>
+<li>are not realy (only exist in reseach)</li>
+<li>are considered illegal (by the Ethereum foundation)</li>
+<li>have been co-invented at ETH Zurich [true]</li>
+<li>(none of the above)</li>
+</ol>
+</li>
+<li>Ignore fees, how many bananas do you get when you send 10 apples to a CPMM that holds a liquidity of 30 apples and 56 bananas?
+<ol>
+<li>How to calculate?
+<ol>
+<li>constant product = 30 [apples] * 56 [bananas] = 168</li>
+<li>and afterwards there has to be the same again thus 40 (30 + 10 new) [apples] * x [bananas] = 168</li>
+<li>solve for x</li>
+</ol>
+<ul>
+<li>alternative: calculate ratio after adding 56 [bananas] / 40 [apples] = 7 / 5 =&gt; now  multiply with number of apples and you get bananas 7 [bananas] / 5 [apples] * 10 [apples] = 14 [bananas]</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
 
       
       
@@ -281,6 +330,39 @@ Edit 3</p>
     
 
     
+        <script>
+      if (window.location.hash) {
+        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
+      }
+      window.addEventListener('hashchange', (evt) => {
+        const oldParts = evt.oldURL.split("#");
+        if (oldParts[1]) {
+          document.getElementById(oldParts[1]).classList.remove('referred');
+        }
+        const newParts = evt.newURL.split("#");
+        if (newParts[1]) {
+          document.getElementById(newParts[1]).classList.add('referred');
+        }
+      }, false);
+      const url_parts = window.location.href.split("#")
+      const url = url_parts[0];
+      const referrence = url_parts[1];
+      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
+        el.ondblclick = function(evt) {
+          const ref_url = url + '#' + evt.target.id
+          navigator.clipboard.writeText(ref_url);
+      }
+      });
+
+      
+    </script>
+    <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="">
+    TIMESTAMP_FORMAT = "MMM dd, yyyy h:mm a";
+    document.querySelectorAll('.human-date').forEach(function (el) {
+        el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
+      });
+</script>
     
     
     <script>
@@ -290,5 +372,5 @@ lucide.createIcons({
             }
         });
 </script>
-    </body>
-  </html>
+  </body>
+</html>

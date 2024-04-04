@@ -3,14 +3,14 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-04T16:51:34Z</updated>
+    <updated>2024-04-04T16:51:39Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
                 Test
                 
             </title>
-            <updated>2024-04-04T16:51:23Z</updated>
+            <updated>2024-04-04T16:51:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/</id>
             <content type="html">
                 &lt;p&gt;First published digital garden site :)&lt;br /&gt;
@@ -24,7 +24,7 @@ Edit 3&lt;/p&gt;
                 Test 1
                 
             </title>
-            <updated>2024-04-04T16:51:23Z</updated>
+            <updated>2024-04-04T16:51:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/test-1/</id>
             <content type="html">
                 &lt;p&gt;First published digital garden site :)&lt;br /&gt;
@@ -39,7 +39,7 @@ Edit 4&lt;br /&gt;
                 WS L1
                 
             </title>
-            <updated>2024-04-04T16:51:23Z</updated>
+            <updated>2024-04-04T16:51:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions&lt;/h2&gt;
@@ -114,10 +114,176 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
         </entry>
         <entry>
             <title>
+                DF L3
+                
+            </title>
+            <updated>2024-04-04T16:51:28Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/</id>
+            <content type="html">
+                &lt;h2 id=&quot;df-and-cf-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183404-png-alt-pasted-image-20240312183404-png&quot; tabindex=&quot;-1&quot;&gt;DF and CF &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183404.png&quot; alt=&quot;Pasted image 20240312183404.png&quot; /&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;df-stack-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183435-png-alt-pasted-image-20240312183435-png&quot; tabindex=&quot;-1&quot;&gt;DF stack&lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183435.png&quot; alt=&quot;Pasted image 20240312183435.png&quot; /&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt; where smart contract on blockchain uses external data &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183520.png&quot; alt=&quot;Pasted image 20240312183520.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;oracle&quot; tabindex=&quot;-1&quot;&gt;Oracle&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reasons&lt;/strong&gt; for need of oracles for blockchains
+&lt;ul&gt;
+&lt;li&gt;blockchain is isolated DB&lt;/li&gt;
+&lt;li&gt;blockchains lack
+&lt;ul&gt;
+&lt;li&gt;access to real-world data&lt;/li&gt;
+&lt;li&gt;no API-query possible&lt;/li&gt;
+&lt;li&gt;cannot browse the internet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Solution&lt;/strong&gt;: transactions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Defintion&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;General: System that connects a blockchain with other systems.&lt;/li&gt;
+&lt;li&gt;Specific: Actors relaying data on-chain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;design&quot; tabindex=&quot;-1&quot;&gt;Design&lt;/h3&gt;
+&lt;h4 id=&quot;challenges&quot; tabindex=&quot;-1&quot;&gt;Challenges&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;miners (provider of data) can lie/cheat&lt;/li&gt;
+&lt;li&gt;network providing data for miners can lie/cheat&lt;/li&gt;
+&lt;li&gt;source or oracle outage&lt;br /&gt;
+=&amp;gt; have multiple miners and sources to prevent outage&lt;br /&gt;
+=&amp;gt; have consensus so possibility of false data is minimised&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;censorship&quot; tabindex=&quot;-1&quot;&gt;Censorship&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;can happen on multiple layers e.g. application, transaction, consensus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;tornados&quot; tabindex=&quot;-1&quot;&gt;Tornados&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;breaks connection to person who put it in =&amp;gt; but observations/analysis of transaction can help with finding out who gave/took coins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;proposer-builder-separation-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312184538-png-alt-pasted-image-20240312184538-png&quot; tabindex=&quot;-1&quot;&gt;proposer/builder separation &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312184538.png&quot; alt=&quot;Pasted image 20240312184538.png&quot; /&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;attack-nodes-who-apply-censorship&quot; tabindex=&quot;-1&quot;&gt;attack nodes who apply censorship&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;for censorship, nodes have to put in work to extract information but then cannot do transactions and don&#39;t earn anything bc. transaction with a censored value is not allowed =&amp;gt; DDoS attack possible to spam node with censored coins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;quiz&quot; tabindex=&quot;-1&quot;&gt;Quiz&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Which of the following DeFi applications is most likely to require external oracle data?
+&lt;ul&gt;
+&lt;li&gt;Token management contracts, such as ERC20&lt;/li&gt;
+&lt;li&gt;Betting on real world events [correct]&lt;/li&gt;
+&lt;li&gt;Uniswap, Curve, and other Automated Market Maker Decentralised Exchanges&lt;/li&gt;
+&lt;li&gt;On-chain games that do not require randomness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Is the context of blockchain oracles, which of the following statements is NOT TRUE?
+&lt;ul&gt;
+&lt;li&gt;Because block generation is centralised process, incorporating an oracle into the consensus protocol does not work because miners may lie or cheat.&lt;/li&gt;
+&lt;li&gt;Oracles have to receive very concise and short data representations to minimise blockchain fees.&lt;/li&gt;
+&lt;li&gt;For each oracle update, a minimum subset of all nodes in the oracle committee should send a report to the miner. [correct bc. one node is enough]&lt;/li&gt;
+&lt;li&gt;Multiple sources /website (redundancy) are required due to website outages and data corruption possibilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What is the anonymity set of Tronado Cach pool with 1000 deposits
+&lt;ul&gt;
+&lt;li&gt;100&lt;/li&gt;
+&lt;li&gt;1000 [correct]&lt;/li&gt;
+&lt;li&gt;999&lt;/li&gt;
+&lt;li&gt;1001&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What are the computational implications if a miner censors a transaction, what is correct?
+&lt;ul&gt;
+&lt;li&gt;No implication bc. the miner doesn&#39;t need to verify the transaction.&lt;/li&gt;
+&lt;li&gt;No implications bc. the miner doesn&#39;t need to execute the transaction.&lt;/li&gt;
+&lt;li&gt;The minder must spend computational resources to execute the transaction but cannot claim transaction fees. [correct]&lt;/li&gt;
+&lt;li&gt;The miner must spend computational resources but is paid the regular transaction fees.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Assumed an oracle committee has five nodes (A,B,C,D,E) and it&#39;s agreed to report the median value. Node E is a malicious node and E observes the following values from the other four nodes (A:1000, B: 1010, C: 1020, D: 1030). What are the upper and lower bounds of the aggregated value to which E can manipulate.
+&lt;ul&gt;
+&lt;li&gt;1000 - 1005&lt;/li&gt;
+&lt;li&gt;1010-1020 [correct bc. median is middle number and you can choose a number between (including borders) 1010 to 1020 and it will be choosen]&lt;/li&gt;
+&lt;li&gt;1000 - 1030&lt;/li&gt;
+&lt;li&gt;no upper/lower bounds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/" >
+        </entry>
+        <entry>
+            <title>
+                DF L2
+                
+            </title>
+            <updated>2024-04-04T16:51:28Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/</id>
+            <content type="html">
+                &lt;p&gt;[[Ethereum and DeFi Glossary.pdf]]&lt;/p&gt;
+&lt;h2 id=&quot;quiz&quot; tabindex=&quot;-1&quot;&gt;Quiz&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;A valid signed transaction of an account can be used to computer
+&lt;ol&gt;
+&lt;li&gt;the private key of the account&lt;/li&gt;
+&lt;li&gt;the address of the account [true]&lt;/li&gt;
+&lt;li&gt;(both are true)&lt;/li&gt;
+&lt;li&gt;(both are false)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Running a node in the Ethereum network
+&lt;ol&gt;
+&lt;li&gt;will earn you money&lt;/li&gt;
+&lt;li&gt;will cost you proof-of-work mining energy&lt;/li&gt;
+&lt;li&gt;needs an excellent internet connection (because you constantly need to be connected to 5&#39;000 other nodes)&lt;/li&gt;
+&lt;li&gt;(none of the above) [true]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;An Ethereum smart contract can be programmed to
+&lt;ol&gt;
+&lt;li&gt;interact with a normal (not Ethereum) computer program through remote procedure calls.&lt;/li&gt;
+&lt;li&gt;automatically run every hour.&lt;/li&gt;
+&lt;li&gt;(both are ture)&lt;/li&gt;
+&lt;li&gt;(both are false) [true]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Layer 2 protocols
+&lt;ol&gt;
+&lt;li&gt;are not realy (only exist in reseach)&lt;/li&gt;
+&lt;li&gt;are considered illegal (by the Ethereum foundation)&lt;/li&gt;
+&lt;li&gt;have been co-invented at ETH Zurich [true]&lt;/li&gt;
+&lt;li&gt;(none of the above)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Ignore fees, how many bananas do you get when you send 10 apples to a CPMM that holds a liquidity of 30 apples and 56 bananas?
+&lt;ol&gt;
+&lt;li&gt;How to calculate?
+&lt;ol&gt;
+&lt;li&gt;constant product = 30 [apples] * 56 [bananas] = 168&lt;/li&gt;
+&lt;li&gt;and afterwards there has to be the same again thus 40 (30 + 10 new) [apples] * x [bananas] = 168&lt;/li&gt;
+&lt;li&gt;solve for x&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;alternative: calculate ratio after adding 56 [bananas] / 40 [apples] = 7 / 5 =&amp;gt; now  multiply with number of apples and you get bananas 7 [bananas] / 5 [apples] * 10 [apples] = 14 [bananas]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/" >
+        </entry>
+        <entry>
+            <title>
                 DF L1
                 
             </title>
-            <updated>2024-04-04T16:51:23Z</updated>
+            <updated>2024-04-04T16:51:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l1/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimer&quot;&gt;#disclaimer&lt;/a&gt; Not examrelevant!&lt;/p&gt;
