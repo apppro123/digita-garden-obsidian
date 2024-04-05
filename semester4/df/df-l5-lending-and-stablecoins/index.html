@@ -462,7 +462,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T21:53:09.907Z';
+        const searchIndexDate = '2024-04-05T21:53:12.234Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -474,9 +474,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:53:09.907Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:53:12.234Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:53:09.907Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:53:12.234Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -824,13 +824,19 @@
 </ul>
 <h3 id="lecture-graphics" tabindex="-1">Lecture (graphics)</h3>
 <ul>
-<li>effects one-by-one <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152523.png" alt="Pasted image 20240323152523.png"></li>
-<li>effects combined <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152543.png" alt="Pasted image 20240323152543.png"></li>
+<li>effects one-by-one <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152523.png" alt="Pasted image 20240323152523.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/u1s6WNk1hI-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/u1s6WNk1hI-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/u1s6WNk1hI-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/u1s6WNk1hI-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152523.png" alt="Pasted image 20240323152523.png" width=""></picture></li>
+<li>effects combined <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152543.png" alt="Pasted image 20240323152543.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/RcHb1OKbTA-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/RcHb1OKbTA-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/RcHb1OKbTA-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/RcHb1OKbTA-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152543.png" alt="Pasted image 20240323152543.png" width=""></picture></li>
 </ul>
 <h2 id="lending" tabindex="-1">Lending</h2>
 <h3 id="on-chain-lending-and-amp-borrowing" tabindex="-1">On-Chain lending &amp; borrowing</h3>
 <ul>
-<li><img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152612.png" alt="Pasted image 20240323152612.png"></li>
+<li><picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152612.png" alt="Pasted image 20240323152612.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/FTCyqdfEyX-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/FTCyqdfEyX-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/FTCyqdfEyX-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/FTCyqdfEyX-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152612.png" alt="Pasted image 20240323152612.png" width=""></picture></li>
 </ul>
 <h3 id="flash-loan" tabindex="-1">Flash loan</h3>
 <ul>
