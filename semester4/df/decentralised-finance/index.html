@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>home page</title>
+    <title>Decentralised Finance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -80,6 +80,7 @@
     
   </head>
   <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section ">
+    
     
     
       
@@ -166,7 +167,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/decentralised-finance/">Decentralised Finance </a>
+                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/decentralised-finance/">Decentralised Finance </a>
                 </div>
             
         </div>
@@ -321,7 +322,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">home page </a>
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">home page </a>
                 </div>
             
         </div>
@@ -331,6 +332,7 @@
     </div>
 
     
+
     
       <div class="search-container" id="globalsearch" onclick="toggleSearch()">
     <div class="search-box">
@@ -735,27 +737,76 @@
     }
 </script>
     
+
     <main class="content cm-s-obsidian ">
       <header>
-      
-
-      <div class="header-meta">
         
-          <div class="header-tags">
-            
+        <div class="header-meta">
+          
+            <div class="header-tags">
               
-            
+                
               
-            
+            </div>
           </div>
-        
-      </div>
       
       
       </header>
       
       
-      
+      <h2 id="promises" tabindex="-1">Promises</h2>
+<ul>
+<li><strong>Inclusivity and Access</strong>:
+<ul>
+<li>provide financial services to individuals globally, including those who are unbanked or underbanked</li>
+<li>potentially bridge the gap between traditional financial systems and individuals who lack access to banking services</li>
+</ul>
+</li>
+<li><strong>Permissionless Innovation</strong>:
+<ul>
+<li>platforms are often open-source and permissionless, allowing developers to create and deploy financial applications without requiring approval from centralized authorities =&gt; rapid innovation and the creation of diverse financial products</li>
+</ul>
+</li>
+<li><strong>Reduced Costs</strong>:
+<ul>
+<li>eliminating intermediaries and automating processes through smart contracts</li>
+<li>potential to reduce transaction costs associated with traditional financial services, such as remittances, loans, and trading</li>
+</ul>
+</li>
+<li><strong>Decentralized Identity and Privacy</strong>:
+<ul>
+<li>leverage decentralized identity solutions, enhancing user privacy and reducing the reliance on centralized entities for identity verification</li>
+<li>Users can control access to their personal information</li>
+</ul>
+</li>
+<li><strong>Financial Empowerment</strong>:
+<ul>
+<li>empower individuals by providing them with greater control over their financial assets</li>
+<li>Users have custody of their private keys and can engage in financial activities without relying on traditional intermediaries</li>
+</ul>
+</li>
+<li><strong>Transparency</strong>: Blockchain technology, provides transparency by allowing users to trace transactions on a public ledger =&gt;  enhance trust and accountability within the financial system</li>
+<li><strong>Interoperability</strong>: platforms often operate on open and interoperable blockchain networks =&gt; allows different DeFi applications to seamlessly integrate with each other, creating a more interconnected and efficient financial ecosystem</li>
+<li><strong>Liquidity Provision</strong>: platforms often use decentralized exchanges and liquidity pools, allowing users to provide liquidity and earn returns =&gt; creates new opportunities for individuals to participate in the financial ecosystem</li>
+</ul>
+<h2 id="bank-run" tabindex="-1">Bank run</h2>
+<ul>
+<li>in CeFi
+<ul>
+<li>dangerous if fractional reserve</li>
+<li>most clients don't receive assets</li>
+</ul>
+</li>
+<li>in DeFi
+<ol>
+<li>event: USDT blacklists a pool, stablecoin de-pegs</li>
+<li>traders will exit pools</li>
+<li>those who exit first receive the best prices</li>
+<li>try to build blacklist detection bots</li>
+</ol>
+</li>
+</ul>
+
       
       
     </main>
@@ -770,6 +821,26 @@
                   
                         
                         
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#promises">Promises</a>
+            		</li>
+
+                    <li><a href="#bank-run">Bank run</a>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
+                        
 
                   
 
@@ -781,6 +852,39 @@
     
 
     
+        <script>
+      if (window.location.hash) {
+        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
+      }
+      window.addEventListener('hashchange', (evt) => {
+        const oldParts = evt.oldURL.split("#");
+        if (oldParts[1]) {
+          document.getElementById(oldParts[1]).classList.remove('referred');
+        }
+        const newParts = evt.newURL.split("#");
+        if (newParts[1]) {
+          document.getElementById(newParts[1]).classList.add('referred');
+        }
+      }, false);
+      const url_parts = window.location.href.split("#")
+      const url = url_parts[0];
+      const referrence = url_parts[1];
+      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
+        el.ondblclick = function(evt) {
+          const ref_url = url + '#' + evt.target.id
+          navigator.clipboard.writeText(ref_url);
+      }
+      });
+
+      
+    </script>
+    <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="">
+    TIMESTAMP_FORMAT = "MMM dd, yyyy h:mm a";
+    document.querySelectorAll('.human-date').forEach(function (el) {
+        el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
+      });
+</script>
     
     
     <script>
@@ -790,5 +894,5 @@ lucide.createIcons({
             }
         });
 </script>
-    </body>
-  </html>
+  </body>
+</html>

@@ -167,6 +167,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/decentralised-finance/">Decentralised Finance </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-definitions/">DF Definitions </a>
                 </div>
             
@@ -484,7 +495,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T22:08:41.207Z';
+        const searchIndexDate = '2024-04-05T22:08:43.824Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -496,9 +507,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:41.207Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:43.824Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:41.207Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:43.824Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -783,7 +794,9 @@
 <li>0 &lt; liquidation threshold &lt; 1</li>
 <li>liquidation threshold provides a &quot;secure&quot; margin</li>
 <li>when health factor &lt; 1 =&gt; borrowing position becomes liquidatable</li>
-<li>e.g. <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154201.png" alt="Pasted image 20240323154201.png"></li>
+<li>e.g. <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154201.png" alt="Pasted image 20240323154201.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/KAhlwDhpMY-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/KAhlwDhpMY-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/KAhlwDhpMY-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/KAhlwDhpMY-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154201.png" alt="Pasted image 20240323154201.png" width=""></picture></li>
 </ul>
 </li>
 <li><strong>Liquidation Spread</strong> <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> LS: bonus, or discount, that a liquidator can collect when liquidating collateral

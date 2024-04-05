@@ -167,6 +167,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/decentralised-finance/">Decentralised Finance </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-definitions/">DF Definitions </a>
                 </div>
             
@@ -484,7 +495,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T22:08:41.207Z';
+        const searchIndexDate = '2024-04-05T22:08:43.824Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -496,9 +507,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:41.207Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:43.824Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:41.207Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:43.824Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -806,7 +817,7 @@
 <li>destroys coins <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png" alt="Pasted image 20240405232749.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-568.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-568.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png" alt="Pasted image 20240405232749.png" width=""></picture><br>
-<a class="internal-link is-unresolved" href="/digital-garden-obsidian/404" target="">Decentralised Finance#Bank run</a></li>
+<a class="internal-link" target="" data-note-icon="" href="/digital-garden-obsidian/semester4/df/decentralised-finance/#bank-run">Decentralised Finance#Bank run</a></li>
 </ul>
 <h2 id="quiz" tabindex="-1">Quiz</h2>
 <ul>

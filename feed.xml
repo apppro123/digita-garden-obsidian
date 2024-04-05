@@ -3,14 +3,14 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-05T22:08:41Z</updated>
+    <updated>2024-04-05T22:08:44Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
                 home page
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/</id>
             <content type="html">
                 
@@ -22,7 +22,7 @@
                 WS L1
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions&lt;/h2&gt;
@@ -97,10 +97,74 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
         </entry>
         <entry>
             <title>
+                Decentralised Finance
+                
+            </title>
+            <updated>2024-04-05T22:08:33Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/decentralised-finance/</id>
+            <content type="html">
+                &lt;h2 id=&quot;promises&quot; tabindex=&quot;-1&quot;&gt;Promises&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Inclusivity and Access&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;provide financial services to individuals globally, including those who are unbanked or underbanked&lt;/li&gt;
+&lt;li&gt;potentially bridge the gap between traditional financial systems and individuals who lack access to banking services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permissionless Innovation&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;platforms are often open-source and permissionless, allowing developers to create and deploy financial applications without requiring approval from centralized authorities =&amp;gt; rapid innovation and the creation of diverse financial products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reduced Costs&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;eliminating intermediaries and automating processes through smart contracts&lt;/li&gt;
+&lt;li&gt;potential to reduce transaction costs associated with traditional financial services, such as remittances, loans, and trading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decentralized Identity and Privacy&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;leverage decentralized identity solutions, enhancing user privacy and reducing the reliance on centralized entities for identity verification&lt;/li&gt;
+&lt;li&gt;Users can control access to their personal information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Financial Empowerment&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;empower individuals by providing them with greater control over their financial assets&lt;/li&gt;
+&lt;li&gt;Users have custody of their private keys and can engage in financial activities without relying on traditional intermediaries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Transparency&lt;/strong&gt;: Blockchain technology, provides transparency by allowing users to trace transactions on a public ledger =&amp;gt;  enhance trust and accountability within the financial system&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interoperability&lt;/strong&gt;: platforms often operate on open and interoperable blockchain networks =&amp;gt; allows different DeFi applications to seamlessly integrate with each other, creating a more interconnected and efficient financial ecosystem&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Liquidity Provision&lt;/strong&gt;: platforms often use decentralized exchanges and liquidity pools, allowing users to provide liquidity and earn returns =&amp;gt; creates new opportunities for individuals to participate in the financial ecosystem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;bank-run&quot; tabindex=&quot;-1&quot;&gt;Bank run&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;in CeFi
+&lt;ul&gt;
+&lt;li&gt;dangerous if fractional reserve&lt;/li&gt;
+&lt;li&gt;most clients don&#39;t receive assets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;in DeFi
+&lt;ol&gt;
+&lt;li&gt;event: USDT blacklists a pool, stablecoin de-pegs&lt;/li&gt;
+&lt;li&gt;traders will exit pools&lt;/li&gt;
+&lt;li&gt;those who exit first receive the best prices&lt;/li&gt;
+&lt;li&gt;try to build blacklist detection bots&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/decentralised-finance/" >
+        </entry>
+        <entry>
+            <title>
                 DF L6
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l6/</id>
             <content type="html">
                 &lt;h2 id=&quot;economic-models&quot; tabindex=&quot;-1&quot;&gt;Economic models&lt;/h2&gt;
@@ -160,7 +224,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
 &lt;h4 id=&quot;usdc-and-usdt&quot; tabindex=&quot;-1&quot;&gt;USDC and USDT&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;destroys coins &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png&quot; alt=&quot;Pasted image 20240405232749.png&quot; /&gt;&lt;br /&gt;
-&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Decentralised Finance#Bank run&lt;/a&gt;&lt;/li&gt;
+&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/df/decentralised-finance/#bank-run&quot;&gt;Decentralised Finance#Bank run&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;quiz&quot; tabindex=&quot;-1&quot;&gt;Quiz&lt;/h2&gt;
 &lt;ul&gt;
@@ -214,7 +278,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L5 Lending &amp; Stablecoins
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -432,7 +496,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L4
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l4/</id>
             <content type="html">
                 &lt;h2 id=&quot;decentralised-exchange&quot; tabindex=&quot;-1&quot;&gt;Decentralised Exchange&lt;/h2&gt;
@@ -687,7 +751,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L3
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;df-and-cf-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183404-png-alt-pasted-image-20240312183404-png&quot; tabindex=&quot;-1&quot;&gt;DF and CF &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183404.png&quot; alt=&quot;Pasted image 20240312183404.png&quot; /&gt;&lt;/h2&gt;
@@ -791,7 +855,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L2
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/</id>
             <content type="html">
                 &lt;p&gt;![[Ethereum and DeFi Glossary.pdf]]&lt;/p&gt;
@@ -853,13 +917,13 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L1
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l1/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimer&quot;&gt;#disclaimer&lt;/a&gt; Not examrelevant!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Financial Markets&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Decentralised Finance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/df/decentralised-finance/&quot;&gt;Decentralised Finance&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -870,7 +934,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF Definitions
                 
             </title>
-            <updated>2024-04-05T22:08:28Z</updated>
+            <updated>2024-04-05T22:08:33Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-definitions/</id>
             <content type="html">
                 &lt;ul&gt;
