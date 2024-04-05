@@ -5,7 +5,7 @@
 ## Decentralised Exchange
 (Example LOB Dex)
 - **(Dis) advantages**:
-	+ + No KYC/AML
+	- + No KYC/AML
 	- + no fees paid to the exchange
 	- + no impermanent loss
 	- - fees for deposit, withdraw, trade creation/cancel
