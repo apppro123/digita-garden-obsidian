@@ -3,14 +3,14 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-05T21:55:42Z</updated>
+    <updated>2024-04-05T21:56:43Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
                 home page
                 
             </title>
-            <updated>2024-04-05T21:55:31Z</updated>
+            <updated>2024-04-05T21:56:32Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/</id>
             <content type="html">
                 
@@ -22,7 +22,7 @@
                 WS L1
                 
             </title>
-            <updated>2024-04-05T21:55:31Z</updated>
+            <updated>2024-04-05T21:56:32Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions&lt;/h2&gt;
@@ -97,10 +97,124 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
         </entry>
         <entry>
             <title>
+                DF L6
+                
+            </title>
+            <updated>2024-04-05T21:56:32Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l6/</id>
+            <content type="html">
+                &lt;h2 id=&quot;economic-models&quot; tabindex=&quot;-1&quot;&gt;Economic models&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;represents&lt;/strong&gt; (often simplifies) an economic process&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;contains&lt;/strong&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/df/df-l6/#variables&quot;&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Variables&quot;&gt;#Variables&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;logical/quantitative &lt;strong&gt;relationships&lt;/strong&gt; between variables&lt;/li&gt;
+&lt;li&gt;example: inflation
+&lt;ul&gt;
+&lt;li&gt;measuring inflation requires a behaviour model bc. it depends on behaviour of individuals e.g. what/how much food they buy =&amp;gt; how money is used&lt;/li&gt;
+&lt;li&gt;differentiate relative vs. inflation price change&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;variables&quot; tabindex=&quot;-1&quot;&gt;Variables&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Interest rate(s) in CeFi and DeFi&lt;/li&gt;
+&lt;li&gt;cryptocurrency price&lt;/li&gt;
+&lt;li&gt;collateral ratio&lt;/li&gt;
+&lt;li&gt;DeFi protocol fees&lt;/li&gt;
+&lt;li&gt;blockchain transaction fees&lt;/li&gt;
+&lt;li&gt;number of users&lt;/li&gt;
+&lt;li&gt;blockchain transaction throughput&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;exogenous-vs-endogenous&quot; tabindex=&quot;-1&quot;&gt;Exogenous vs. endogenous&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Exogenous&lt;/strong&gt; variable == &lt;strong&gt;outside&lt;/strong&gt; force
+&lt;ul&gt;
+&lt;li&gt;determined outside model, imposed on model&lt;/li&gt;
+&lt;li&gt;e.g. in MakerDAO, asset price of collateral (e.g. ETH), is independent of the MakerDAO system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Endogenous&lt;/strong&gt; variable == &lt;strong&gt;inside&lt;/strong&gt; the model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;stablecooins&quot; tabindex=&quot;-1&quot;&gt;Stablecooins&lt;/h2&gt;
+&lt;h3 id=&quot;types&quot; tabindex=&quot;-1&quot;&gt;Types&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Types&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reserved-based&lt;/strong&gt; e.g. USDC by a bank&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;collateral-based&lt;/strong&gt;: e.g. MakerDAO&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;algorithmic&lt;/strong&gt; e.g. AMPL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;maker-dao-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405232329-png-alt-pasted-image-20240405232329-png&quot; tabindex=&quot;-1&quot;&gt;MakerDAO &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232329.png&quot; alt=&quot;Pasted image 20240405232329.png&quot; /&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;to be profitable: assumption that ETH goes up and you can get even more with this DAI =&amp;gt; with drawn DAI get even more ETH =&amp;gt; later change back and have more in all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;ampleforth&quot; tabindex=&quot;-1&quot;&gt;Ampleforth&lt;/h4&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#short&quot;&gt;#short&lt;/a&gt; AMPL&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png&quot; alt=&quot;Pasted image 20240405232646.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;systemic implications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;usdc-and-usdt&quot; tabindex=&quot;-1&quot;&gt;USDC and USDT&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;destroys coins &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png&quot; alt=&quot;Pasted image 20240405232749.png&quot; /&gt;&lt;br /&gt;
+&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Decentralised Finance#Bank run&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;quiz&quot; tabindex=&quot;-1&quot;&gt;Quiz&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Which stable coin is the most stable? ( &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#remarkN&quot;&gt;#remarkN&lt;/a&gt; atm)
+&lt;ul&gt;
+&lt;li&gt;USDC [correct]&lt;/li&gt;
+&lt;li&gt;DAI&lt;/li&gt;
+&lt;li&gt;AMPL&lt;/li&gt;
+&lt;li&gt;ETH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Which of the following statements is False?
+&lt;ul&gt;
+&lt;li&gt;Several algorithmic stablecoins have depegged.&lt;/li&gt;
+&lt;li&gt;DAI is a collateral based stablecoin, where e.g. ETH is used as collateral&lt;/li&gt;
+&lt;li&gt;WBTC token prices should be pegged to BTC price&lt;/li&gt;
+&lt;li&gt;ETH is more stable than USDC [correct]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What happens in AMPL system when 1 AMPL is worth less than 1 USD
+&lt;ul&gt;
+&lt;li&gt;The supply of AMPL is increase (expansion)&lt;/li&gt;
+&lt;li&gt;The supply of AMPL is decreased (contraction) [correct: if AMPL is more scarce, it should be worth more =&amp;gt; less difference to USD]&lt;/li&gt;
+&lt;li&gt;no action is taken (equilibrium)&lt;/li&gt;
+&lt;li&gt;additional collateral is required&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How does the AMPL stablecoin reduce or increase the account balances of the token holders?
+&lt;ul&gt;
+&lt;li&gt;The ERC20 contract controls the balances and can modify them. [correct]&lt;/li&gt;
+&lt;li&gt;The ERC71 contract controls the balances and can modify them.&lt;/li&gt;
+&lt;li&gt;every user must individually approve each account balance change before rebalancing&lt;/li&gt;
+&lt;li&gt;AMPL rebalances the token supply through arbitrage with USDC.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If the reserve ratio of a bank is 0.2 and the total money deposited by bank customers is $500,000, how much money is held by the bank?
+&lt;ul&gt;
+&lt;li&gt;$100,000 [correct bc. 0.2 = 100&#39;000/500&#39;000 or 0.2 * 500&#39;000 = 100&#39;000]&lt;/li&gt;
+&lt;li&gt;$250,000&lt;/li&gt;
+&lt;li&gt;$400,000&lt;/li&gt;
+&lt;li&gt;$1,000,000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l6/" >
+        </entry>
+        <entry>
+            <title>
                 DF L5 Lending &amp; Stablecoins
                 
             </title>
-            <updated>2024-04-05T21:55:31Z</updated>
+            <updated>2024-04-05T21:56:32Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -318,7 +432,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L4
                 
             </title>
-            <updated>2024-04-05T21:55:31Z</updated>
+            <updated>2024-04-05T21:56:32Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l4/</id>
             <content type="html">
                 &lt;h2 id=&quot;decentralised-exchange&quot; tabindex=&quot;-1&quot;&gt;Decentralised Exchange&lt;/h2&gt;
@@ -573,7 +687,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L3
                 
             </title>
-            <updated>2024-04-05T21:55:31Z</updated>
+            <updated>2024-04-05T21:56:32Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;df-and-cf-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183404-png-alt-pasted-image-20240312183404-png&quot; tabindex=&quot;-1&quot;&gt;DF and CF &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183404.png&quot; alt=&quot;Pasted image 20240312183404.png&quot; /&gt;&lt;/h2&gt;
@@ -677,7 +791,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L2
                 
             </title>
-            <updated>2024-04-05T21:55:31Z</updated>
+            <updated>2024-04-05T21:56:32Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/</id>
             <content type="html">
                 &lt;p&gt;![[Ethereum and DeFi Glossary.pdf]]&lt;/p&gt;
@@ -739,7 +853,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L1
                 
             </title>
-            <updated>2024-04-05T21:55:31Z</updated>
+            <updated>2024-04-05T21:56:32Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l1/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimer&quot;&gt;#disclaimer&lt;/a&gt; Not examrelevant!&lt;/p&gt;
