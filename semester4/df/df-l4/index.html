@@ -218,17 +218,6 @@
         
     
                     
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l6/">DF L6 </a>
-                </div>
-            
-        </div>
-        
-    
-                    
                 </div>
             
         </div>
@@ -473,7 +462,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T21:53:36.522Z';
+        const searchIndexDate = '2024-04-05T21:55:42.436Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -485,9 +474,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:53:36.522Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:55:42.436Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:53:36.522Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:55:42.436Z', docs}));
             window.docs = docs
             window.index = index;
         }
