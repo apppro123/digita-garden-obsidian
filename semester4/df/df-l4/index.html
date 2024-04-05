@@ -460,7 +460,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-04T21:52:20.532Z';
+        const searchIndexDate = '2024-04-05T21:43:33.541Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -472,9 +472,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-04T21:52:20.532Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:43:33.541Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-04T21:52:20.532Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:43:33.541Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -729,8 +729,6 @@
 <li>No KYC/AML</li>
 </ul>
 </li>
-</ul>
-<ul>
 <li>
 <ul>
 <li>no fees paid to the exchange</li>
