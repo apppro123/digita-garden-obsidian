@@ -484,7 +484,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T22:08:37.561Z';
+        const searchIndexDate = '2024-04-05T22:08:39.170Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -496,9 +496,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:37.561Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:39.170Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:37.561Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:39.170Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -753,7 +753,9 @@
 <li><strong>Anti-money laundering</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> AML): helping to break criminal networks and minimise the impact of illicit transactions on affected economies.</li>
 <li><strong>washtrading</strong>: occurs when an investor buys and sells the same or a similar security investment at the same time (e.g. can be done by using flash loans)</li>
 <li><strong>(Fractional) reserve</strong>: bank's reserve ratio = (money held by bank) / (money deposited by bank customers)</li>
-<li><strong>Exchange traded fund</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> ETF): security/asset<img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405223919.png" alt="Pasted image 20240405223919.png">
+<li><strong>Exchange traded fund</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> ETF): security/asset<picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405223919.png" alt="Pasted image 20240405223919.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/W-TJeovLh6-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/W-TJeovLh6-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/W-TJeovLh6-528.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/W-TJeovLh6-528.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405223919.png" alt="Pasted image 20240405223919.png" width=""></picture>
 <ul>
 <li>tracking an index/sector/commodity</li>
 <li>tradable on an exchange</li>
