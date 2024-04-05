@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>home page</title>
+    <title>DF Definitions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -80,6 +80,7 @@
     
   </head>
   <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section ">
+    
     
     
       
@@ -166,7 +167,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-definitions/">DF Definitions </a>
+                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-definitions/">DF Definitions </a>
                 </div>
             
         </div>
@@ -310,7 +311,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">home page </a>
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">home page </a>
                 </div>
             
         </div>
@@ -320,6 +321,7 @@
     </div>
 
     
+
     
       <div class="search-container" id="globalsearch" onclick="toggleSearch()">
     <div class="search-box">
@@ -724,27 +726,71 @@
     }
 </script>
     
+
     <main class="content cm-s-obsidian ">
       <header>
-      
-
-      <div class="header-meta">
         
-          <div class="header-tags">
-            
+        <div class="header-meta">
+          
+            <div class="header-tags">
               
-            
+                
               
-            
+            </div>
           </div>
-        
-      </div>
       
       
       </header>
       
       
-      
+      <ul>
+<li><strong>pegged</strong> cryptocurrency: cryptocurrency whose value is linked to a specific bank-issued currency, financial instrument or tradable commodity
+<ul>
+<li>e.g. pay back to buy BTC and holds it for you</li>
+</ul>
+</li>
+<li><strong>Know your customer</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> KYC): means verifying who you are when joining a crypto exchange</li>
+<li><strong>Anti-money laundering</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> AML): helping to break criminal networks and minimise the impact of illicit transactions on affected economies.</li>
+<li><strong>washtrading</strong>: occurs when an investor buys and sells the same or a similar security investment at the same time (e.g. can be done by using flash loans)</li>
+<li><strong>(Fractional) reserve</strong>: bank's reserve ratio = (money held by bank) / (money deposited by bank customers)</li>
+<li><strong>Exchange traded fund</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> ETF): security/asset<img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405223919.png" alt="Pasted image 20240405223919.png">
+<ul>
+<li>tracking an index/sector/commodity</li>
+<li>tradable on an exchange</li>
+<li>typically, lower fees than buying individual stocks</li>
+<li>EFT types: bond, stock, industry, commodity, currency, inverse, etc</li>
+<li>e.g. SPDR S&amp;P 500 ETF tracks the S&amp;P 500 index</li>
+</ul>
+</li>
+</ul>
+<h3 id="lending" tabindex="-1">Lending</h3>
+<ul>
+<li><strong>collateral</strong>: assets that serve as a security deposit</li>
+<li><strong>Over-collateralisation</strong>: Borrower has to provide value(collateral assets) &gt; value(granted loan)</li>
+<li><strong>Under-collateralisation</strong>: value(collateral) &lt; value(debt)</li>
+<li><strong>Liquidation</strong>: selling collateral from the borrower
+<ul>
+<li>E.g., if value(collateral) &lt;= 150% x value(debt)</li>
+<li>Anyone can liquidate the debt position</li>
+</ul>
+</li>
+<li><strong>Health factor</strong> <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154018.png" alt="Pasted image 20240323154018.png">
+<ul>
+<li>0 &lt; liquidation threshold &lt; 1</li>
+<li>liquidation threshold provides a &quot;secure&quot; margin</li>
+<li>when health factor &lt; 1 =&gt; borrowing position becomes liquidatable</li>
+<li>e.g. <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154201.png" alt="Pasted image 20240323154201.png"></li>
+</ul>
+</li>
+<li><strong>Liquidation Spread</strong> <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> LS: bonus, or discount, that a liquidator can collect when liquidating collateral
+<ul>
+<li>𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐶𝑜𝑙𝑙𝑎𝑡𝑒𝑟𝑎𝑙 𝑡𝑜 𝐶𝑙𝑎𝑖𝑚 = 𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐷𝑒𝑏𝑡 𝑡𝑜 𝑅𝑒𝑝𝑎𝑦 × (1 + 𝐿𝑆)</li>
+</ul>
+</li>
+<li><strong>Close Factor</strong> <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> CF: the maximum proportion of the debt that is allowed to be repaid in a single fixed spread liquidation<br>
+𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐷𝑒𝑏𝑡 𝑡𝑜 𝑅𝑒𝑝𝑎𝑦 &lt; 𝐶𝐹 × 𝑇𝑜𝑡𝑎𝑙 𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐷𝑒𝑏𝑡𝑠</li>
+</ul>
+
       
       
     </main>
@@ -759,6 +805,23 @@
                   
                         
                         
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#lending">Lending</a>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
+                        
 
                   
 
@@ -770,6 +833,39 @@
     
 
     
+        <script>
+      if (window.location.hash) {
+        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
+      }
+      window.addEventListener('hashchange', (evt) => {
+        const oldParts = evt.oldURL.split("#");
+        if (oldParts[1]) {
+          document.getElementById(oldParts[1]).classList.remove('referred');
+        }
+        const newParts = evt.newURL.split("#");
+        if (newParts[1]) {
+          document.getElementById(newParts[1]).classList.add('referred');
+        }
+      }, false);
+      const url_parts = window.location.href.split("#")
+      const url = url_parts[0];
+      const referrence = url_parts[1];
+      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
+        el.ondblclick = function(evt) {
+          const ref_url = url + '#' + evt.target.id
+          navigator.clipboard.writeText(ref_url);
+      }
+      });
+
+      
+    </script>
+    <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="">
+    TIMESTAMP_FORMAT = "MMM dd, yyyy h:mm a";
+    document.querySelectorAll('.human-date').forEach(function (el) {
+        el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
+      });
+</script>
     
     
     <script>
@@ -779,5 +875,5 @@ lucide.createIcons({
             }
         });
 </script>
-    </body>
-  </html>
+  </body>
+</html>

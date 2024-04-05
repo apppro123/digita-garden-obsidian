@@ -167,6 +167,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-definitions/">DF Definitions </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l1/">DF L1 </a>
                 </div>
             
@@ -212,6 +223,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/">DF L5 Lending &amp; Stablecoins </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l6/">DF L6 </a>
                 </div>
             
         </div>
@@ -462,7 +484,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T22:04:01.138Z';
+        const searchIndexDate = '2024-04-05T22:08:37.561Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -474,9 +496,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:04:01.138Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:37.561Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:04:01.138Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:37.561Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -722,7 +744,7 @@
       
       
       <ul>
-<li>added multiple things in <a class="internal-link is-unresolved" href="/digital-garden-obsidian/404" target="">DF Definitions</a></li>
+<li>added multiple things in <a class="internal-link" target="" data-note-icon="" href="/digital-garden-obsidian/semester4/df/df-definitions/">DF Definitions</a></li>
 </ul>
 <h2 id="how-economic-machine-works" tabindex="-1">How economic machine works</h2>
 <p><a class="tag" onclick="toggleTagSearch(this)" data-content="#video">#video</a> <a href="https://www.youtube.com/watch?v=PHe0bXAIuk0" target="_blank" class="external-link">How The Economic Machine Works by Ray Dalio</a></p>
@@ -864,12 +886,18 @@
 <li>(risk-free) arbitrage</li>
 <li>washtrading</li>
 <li>flash mining</li>
-<li>collateral swapping <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405230801.png" alt="Pasted image 20240405230801.png"></li>
+<li>collateral swapping <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405230801.png" alt="Pasted image 20240405230801.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ADh7uRj8VG-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ADh7uRj8VG-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ADh7uRj8VG-618.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ADh7uRj8VG-618.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405230801.png" alt="Pasted image 20240405230801.png" width=""></picture></li>
 <li>liquidation
 <ul>
 <li>when liquidator doesn't have cryptocurrency upfront to repay</li>
 <li>only works when liquidation completes in one transaction</li>
-<li>e.g. <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231019.png" alt="Pasted image 20240405231019.png"> <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231027.png" alt="Pasted image 20240405231027.png"><img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231038.png" alt="Pasted image 20240405231038.png"></li>
+<li>e.g. <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231019.png" alt="Pasted image 20240405231019.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/WT3mlbFMQ3-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/WT3mlbFMQ3-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/WT3mlbFMQ3-632.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/WT3mlbFMQ3-632.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231019.png" alt="Pasted image 20240405231019.png" width=""></picture> <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231027.png" alt="Pasted image 20240405231027.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/aKqenuFEBg-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/aKqenuFEBg-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/aKqenuFEBg-612.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/aKqenuFEBg-612.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231027.png" alt="Pasted image 20240405231027.png" width=""></picture><img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231038.png" alt="Pasted image 20240405231038.png"></li>
 </ul>
 </li>
 </ul>

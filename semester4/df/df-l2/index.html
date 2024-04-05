@@ -167,6 +167,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-definitions/">DF Definitions </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l1/">DF L1 </a>
                 </div>
             
@@ -212,6 +223,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/">DF L5 Lending &amp; Stablecoins </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l6/">DF L6 </a>
                 </div>
             
         </div>
@@ -462,7 +484,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T22:04:01.138Z';
+        const searchIndexDate = '2024-04-05T22:08:37.561Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -474,9 +496,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:04:01.138Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:37.561Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:04:01.138Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:37.561Z', docs}));
             window.docs = docs
             window.index = index;
         }
