@@ -462,7 +462,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T22:03:48.930Z';
+        const searchIndexDate = '2024-04-05T22:04:01.138Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -474,9 +474,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:03:48.930Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:04:01.138Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:03:48.930Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:04:01.138Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -864,9 +864,7 @@
 <li>(risk-free) arbitrage</li>
 <li>washtrading</li>
 <li>flash mining</li>
-<li>collateral swapping <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405230801.png" alt="Pasted image 20240405230801.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ADh7uRj8VG-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ADh7uRj8VG-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ADh7uRj8VG-618.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ADh7uRj8VG-618.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405230801.png" alt="Pasted image 20240405230801.png" width=""></picture></li>
+<li>collateral swapping <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405230801.png" alt="Pasted image 20240405230801.png"></li>
 <li>liquidation
 <ul>
 <li>when liquidator doesn't have cryptocurrency upfront to repay</li>
