@@ -473,7 +473,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T21:53:31.651Z';
+        const searchIndexDate = '2024-04-05T21:53:36.522Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -485,9 +485,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:53:31.651Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:53:36.522Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:53:31.651Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:53:36.522Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -785,16 +785,12 @@
 <h4 id="ampleforth" tabindex="-1">Ampleforth</h4>
 <p><a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> AMPL</p>
 <ul>
-<li><picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png" alt="Pasted image 20240405232646.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-568.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-568.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png" alt="Pasted image 20240405232646.png" width=""></picture></li>
+<li><img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png" alt="Pasted image 20240405232646.png"></li>
 <li>systemic implications</li>
 </ul>
 <h4 id="usdc-and-usdt" tabindex="-1">USDC and USDT</h4>
 <ul>
-<li>destroys coins <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png" alt="Pasted image 20240405232749.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-568.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-568.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png" alt="Pasted image 20240405232749.png" width=""></picture><br>
+<li>destroys coins <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png" alt="Pasted image 20240405232749.png"><br>
 <a class="internal-link is-unresolved" href="/digital-garden-obsidian/404" target="">Decentralised Finance#Bank run</a></li>
 </ul>
 <h2 id="quiz" tabindex="-1">Quiz</h2>
