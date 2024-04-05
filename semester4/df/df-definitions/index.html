@@ -484,7 +484,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T22:08:39.170Z';
+        const searchIndexDate = '2024-04-05T22:08:41.207Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -496,9 +496,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:39.170Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T22:08:41.207Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:39.170Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T22:08:41.207Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -776,7 +776,9 @@
 <li>Anyone can liquidate the debt position</li>
 </ul>
 </li>
-<li><strong>Health factor</strong> <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154018.png" alt="Pasted image 20240323154018.png">
+<li><strong>Health factor</strong> <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154018.png" alt="Pasted image 20240323154018.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/OQXmoA1rMw-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/OQXmoA1rMw-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/OQXmoA1rMw-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/OQXmoA1rMw-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154018.png" alt="Pasted image 20240323154018.png" width=""></picture>
 <ul>
 <li>0 &lt; liquidation threshold &lt; 1</li>
 <li>liquidation threshold provides a &quot;secure&quot; margin</li>
