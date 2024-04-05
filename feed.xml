@@ -3,43 +3,26 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-05T21:53:01Z</updated>
+    <updated>2024-04-05T21:53:10Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
-                Test
+                home page
                 
             </title>
-            <updated>2024-04-05T21:52:50Z</updated>
+            <updated>2024-04-05T21:52:58Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/</id>
             <content type="html">
-                &lt;p&gt;First published digital garden site :)&lt;br /&gt;
-Edit 3&lt;/p&gt;
-
+                
             </content>
             <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/" >
-        </entry>
-        <entry>
-            <title>
-                Test 1
-                
-            </title>
-            <updated>2024-04-05T21:52:50Z</updated>
-            <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/test-1/</id>
-            <content type="html">
-                &lt;p&gt;First published digital garden site :)&lt;br /&gt;
-Edit 4&lt;br /&gt;
-&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/&quot;&gt;Test&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/test-1/" >
         </entry>
         <entry>
             <title>
                 WS L1
                 
             </title>
-            <updated>2024-04-05T21:52:50Z</updated>
+            <updated>2024-04-05T21:52:58Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions&lt;/h2&gt;
@@ -114,10 +97,228 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
         </entry>
         <entry>
             <title>
+                DF L5 Lending &amp; Stablecoins
+                
+            </title>
+            <updated>2024-04-05T21:52:58Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/</id>
+            <content type="html">
+                &lt;ul&gt;
+&lt;li&gt;added multiple things in &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;DF Definitions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;how-economic-machine-works&quot; tabindex=&quot;-1&quot;&gt;How economic machine works&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#video&quot;&gt;#video&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=PHe0bXAIuk0&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;How The Economic Machine Works by Ray Dalio&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Transaction&lt;/strong&gt;: money, credit &amp;lt;=&amp;gt; goods, services, financial assets
+&lt;ul&gt;
+&lt;li&gt;transactions &lt;strong&gt;drive economy&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;needs buyers and sellers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;special actors&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;central bank:
+&lt;ul&gt;
+&lt;li&gt;can print money&lt;/li&gt;
+&lt;li&gt;sets interest rates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;state: greatest buyer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;credit&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;most important part bc. biggest and &lt;strong&gt;most volatile&lt;/strong&gt; part&lt;/li&gt;
+&lt;li&gt;needs lenders and borrowers
+&lt;ul&gt;
+&lt;li&gt;principal: amount lend&lt;/li&gt;
+&lt;li&gt;interest: additional amount to pay back for principal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;debt is created with it&lt;/li&gt;
+&lt;li&gt;credit creates spending =&amp;gt; drive economy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;without&lt;/strong&gt; credit: growth can just come from more productivity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;with&lt;/strong&gt; credit: growth can come from more productivity and more spending through borrowing/credit =&amp;gt; creates cycle&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bad&lt;/strong&gt; when it supports overconsumption and cannot be paid bad e.g. big TV&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;good&lt;/strong&gt; when it efficiently allocates resources e.g. tractor to harvest more crops&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;economic growth&lt;/strong&gt; due to cycle of: (more) income =&amp;gt; borrowing =&amp;gt; spending =&amp;gt; productivity =&amp;gt; ...&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;inflation&lt;/strong&gt; when prices rise
+&lt;ul&gt;
+&lt;li&gt;too much inflation causes problems =&amp;gt; central bank rises interest rates =&amp;gt; fewer people can borrow money =&amp;gt; borrow less =&amp;gt; less spending =&amp;gt; prices go down =&amp;gt; deflation =&amp;gt; recession =&amp;gt; decrease interest rates =&amp;gt; more borrowing =&amp;gt; inflation =&amp;gt; ...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;deflation&lt;/strong&gt; when prices decrease&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;deleveraging&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;worse than recession bc. lowering interest rates doesn&#39;t work (not rly. possible to go under 0%)&lt;/li&gt;
+&lt;li&gt;beautiful deleveraging through properly applying counter actions =&amp;gt; debt declines same as income
+&lt;ul&gt;
+&lt;li&gt;deflationary (cut spending and dept + redistribution) and inflationary (printing money) actions are in balance&lt;/li&gt;
+&lt;li&gt;income needs to grow faster than debt grows =&amp;gt; people are creditworthy again&lt;/li&gt;
+&lt;li&gt;growth is slow but debt shrinks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;possible counter actions
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;cut spending&lt;/strong&gt;: has opposite effects bc. less spending =&amp;gt; less income (for another person) =&amp;gt; lower wages and unemployment =&amp;gt; can pay back less
+&lt;ul&gt;
+&lt;li&gt;and lenders notice that borrowers probably cannot pay back everything =&amp;gt; don&#39;t lend anything anymore&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cut dept&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;lenders don&#39;t want that and &amp;quot;alternatives&amp;quot; are: less paid back, over longer time frame, reduced interest rate&lt;/li&gt;
+&lt;li&gt;also deflationary bc. everything loses value and so borrowers still, also with less debt, won&#39;t have enough to pay back (even less)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;redistribution&lt;/strong&gt;: government has to pay for unemployment and want&#39;s to set economic stimulus =&amp;gt; needs more money generally tries to raise taxes for wealthy (bc. wealth is concentrated), but wealthy don&#39;t like that too much...
+&lt;ul&gt;
+&lt;li&gt;revolution/class conflict evolves =&amp;gt; maybe army and/or (strong) political change e.g. Hitler after 1930s in Germany&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;print money&lt;/strong&gt;: last alternative bc. interest rates are already lowered as much as possible
+&lt;ul&gt;
+&lt;li&gt;inflationary and stimulates economy&lt;/li&gt;
+&lt;li&gt;to buy financial assets and government bonds
+&lt;ul&gt;
+&lt;li&gt;just helps those who own financial assets bc. central bank can only buy financial assets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;central bank can cooperate with central government through buying government bonds to spend money on goods and services =&amp;gt; money for people
+&lt;ul&gt;
+&lt;li&gt;very risky&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;doesn&#39;t have to result in inflation, when credit shrinks the same amount and thus spending is not higher&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;reflation&lt;/strong&gt; (after deleveraging)
+&lt;ul&gt;
+&lt;li&gt;ca. 7-10 year (lost decade) (maybe just after a &amp;quot;beatauiful&amp;quot; deleveraging)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;lecture-graphics&quot; tabindex=&quot;-1&quot;&gt;Lecture (graphics)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;effects one-by-one &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152523.png&quot; alt=&quot;Pasted image 20240323152523.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;effects combined &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152543.png&quot; alt=&quot;Pasted image 20240323152543.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;lending&quot; tabindex=&quot;-1&quot;&gt;Lending&lt;/h2&gt;
+&lt;h3 id=&quot;on-chain-lending-and-amp-borrowing&quot; tabindex=&quot;-1&quot;&gt;On-Chain lending &amp;amp; borrowing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152612.png&quot; alt=&quot;Pasted image 20240323152612.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;flash-loan&quot; tabindex=&quot;-1&quot;&gt;Flash loan&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;flash loan should be taken and repaid in one single transaction &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154417.png&quot; alt=&quot;Pasted image 20240323154417.png&quot; /&gt;
+&lt;ul&gt;
+&lt;li&gt;not directly time bound rather has to happen within one block building process&lt;/li&gt;
+&lt;li&gt;if it cannot be paid back =&amp;gt; entire transaction is invalid
+&lt;ul&gt;
+&lt;li&gt;lender is secure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;use-cases&quot; tabindex=&quot;-1&quot;&gt;Use cases&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;DeFi attacke
+&lt;ul&gt;
+&lt;li&gt;price oracle manipulation&lt;/li&gt;
+&lt;li&gt;pump and dump (buy another coin to make them look like as more valuable/have more transactions for a short amount of time)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(risk-free) arbitrage&lt;/li&gt;
+&lt;li&gt;washtrading&lt;/li&gt;
+&lt;li&gt;flash mining&lt;/li&gt;
+&lt;li&gt;collateral swapping &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405230801.png&quot; alt=&quot;Pasted image 20240405230801.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;liquidation
+&lt;ul&gt;
+&lt;li&gt;when liquidator doesn&#39;t have cryptocurrency upfront to repay&lt;/li&gt;
+&lt;li&gt;only works when liquidation completes in one transaction&lt;/li&gt;
+&lt;li&gt;e.g. &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231019.png&quot; alt=&quot;Pasted image 20240405231019.png&quot; /&gt; &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231027.png&quot; alt=&quot;Pasted image 20240405231027.png&quot; /&gt;&lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231038.png&quot; alt=&quot;Pasted image 20240405231038.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;liquidation&quot; tabindex=&quot;-1&quot;&gt;Liquidation&lt;/h2&gt;
+&lt;h3 id=&quot;in-tradition-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png&quot; tabindex=&quot;-1&quot;&gt;in tradition finance &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231219.png&quot; alt=&quot;Pasted image 20240405231219.png&quot; /&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;pass resolution for voluntary liquidation can be done by board of executives&lt;/li&gt;
+&lt;li&gt;administration of liquidation are e.g. the not paid electricity bills&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;takes a long time&lt;/strong&gt; maybe even years&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed-spread-liquidation&quot; tabindex=&quot;-1&quot;&gt;Fixed spread liquidation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;can be completed in &lt;strong&gt;1 transaction&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;repays debts&lt;/strong&gt; of borrowing position&lt;/li&gt;
+&lt;li&gt;acquires collateral at a &lt;strong&gt;discounted price&lt;/strong&gt; from the position in return
+&lt;ul&gt;
+&lt;li&gt;typically discounts are e.g. 5-15% (called &lt;strong&gt;fixed spread&lt;/strong&gt;) in Aave ( &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimerN&quot;&gt;#disclaimerN&lt;/a&gt; probably meant average with it)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231741.png&quot; alt=&quot;Pasted image 20240405231741.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;price oracles for getting prices: on and off chain oracles possible/depending on currency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;quiz&quot; tabindex=&quot;-1&quot;&gt;Quiz&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How long does a flash loan last?
+&lt;ul&gt;
+&lt;li&gt;During one block&lt;/li&gt;
+&lt;li&gt;During one transaction [correct]&lt;/li&gt;
+&lt;li&gt;From transaction signature until the transaction is mined&lt;/li&gt;
+&lt;li&gt;as long as you want&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What is TRUE?
+&lt;ul&gt;
+&lt;li&gt;Liquidations are typically done optimally.&lt;/li&gt;
+&lt;li&gt;The close factor is the minimum proportion of debt that can be repaid in a liquidiation. [false bc. it&#39;s the maximum proportion... and you can also liquidate less]&lt;/li&gt;
+&lt;li&gt;A flash loan has no fees&lt;/li&gt;
+&lt;li&gt;transactions fees for a flash loan are on the order of 100 USD, even if the loan amounts can grow beyond 1B USD. [correct]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What can flash loans be used for?
+&lt;ul&gt;
+&lt;li&gt;Washtrading [correct]&lt;/li&gt;
+&lt;li&gt;pumping a coin [false bc. you can just do pumping and dumping together, not individually]&lt;/li&gt;
+&lt;li&gt;dumping a coin&lt;/li&gt;
+&lt;li&gt;forking a blockchain&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Which of the following liquidation strategies best describes an optimal fixed spread liquidation strategy?
+&lt;ul&gt;
+&lt;li&gt;the liquidation first performs an oracle price update, and then atomically performs the liquidation&lt;/li&gt;
+&lt;li&gt;the liquidator liquidates the position up to the close factor (when the close factor drops below 1, the position becomes available for liquidation)&lt;/li&gt;
+&lt;li&gt;perform two liquidations. The first one keeps the close factor below 1, such that the second liquidation can also successfully execute [correct ]&lt;/li&gt;
+&lt;li&gt;perform three liquidations, two keeping the CF below 1, while the last one also successfully executes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We define a borrowing position as a bad debt if it is financially rational for neither the borrowers nor the lending platform to close the position. Which of the following is not a cause for bad debt?
+&lt;ul&gt;
+&lt;li&gt;if the collateral value falls below the value of the debt.&lt;/li&gt;
+&lt;li&gt;if the value of excess asset used for over-liquidation cannot cover the liquidation transaction fee.&lt;/li&gt;
+&lt;li&gt;if the debt has not been repaid for a long time. [correct bc. time component has no impact on bad dept]&lt;/li&gt;
+&lt;li&gt;if the value of the debt grows more than the value of the collateral.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/" >
+        </entry>
+        <entry>
+            <title>
                 DF L4
                 
             </title>
-            <updated>2024-04-05T21:52:50Z</updated>
+            <updated>2024-04-05T21:52:58Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l4/</id>
             <content type="html">
                 &lt;h2 id=&quot;decentralised-exchange&quot; tabindex=&quot;-1&quot;&gt;Decentralised Exchange&lt;/h2&gt;
@@ -372,7 +573,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L3
                 
             </title>
-            <updated>2024-04-05T21:52:50Z</updated>
+            <updated>2024-04-05T21:52:58Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;df-and-cf-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183404-png-alt-pasted-image-20240312183404-png&quot; tabindex=&quot;-1&quot;&gt;DF and CF &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183404.png&quot; alt=&quot;Pasted image 20240312183404.png&quot; /&gt;&lt;/h2&gt;
@@ -476,7 +677,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L2
                 
             </title>
-            <updated>2024-04-05T21:52:50Z</updated>
+            <updated>2024-04-05T21:52:58Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/</id>
             <content type="html">
                 &lt;p&gt;![[Ethereum and DeFi Glossary.pdf]]&lt;/p&gt;
@@ -538,7 +739,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 DF L1
                 
             </title>
-            <updated>2024-04-05T21:52:50Z</updated>
+            <updated>2024-04-05T21:52:58Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l1/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimer&quot;&gt;#disclaimer&lt;/a&gt; Not examrelevant!&lt;/p&gt;

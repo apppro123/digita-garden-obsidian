@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Test 1</title>
+    <title>DF L5 Lending &amp; Stablecoins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -207,6 +207,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/">DF L5 Lending &amp; Stablecoins </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -278,16 +289,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/test-1/">Test 1 </a>
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">Test </a>
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">home page </a>
                 </div>
             
         </div>
@@ -460,7 +462,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T21:53:01.086Z';
+        const searchIndexDate = '2024-04-05T21:53:09.907Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -472,9 +474,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:53:01.086Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T21:53:09.907Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:53:01.086Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T21:53:09.907Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -719,9 +721,212 @@
       </header>
       
       
-      <p>First published digital garden site :)<br>
-Edit 4<br>
-<a class="internal-link" target="" data-note-icon="" href="/digital-garden-obsidian/">Test</a></p>
+      <ul>
+<li>added multiple things in <a class="internal-link is-unresolved" href="/digital-garden-obsidian/404" target="">DF Definitions</a></li>
+</ul>
+<h2 id="how-economic-machine-works" tabindex="-1">How economic machine works</h2>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#video">#video</a> <a href="https://www.youtube.com/watch?v=PHe0bXAIuk0" target="_blank" class="external-link">How The Economic Machine Works by Ray Dalio</a></p>
+<ul>
+<li><strong>Transaction</strong>: money, credit &lt;=&gt; goods, services, financial assets
+<ul>
+<li>transactions <strong>drive economy</strong></li>
+<li>needs buyers and sellers</li>
+</ul>
+</li>
+<li><strong>special actors</strong>
+<ul>
+<li>central bank:
+<ul>
+<li>can print money</li>
+<li>sets interest rates</li>
+</ul>
+</li>
+<li>state: greatest buyer</li>
+</ul>
+</li>
+<li><strong>credit</strong>
+<ul>
+<li>most important part bc. biggest and <strong>most volatile</strong> part</li>
+<li>needs lenders and borrowers
+<ul>
+<li>principal: amount lend</li>
+<li>interest: additional amount to pay back for principal</li>
+</ul>
+</li>
+<li>debt is created with it</li>
+<li>credit creates spending =&gt; drive economy</li>
+<li><strong>without</strong> credit: growth can just come from more productivity</li>
+<li><strong>with</strong> credit: growth can come from more productivity and more spending through borrowing/credit =&gt; creates cycle</li>
+<li><strong>bad</strong> when it supports overconsumption and cannot be paid bad e.g. big TV</li>
+<li><strong>good</strong> when it efficiently allocates resources e.g. tractor to harvest more crops</li>
+</ul>
+</li>
+<li><strong>economic growth</strong> due to cycle of: (more) income =&gt; borrowing =&gt; spending =&gt; productivity =&gt; ...</li>
+<li><strong>inflation</strong> when prices rise
+<ul>
+<li>too much inflation causes problems =&gt; central bank rises interest rates =&gt; fewer people can borrow money =&gt; borrow less =&gt; less spending =&gt; prices go down =&gt; deflation =&gt; recession =&gt; decrease interest rates =&gt; more borrowing =&gt; inflation =&gt; ...</li>
+</ul>
+</li>
+<li><strong>deflation</strong> when prices decrease</li>
+<li><strong>deleveraging</strong>
+<ul>
+<li>worse than recession bc. lowering interest rates doesn't work (not rly. possible to go under 0%)</li>
+<li>beautiful deleveraging through properly applying counter actions =&gt; debt declines same as income
+<ul>
+<li>deflationary (cut spending and dept + redistribution) and inflationary (printing money) actions are in balance</li>
+<li>income needs to grow faster than debt grows =&gt; people are creditworthy again</li>
+<li>growth is slow but debt shrinks</li>
+</ul>
+</li>
+<li>possible counter actions
+<ul>
+<li><strong>cut spending</strong>: has opposite effects bc. less spending =&gt; less income (for another person) =&gt; lower wages and unemployment =&gt; can pay back less
+<ul>
+<li>and lenders notice that borrowers probably cannot pay back everything =&gt; don't lend anything anymore</li>
+</ul>
+</li>
+<li><strong>cut dept</strong>
+<ul>
+<li>lenders don't want that and &quot;alternatives&quot; are: less paid back, over longer time frame, reduced interest rate</li>
+<li>also deflationary bc. everything loses value and so borrowers still, also with less debt, won't have enough to pay back (even less)</li>
+</ul>
+</li>
+<li><strong>redistribution</strong>: government has to pay for unemployment and want's to set economic stimulus =&gt; needs more money generally tries to raise taxes for wealthy (bc. wealth is concentrated), but wealthy don't like that too much...
+<ul>
+<li>revolution/class conflict evolves =&gt; maybe army and/or (strong) political change e.g. Hitler after 1930s in Germany</li>
+</ul>
+</li>
+<li><strong>print money</strong>: last alternative bc. interest rates are already lowered as much as possible
+<ul>
+<li>inflationary and stimulates economy</li>
+<li>to buy financial assets and government bonds
+<ul>
+<li>just helps those who own financial assets bc. central bank can only buy financial assets</li>
+</ul>
+</li>
+<li>central bank can cooperate with central government through buying government bonds to spend money on goods and services =&gt; money for people
+<ul>
+<li>very risky</li>
+</ul>
+</li>
+<li>doesn't have to result in inflation, when credit shrinks the same amount and thus spending is not higher</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>reflation</strong> (after deleveraging)
+<ul>
+<li>ca. 7-10 year (lost decade) (maybe just after a &quot;beatauiful&quot; deleveraging)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="lecture-graphics" tabindex="-1">Lecture (graphics)</h3>
+<ul>
+<li>effects one-by-one <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152523.png" alt="Pasted image 20240323152523.png"></li>
+<li>effects combined <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152543.png" alt="Pasted image 20240323152543.png"></li>
+</ul>
+<h2 id="lending" tabindex="-1">Lending</h2>
+<h3 id="on-chain-lending-and-amp-borrowing" tabindex="-1">On-Chain lending &amp; borrowing</h3>
+<ul>
+<li><img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323152612.png" alt="Pasted image 20240323152612.png"></li>
+</ul>
+<h3 id="flash-loan" tabindex="-1">Flash loan</h3>
+<ul>
+<li>flash loan should be taken and repaid in one single transaction <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240323154417.png" alt="Pasted image 20240323154417.png">
+<ul>
+<li>not directly time bound rather has to happen within one block building process</li>
+<li>if it cannot be paid back =&gt; entire transaction is invalid
+<ul>
+<li>lender is secure</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="use-cases" tabindex="-1">Use cases</h4>
+<ul>
+<li>DeFi attacke
+<ul>
+<li>price oracle manipulation</li>
+<li>pump and dump (buy another coin to make them look like as more valuable/have more transactions for a short amount of time)</li>
+</ul>
+</li>
+<li>(risk-free) arbitrage</li>
+<li>washtrading</li>
+<li>flash mining</li>
+<li>collateral swapping <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405230801.png" alt="Pasted image 20240405230801.png"></li>
+<li>liquidation
+<ul>
+<li>when liquidator doesn't have cryptocurrency upfront to repay</li>
+<li>only works when liquidation completes in one transaction</li>
+<li>e.g. <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231019.png" alt="Pasted image 20240405231019.png"> <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231027.png" alt="Pasted image 20240405231027.png"><img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231038.png" alt="Pasted image 20240405231038.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="liquidation" tabindex="-1">Liquidation</h2>
+<h3 id="in-tradition-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png" tabindex="-1">in tradition finance <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231219.png" alt="Pasted image 20240405231219.png"></h3>
+<ul>
+<li>pass resolution for voluntary liquidation can be done by board of executives</li>
+<li>administration of liquidation are e.g. the not paid electricity bills</li>
+<li><strong>takes a long time</strong> maybe even years</li>
+</ul>
+<h3 id="fixed-spread-liquidation" tabindex="-1">Fixed spread liquidation</h3>
+<ul>
+<li>can be completed in <strong>1 transaction</strong></li>
+<li><strong>repays debts</strong> of borrowing position</li>
+<li>acquires collateral at a <strong>discounted price</strong> from the position in return
+<ul>
+<li>typically discounts are e.g. 5-15% (called <strong>fixed spread</strong>) in Aave ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#disclaimerN">#disclaimerN</a> probably meant average with it)</li>
+</ul>
+</li>
+<li><img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231741.png" alt="Pasted image 20240405231741.png"></li>
+<li>price oracles for getting prices: on and off chain oracles possible/depending on currency</li>
+</ul>
+<h2 id="quiz" tabindex="-1">Quiz</h2>
+<ul>
+<li>How long does a flash loan last?
+<ul>
+<li>During one block</li>
+<li>During one transaction [correct]</li>
+<li>From transaction signature until the transaction is mined</li>
+<li>as long as you want</li>
+</ul>
+</li>
+<li>What is TRUE?
+<ul>
+<li>Liquidations are typically done optimally.</li>
+<li>The close factor is the minimum proportion of debt that can be repaid in a liquidiation. [false bc. it's the maximum proportion... and you can also liquidate less]</li>
+<li>A flash loan has no fees</li>
+<li>transactions fees for a flash loan are on the order of 100 USD, even if the loan amounts can grow beyond 1B USD. [correct]</li>
+</ul>
+</li>
+<li>What can flash loans be used for?
+<ul>
+<li>Washtrading [correct]</li>
+<li>pumping a coin [false bc. you can just do pumping and dumping together, not individually]</li>
+<li>dumping a coin</li>
+<li>forking a blockchain</li>
+</ul>
+</li>
+<li>Which of the following liquidation strategies best describes an optimal fixed spread liquidation strategy?
+<ul>
+<li>the liquidation first performs an oracle price update, and then atomically performs the liquidation</li>
+<li>the liquidator liquidates the position up to the close factor (when the close factor drops below 1, the position becomes available for liquidation)</li>
+<li>perform two liquidations. The first one keeps the close factor below 1, such that the second liquidation can also successfully execute [correct ]</li>
+<li>perform three liquidations, two keeping the CF below 1, while the last one also successfully executes</li>
+</ul>
+</li>
+<li>We define a borrowing position as a bad debt if it is financially rational for neither the borrowers nor the lending platform to close the position. Which of the following is not a cause for bad debt?
+<ul>
+<li>if the collateral value falls below the value of the debt.</li>
+<li>if the value of excess asset used for over-liquidation cannot cover the liquidation transaction fee.</li>
+<li>if the debt has not been repaid for a long time. [correct bc. time component has no impact on bad dept]</li>
+<li>if the value of the debt grows more than the value of the collateral.</li>
+</ul>
+</li>
+</ul>
 
       
       
@@ -736,6 +941,62 @@ Edit 4<br>
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#how-economic-machine-works">How economic machine works</a>
+            
+                <ol>
+                    
+                    <li><a href="#lecture-graphics">Lecture (graphics)</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#lending">Lending</a>
+            
+                <ol>
+                    
+                    <li><a href="#on-chain-lending-and-amp-borrowing">On-Chain lending & borrowing</a>
+            		</li>
+
+                    <li><a href="#flash-loan">Flash loan</a>
+            
+                <ol>
+                    
+                    <li><a href="#use-cases">Use cases</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#liquidation">Liquidation</a>
+            
+                <ol>
+                    
+                    <li><a href="#in-tradition-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png">in tradition finance</a>
+            		</li>
+
+                    <li><a href="#fixed-spread-liquidation">Fixed spread liquidation</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#quiz">Quiz</a>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   
