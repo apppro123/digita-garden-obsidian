@@ -34,7 +34,7 @@
 #### Ampleforth
 #short AMPL
 - ![Pasted image 20240405232646.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png)
-- systemic implications
+- systemic implications #ToDo don't know yet
 #### USDC and USDT
 - destroys coins ![Pasted image 20240405232749.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png)
 [[Semester4/DF/Decentralised Finance#Bank run\|Decentralised Finance#Bank run]]
