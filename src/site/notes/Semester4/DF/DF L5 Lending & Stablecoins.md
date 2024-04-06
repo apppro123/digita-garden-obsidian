@@ -64,7 +64,7 @@
 	- if it cannot be paid back => entire transaction is invalid
 		- lender is secure
 #### Use cases
-- DeFi attacke
+- DeFi attacks
 	- price oracle manipulation
 	- pump and dump (buy another coin to make them look like as more valuable/have more transactions for a short amount of time)
 - (risk-free) arbitrage
@@ -76,7 +76,7 @@
 	- only works when liquidation completes in one transaction
 	- e.g. ![Pasted image 20240405231019.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231019.png) ![Pasted image 20240405231027.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231027.png)![Pasted image 20240405231038.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231038.png)
 ## Liquidation
-### in tradition finance ![Pasted image 20240405231219.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231219.png)
+### in traditional finance ![Pasted image 20240405231219.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231219.png)
 - pass resolution for voluntary liquidation can be done by board of executives
 - administration of liquidation are e.g. the not paid electricity bills
 - **takes a long time** maybe even years
@@ -96,9 +96,9 @@
 	- as long as you want
 - What is TRUE?
 	- Liquidations are typically done optimally.
-	- The close factor is the minimum proportion of debt that can be repaid in a liquidiation. \[false bc. it's the maximum proportion... and you can also liquidate less]
+	- The close factor is the minimum proportion of debt that can be repaid in a liquidation. \[false bc. it's the maximum proportion... and you can also liquidate less]
 	- A flash loan has no fees
-	- transactions fees for a flash loan are on the order of 100 USD, even if the loan amounts can grow beyond 1B USD. \[correct]
+	- Transaction fees for a flash loan are on the order of 100 USD, even if the loan amounts can grow beyond 1B USD. \[correct]
 - What can flash loans be used for?
 	- Washtrading \[correct]
 	- pumping a coin \[false bc. you can just do pumping and dumping together, not individually]
