@@ -5,19 +5,19 @@
 ## Decentralised Exchange
 (Example LOB Dex)
 - **(Dis) advantages**:
-	- + No KYC/AML
-	- + no fees paid to the exchange
-	- + no impermanent loss
-	- - fees for deposit, withdraw, trade creation/cancel
-	- - slow execution
-	- - not fully decentralised (mediating server)
+	- \+ No KYC/AML
+	- \+ no fees paid to the exchange
+	- \+ no impermanent loss
+	- \- fees for deposit, withdraw, trade creation/cancel
+	- \- slow execution
+	- \- not fully decentralised (mediating server)
 - trading **volume**: around 70 billion (recent months)
 - **Why?** ![Pasted image 20240322154927.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240322154927.png)
 ### Systems Architecture ![Pasted image 20240322155034.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240322155034.png)
 ### Automated market maker
 #short AMM
 - **Liquidity pool** idea: Let a smart contract do the market making. ![Pasted image 20240322155519.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240322155519.png) **liquidity provider (LP)** token: ![Pasted image 20240322155644.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240322155644.png)
-- **formula**: ![Pasted image 20240322155719.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240322155719.png)
+- **formula** $x*y=k$ where $x$ = asset X quantity, $y$ = asset Y quantity, $k$ = constant
 - properties
 	- instant liquidity, irrespective of the trade size
 	- purchase of asset X increases price of X and decreases the price of Y
@@ -87,10 +87,10 @@
 	- instant liquidity, irrespective of the trade size
 	- purchase of an asset decreases the asset supply in AMM, and increases its market price
 	- the expected increase or decrease in price is based on the trading volume and available liquidity
-- Which of the following is a property for a typical on-chain order book
+- Which of the following is a property for a typical on-chain order book?
 	- no fees for order placements
 	- front running resistance
-	- impermanent loss \[the is no impermanent loss in an order book bc. market makers can fill the orders and thus liquidity cannot just be removed; this is rather in an AMM]
+	- impermanent loss \[there is no impermanent loss in an order book bc. market makers can fill the orders and thus liquidity cannot just be removed; this is rather in an AMM]
 	- non-custodian ( #german Verwalter/Aufseher) settlement \[correct bc. swapping of assets is non-custodial meaning you own your coins with your private key, there is no custodian doing the settlement]
 - Which of the following statements is incorrect
 	- Unexpected slippage can only cause a worse execution price \[correct]
@@ -106,4 +106,4 @@
 	- Broadcast the back-running transaction immediately after the victim's transaction with 99GWei
 	- Broadcast the back-running transaction immediately after the victim's transaction, with 100GWei
 	- Send a private back-running transaction to private relayer services, and bribe the miners to perform the back-run
-	- (i) broadcast the back-running transaction immediately after the victim with 100GWei, and also (ii) send the transaction to private relayer services and bribe the miners
+	- (i) broadcast the back-running transaction immediately after the victim with 100GWei, and also (ii) send the transaction to private relayer services and bribe the miners \[correct]
