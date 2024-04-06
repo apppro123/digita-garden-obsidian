@@ -517,7 +517,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-06T20:21:18.611Z';
+        const searchIndexDate = '2024-04-06T20:21:20.300Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -529,9 +529,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-06T20:21:18.611Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-06T20:21:20.300Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-06T20:21:18.611Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-06T20:21:20.300Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -832,7 +832,7 @@
 <li><picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png" alt="Pasted image 20240405232646.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-568.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-568.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png" alt="Pasted image 20240405232646.png" width=""></picture></li>
-<li>systemic implications</li>
+<li>systemic implications <a class="tag" onclick="toggleTagSearch(this)" data-content="#ToDo">#ToDo</a> don't know yet</li>
 </ul>
 <h4 id="usdc-and-usdt" tabindex="-1">USDC and USDT</h4>
 <ul>
