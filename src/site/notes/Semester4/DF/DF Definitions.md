@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/semester4/df/df-definitions/"}
 ---
 
+- more definition in [[Ethereum and DeFi Glossary.pdf]]
 - **pegged** cryptocurrency: cryptocurrency whose value is linked to a specific bank-issued currency, financial instrument or tradable commodity
 	- e.g. pay back to buy BTC and holds it for you
 - **Know your customer** ( #short KYC): means verifying who you are when joining a crypto exchange
