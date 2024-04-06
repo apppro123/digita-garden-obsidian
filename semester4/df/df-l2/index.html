@@ -517,7 +517,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-06T20:19:48.915Z';
+        const searchIndexDate = '2024-04-06T20:19:55.020Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -529,9 +529,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-06T20:19:48.915Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-06T20:19:55.020Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-06T20:19:48.915Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-06T20:19:55.020Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -776,7 +776,7 @@
       </header>
       
       
-      <p>![[Ethereum and DeFi Glossary.pdf]]</p>
+      <p>&lt;![[Ethereum and DeFi Glossary.pdf]]</p>
 <h2 id="quiz" tabindex="-1">Quiz</h2>
 <ol>
 <li>A valid signed transaction of an account can be used to computer

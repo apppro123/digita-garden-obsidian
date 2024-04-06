@@ -517,7 +517,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-06T20:19:48.915Z';
+        const searchIndexDate = '2024-04-06T20:19:55.020Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -529,9 +529,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-06T20:19:48.915Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-06T20:19:55.020Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-06T20:19:48.915Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-06T20:19:55.020Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -802,7 +802,7 @@
 </ul>
 </li>
 <li><strong>Solution</strong>: transactions</li>
-<li><strong>Defintion</strong>
+<li><strong>Definition</strong>
 <ul>
 <li>General: System that connects a blockchain with other systems.</li>
 <li>Specific: Actors relaying data on-chain.</li>
@@ -822,9 +822,15 @@
 <ul>
 <li>can happen on multiple layers e.g. application, transaction, consensus</li>
 </ul>
-<h3 id="tornados" tabindex="-1">Tornados</h3>
+<h3 id="mixers" tabindex="-1">Mixers</h3>
 <ul>
 <li>breaks connection to person who put it in =&gt; but observations/analysis of transaction can help with finding out who gave/took coins</li>
+<li>(in best case) just fixed values e.g. 1 ETH possible, so less</li>
+</ul>
+<h4 id="implications" tabindex="-1">Implications</h4>
+<ul>
+<li>Confirmation latency: slows down transaction confirmations</li>
+<li>Denial of Service: A lot of (fake) transactions can slow node down or even completely take it down</li>
 </ul>
 <h3 id="proposer-builder-separation-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312184538-png-alt-pasted-image-20240312184538-png" tabindex="-1">proposer/builder separation <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240312184538.png" alt="Pasted image 20240312184538.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/E43bC12Y6t-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/E43bC12Y6t-500.jpeg">
@@ -870,7 +876,7 @@
 <li>Assumed an oracle committee has five nodes (A,B,C,D,E) and it's agreed to report the median value. Node E is a malicious node and E observes the following values from the other four nodes (A:1000, B: 1010, C: 1020, D: 1030). What are the upper and lower bounds of the aggregated value to which E can manipulate.
 <ul>
 <li>1000 - 1005</li>
-<li>1010-1020 [correct bc. median is middle number and you can choose a number between (including borders) 1010 to 1020 and it will be choosen]</li>
+<li>1010-1020 [correct bc. median is middle number and you can choose a number between (including borders) 1010 to 1020 and it will be chosen]</li>
 <li>1000 - 1030</li>
 <li>no upper/lower bounds</li>
 </ul>
@@ -929,7 +935,13 @@
             
                 <ol>
                     
-                    <li><a href="#tornados">Tornados</a>
+                    <li><a href="#mixers">Mixers</a>
+            
+                <ol>
+                    
+                    <li><a href="#implications">Implications</a>
+            		</li>
+                </ol>
             		</li>
 
                     <li><a href="#proposer-builder-separation-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312184538-png-alt-pasted-image-20240312184538-png">proposer/builder separation</a>
