@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/semester4/df/df-l2/"}
 ---
 
-![[Ethereum and DeFi Glossary.pdf]]
+<![[Ethereum and DeFi Glossary.pdf]]
 ## Quiz
 1. A valid signed transaction of an account can be used to computer
 	1. the private key of the account
