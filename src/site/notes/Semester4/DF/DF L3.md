@@ -13,7 +13,7 @@
 		- no API-query possible
 		- cannot browse the internet
 - **Solution**: transactions
-- **Defintion**
+- **Definition**
 	- General: System that connects a blockchain with other systems.
 	- Specific: Actors relaying data on-chain.
 ### Design
@@ -25,8 +25,12 @@
 => have consensus so possibility of false data is minimised
 ## Censorship
 - can happen on multiple layers e.g. application, transaction, consensus
-### Tornados
+### Mixers
 - breaks connection to person who put it in => but observations/analysis of transaction can help with finding out who gave/took coins
+- (in best case) just fixed values e.g. 1 ETH possible, so less 
+#### Implications
+- Confirmation latency: slows down transaction confirmations
+- Denial of Service: A lot of (fake) transactions can slow node down or even completely take it down
 ### proposer/builder separation ![Pasted image 20240312184538.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240312184538.png)
 ### attack nodes who apply censorship
 - for censorship, nodes have to put in work to extract information but then cannot do transactions and don't earn anything bc. transaction with a censored value is not allowed => DDoS attack possible to spam node with censored coins
@@ -53,6 +57,6 @@
 	- The miner must spend computational resources but is paid the regular transaction fees.
 - Assumed an oracle committee has five nodes (A,B,C,D,E) and it's agreed to report the median value. Node E is a malicious node and E observes the following values from the other four nodes (A:1000, B: 1010, C: 1020, D: 1030). What are the upper and lower bounds of the aggregated value to which E can manipulate.
 	- 1000 - 1005
-	- 1010-1020 \[correct bc. median is middle number and you can choose a number between (including borders) 1010 to 1020 and it will be choosen]
+	- 1010-1020 \[correct bc. median is middle number and you can choose a number between (including borders) 1010 to 1020 and it will be chosen]
 	- 1000 - 1030
 	- no upper/lower bounds
