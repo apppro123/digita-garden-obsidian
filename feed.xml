@@ -3,14 +3,14 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-06T20:20:34Z</updated>
+    <updated>2024-04-06T20:20:40Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
                 home page
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/</id>
             <content type="html">
                 
@@ -22,7 +22,7 @@
                 WS L4
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l4/</id>
             <content type="html">
                 &lt;p&gt;Beweis zu Satz 2.13&lt;/p&gt;
@@ -111,7 +111,7 @@ Dieser Satz erlaubt es uns, direkt mit Zufallsvariablen zu arbeiten, ohne den Wa
                 WS L1
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions&lt;/h2&gt;
@@ -189,7 +189,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 Financial Markets
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/financial-markets/</id>
             <content type="html">
                 &lt;h2 id=&quot;some-things&quot; tabindex=&quot;-1&quot;&gt;Some things&lt;/h2&gt;
@@ -246,7 +246,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 Decentralised Finance
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/decentralised-finance/</id>
             <content type="html">
                 &lt;h2 id=&quot;promises&quot; tabindex=&quot;-1&quot;&gt;Promises&lt;/h2&gt;
@@ -310,7 +310,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L6
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l6/</id>
             <content type="html">
                 &lt;h2 id=&quot;economic-models&quot; tabindex=&quot;-1&quot;&gt;Economic models&lt;/h2&gt;
@@ -424,7 +424,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L5 Lending &amp; Stablecoins
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -553,7 +553,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
 &lt;/ul&gt;
 &lt;h4 id=&quot;use-cases&quot; tabindex=&quot;-1&quot;&gt;Use cases&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;DeFi attacke
+&lt;li&gt;DeFi attacks
 &lt;ul&gt;
 &lt;li&gt;price oracle manipulation&lt;/li&gt;
 &lt;li&gt;pump and dump (buy another coin to make them look like as more valuable/have more transactions for a short amount of time)&lt;/li&gt;
@@ -572,7 +572,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;liquidation&quot; tabindex=&quot;-1&quot;&gt;Liquidation&lt;/h2&gt;
-&lt;h3 id=&quot;in-tradition-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png&quot; tabindex=&quot;-1&quot;&gt;in tradition finance &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231219.png&quot; alt=&quot;Pasted image 20240405231219.png&quot; /&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;in-traditional-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png&quot; tabindex=&quot;-1&quot;&gt;in traditional finance &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231219.png&quot; alt=&quot;Pasted image 20240405231219.png&quot; /&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;pass resolution for voluntary liquidation can be done by board of executives&lt;/li&gt;
 &lt;li&gt;administration of liquidation are e.g. the not paid electricity bills&lt;/li&gt;
@@ -603,9 +603,9 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
 &lt;li&gt;What is TRUE?
 &lt;ul&gt;
 &lt;li&gt;Liquidations are typically done optimally.&lt;/li&gt;
-&lt;li&gt;The close factor is the minimum proportion of debt that can be repaid in a liquidiation. [false bc. it&#39;s the maximum proportion... and you can also liquidate less]&lt;/li&gt;
+&lt;li&gt;The close factor is the minimum proportion of debt that can be repaid in a liquidation. [false bc. it&#39;s the maximum proportion... and you can also liquidate less]&lt;/li&gt;
 &lt;li&gt;A flash loan has no fees&lt;/li&gt;
-&lt;li&gt;transactions fees for a flash loan are on the order of 100 USD, even if the loan amounts can grow beyond 1B USD. [correct]&lt;/li&gt;
+&lt;li&gt;Transaction fees for a flash loan are on the order of 100 USD, even if the loan amounts can grow beyond 1B USD. [correct]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;What can flash loans be used for?
@@ -642,7 +642,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L4
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l4/</id>
             <content type="html">
                 &lt;h2 id=&quot;decentralised-exchange&quot; tabindex=&quot;-1&quot;&gt;Decentralised Exchange&lt;/h2&gt;
@@ -873,7 +873,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L3
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;df-and-cf-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183404-png-alt-pasted-image-20240312183404-png&quot; tabindex=&quot;-1&quot;&gt;DF and CF &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183404.png&quot; alt=&quot;Pasted image 20240312183404.png&quot; /&gt;&lt;/h2&gt;
@@ -983,7 +983,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L2
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/</id>
             <content type="html">
                 &lt;p&gt;&amp;lt;![[Ethereum and DeFi Glossary.pdf]]&lt;/p&gt;
@@ -1045,7 +1045,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L1
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l1/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimer&quot;&gt;#disclaimer&lt;/a&gt; Not examrelevant!&lt;/p&gt;
@@ -1062,7 +1062,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF Definitions
                 
             </title>
-            <updated>2024-04-06T20:20:18Z</updated>
+            <updated>2024-04-06T20:20:28Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-definitions/</id>
             <content type="html">
                 &lt;ul&gt;

@@ -517,7 +517,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-06T20:20:33.883Z';
+        const searchIndexDate = '2024-04-06T20:20:39.413Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -529,9 +529,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-06T20:20:33.883Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-06T20:20:39.413Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-06T20:20:33.883Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-06T20:20:39.413Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -910,7 +910,7 @@
 </ul>
 <h4 id="use-cases" tabindex="-1">Use cases</h4>
 <ul>
-<li>DeFi attacke
+<li>DeFi attacks
 <ul>
 <li>price oracle manipulation</li>
 <li>pump and dump (buy another coin to make them look like as more valuable/have more transactions for a short amount of time)</li>
@@ -935,7 +935,7 @@
 </li>
 </ul>
 <h2 id="liquidation" tabindex="-1">Liquidation</h2>
-<h3 id="in-tradition-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png" tabindex="-1">in tradition finance <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231219.png" alt="Pasted image 20240405231219.png"></h3>
+<h3 id="in-traditional-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png" tabindex="-1">in traditional finance <img src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405231219.png" alt="Pasted image 20240405231219.png"></h3>
 <ul>
 <li>pass resolution for voluntary liquidation can be done by board of executives</li>
 <li>administration of liquidation are e.g. the not paid electricity bills</li>
@@ -966,9 +966,9 @@
 <li>What is TRUE?
 <ul>
 <li>Liquidations are typically done optimally.</li>
-<li>The close factor is the minimum proportion of debt that can be repaid in a liquidiation. [false bc. it's the maximum proportion... and you can also liquidate less]</li>
+<li>The close factor is the minimum proportion of debt that can be repaid in a liquidation. [false bc. it's the maximum proportion... and you can also liquidate less]</li>
 <li>A flash loan has no fees</li>
-<li>transactions fees for a flash loan are on the order of 100 USD, even if the loan amounts can grow beyond 1B USD. [correct]</li>
+<li>Transaction fees for a flash loan are on the order of 100 USD, even if the loan amounts can grow beyond 1B USD. [correct]</li>
 </ul>
 </li>
 <li>What can flash loans be used for?
@@ -1052,7 +1052,7 @@
             
                 <ol>
                     
-                    <li><a href="#in-tradition-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png">in tradition finance</a>
+                    <li><a href="#in-traditional-finance-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405231219-png-alt-pasted-image-20240405231219-png">in traditional finance</a>
             		</li>
 
                     <li><a href="#fixed-spread-liquidation">Fixed spread liquidation</a>
