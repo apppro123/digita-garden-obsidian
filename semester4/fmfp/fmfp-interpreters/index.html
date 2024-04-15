@@ -636,7 +636,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:06:09.563Z';
+        const searchIndexDate = '2024-04-15T21:06:18.019Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -648,9 +648,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:09.563Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:18.019Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:09.563Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:18.019Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1053,14 +1053,20 @@ p &gt;&gt;= g = Prs (\s -&gt; [ (u,s’’) | (t,s’ ) &lt;- parse p s,
 <li>parse repeated operation/atom pairs after initial atom</li>
 <li>obtain left associativity using <strong>fold-left</strong> over list of these pairs</li>
 <li>use concrete grammar to  build <strong>abstract syntax tree</strong> of type <code>data Expr = Lit Int | Add Expr Expr | Sub Expr Expr</code></li>
-<li><img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194939.png" alt="Pasted image 20240329194939.png"></li>
+<li><picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194939.png" alt="Pasted image 20240329194939.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/20lNRjGfXq-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/20lNRjGfXq-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/20lNRjGfXq-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/20lNRjGfXq-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194939.png" alt="Pasted image 20240329194939.png" width=""></picture></li>
 </ul>
 </li>
 </ul>
 <h2 id="mjx-container-class-math-jax-jax-svg-style-direction-ltr-position-relative-svg-style-overflow-visible-min-height-1px-min-width-1px-vertical-align-0-027ex-xmlns-http-www-w3-org-2000-svg-width-1-319ex-height-1-597ex-role-img-focusable-false-view-box-0-694-583-706-aria-hidden-true-g-stroke-current-color-fill-current-color-stroke-width-0-transform-scale-1-1-g-data-mml-node-math-g-data-mml-node-mi-path-data-c-1-d706-d-m166-673-q166-685-183-694-h202-q292-691-316-644-q322-629-373-486-t474-207-t524-67-q531-47-537-34-t546-15-t551-6-t555-2-t556-2-t550-11-h482-q457-3-450-18-t399-152-l354-277-l340-262-q327-246-293-207-t236-141-q211-112-174-69-q123-9-111-1-t83-12-q47-12-47-20-q47-37-61-52-t199-187-q229-216-266-252-t321-306-l338-322-q338-323-288-462-t234-612-q214-657-183-657-q166-657-166-673-z-style-stroke-width-3-g-g-g-svg-mjx-assistive-mml-unselectable-on-display-inline-style-top-0px-left-0px-clip-rect-1px-1px-1px-1px-webkit-touch-callout-none-webkit-user-select-none-khtml-user-select-none-moz-user-select-none-ms-user-select-none-user-select-none-position-absolute-padding-1px-0px-0px-0px-border-0px-display-block-width-auto-overflow-hidden-math-xmlns-http-www-w3-org-1998-math-math-ml-mi-l-mi-math-mjx-assistive-mml-mjx-container-calculus" tabindex="-1"><mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.027ex;" xmlns="http://www.w3.org/2000/svg" width="1.319ex" height="1.597ex" role="img" focusable="false" viewBox="0 -694 583 706" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D706" d="M166 673Q166 685 183 694H202Q292 691 316 644Q322 629 373 486T474 207T524 67Q531 47 537 34T546 15T551 6T555 2T556 -2T550 -11H482Q457 3 450 18T399 152L354 277L340 262Q327 246 293 207T236 141Q211 112 174 69Q123 9 111 -1T83 -12Q47 -12 47 20Q47 37 61 52T199 187Q229 216 266 252T321 306L338 322Q338 323 288 462T234 612Q214 657 183 657Q166 657 166 673Z" style="stroke-width: 3;"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi></math></mjx-assistive-mml></mjx-container>-calculus</h2>
 <ul>
-<li><strong>programs are terms</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329195309.png" alt="Pasted image 20240329195309.png"></li>
-<li>formalising core <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329195326.png" alt="Pasted image 20240329195326.png">
+<li><strong>programs are terms</strong> <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329195309.png" alt="Pasted image 20240329195309.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/vdHtGr2XX_-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/vdHtGr2XX_-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/vdHtGr2XX_-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/vdHtGr2XX_-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329195309.png" alt="Pasted image 20240329195309.png" width=""></picture></li>
+<li>formalising core <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329195326.png" alt="Pasted image 20240329195326.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/xcGZD2_zsV-429.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/xcGZD2_zsV-429.jpeg">
+      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329195326.png" alt="Pasted image 20240329195326.png" width=""></picture>
 <ul>
 <li>enough to construct all others</li>
 </ul>
