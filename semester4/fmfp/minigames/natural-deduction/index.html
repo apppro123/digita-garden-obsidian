@@ -854,7 +854,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:07:28.758Z';
+        const searchIndexDate = '2024-04-15T21:07:33.820Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -866,9 +866,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:07:28.758Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:07:33.820Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:07:28.758Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:07:33.820Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1129,7 +1129,9 @@
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bhptDpoH0C-504.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bhptDpoH0C-504.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/proof_example.png" alt="proof_example.png" width=""></picture></li>
 </ul>
 <h3 id="propositional-logic" tabindex="-1">Propositional logic</h3>
-<h4 id="syntax-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240223151900-png-alt-pasted-image-20240223151900-png" tabindex="-1">Syntax<img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240223151900.png" alt="Pasted image 20240223151900.png"></h4>
+<h4 id="syntax-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240223151900-png-alt-pasted-image-20240223151900-png" tabindex="-1">Syntax<picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240223151900.png" alt="Pasted image 20240223151900.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/RCXmeBtCU9-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/RCXmeBtCU9-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/RCXmeBtCU9-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/RCXmeBtCU9-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240223151900.png" alt="Pasted image 20240223151900.png" width=""></picture></h4>
 <ul>
 <li>Is a <strong>bird a formula</strong>? No, bc. it's about the smallest set (inductive definition), so there is not other stuff there!</li>
 </ul>
