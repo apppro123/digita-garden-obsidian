@@ -3,14 +3,14 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-15T21:10:01Z</updated>
+    <updated>2024-04-15T21:10:06Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
                 home page
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/</id>
             <content type="html">
                 
@@ -22,7 +22,7 @@
                 WS L7 Normalverteilung
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l7-normalverteilung/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -38,7 +38,7 @@
                 WS L6
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l6/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -104,7 +104,7 @@ Für jedes &lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; style
                 WS L5
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l5/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -193,7 +193,7 @@ Dann ist &lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; style=&
                 WS L4
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l4/</id>
             <content type="html">
                 &lt;p&gt;Beweis zu Satz 2.13&lt;/p&gt;
@@ -282,7 +282,7 @@ Dieser Satz erlaubt es uns, direkt mit Zufallsvariablen zu arbeiten, ohne den Wa
                 WS L3
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l3/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -373,7 +373,7 @@ Eine Folge von Zufallsvariablen &lt;mjx-container class=&quot;MathJax&quot; jax=
                 WS L2
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l2/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -466,7 +466,7 @@ Eine &lt;strong&gt;(reellwertige) Zufallsvariable (Z.V.)&lt;/strong&gt; ist eine
                 WS L1
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions&lt;/h2&gt;
@@ -541,10 +541,241 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
         </entry>
         <entry>
             <title>
+                Monads
+                
+            </title>
+            <updated>2024-04-15T21:09:53Z</updated>
+            <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/monads/</id>
+            <content type="html">
+                &lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#Idea&quot;&gt;#Idea&lt;/a&gt; separate values from computation producing the values
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;f :: a -&amp;gt; b&lt;/code&gt; ordinary function, returns value of type &lt;code&gt;b&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;f :: a -&amp;gt; M b&lt;/code&gt; &lt;strong&gt;monadic&lt;/strong&gt; function, returns computation &lt;code&gt;M b&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;M&lt;/code&gt; is a &lt;strong&gt;type constructor&lt;/strong&gt; satisfying certain properties (monad laws)&lt;/li&gt;
+&lt;li&gt;by varying &lt;code&gt;M&lt;/code&gt;, we can model different notions of computation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Monad is a &lt;strong&gt;type constructor&lt;/strong&gt; in the monad type class&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;imagine&lt;/strong&gt; a monad as a container which &amp;quot;wraps&amp;quot; a value&lt;/li&gt;
+&lt;li&gt;explains side-effects in a functional context and helps designing controlled side-effects
+&lt;ul&gt;
+&lt;li&gt;fine-grained control of side effects possible&lt;/li&gt;
+&lt;li&gt;can model computational effects that are not present in imperative languages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;properties&quot; tabindex=&quot;-1&quot;&gt;Properties&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;every monad supports 2 &lt;strong&gt;basic operations&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;embedding a value&lt;/strong&gt; into a computation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;composing computations&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;class Monad m where
+	-- return and bind are mathematical core
+	return :: a -&amp;gt; m a
+	(&amp;gt;&amp;gt;=) :: m a -&amp;gt; (a -&amp;gt; m b) -&amp;gt; m b -- bind
+	
+	-- shortcut for convenience, when second computatin
+	-- doesn&#39;t depend on result of first
+	(&amp;gt;&amp;gt;) :: m a -&amp;gt; m b -&amp;gt; m b
+	m1 &amp;gt;&amp;gt; m2 = m1 &amp;gt;&amp;gt;= (&#92;_ -&amp;gt; m2)
+	
+	-- not partof mathematical concept of a monad
+	-- called on pattern matching error in do-notation
+	fail :: String -&amp;gt; m a
+
+-- instances
+instance Monad Maybe where
+	return x       = Just x
+	Nothing &amp;gt;&amp;gt;= _  = Nothing
+	(Just x) &amp;gt;&amp;gt;= f = f x
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;monad-laws&quot; tabindex=&quot;-1&quot;&gt;Monad laws&lt;/h3&gt;
+&lt;p&gt;Monad operations must satisfy&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) &lt;code&gt;return x &amp;gt;&amp;gt;= f = f x&lt;/code&gt; &lt;strong&gt;left unit&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;(2) &lt;code&gt;m &amp;gt;&amp;gt;= return = m&lt;/code&gt; &lt;strong&gt;right unit&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;(3) &lt;code&gt;(m &amp;gt;&amp;gt;= f) &amp;gt;&amp;gt;= g = m &amp;gt;&amp;gt;= (&#92;x -&amp;gt; (f x &amp;gt;&amp;gt;= g))&lt;/code&gt; &lt;strong&gt;associativity&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;examples&quot; tabindex=&quot;-1&quot;&gt;Examples&lt;/h2&gt;
+&lt;h3 id=&quot;monad&quot; tabindex=&quot;-1&quot;&gt;monad&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;data Maybe a = Nothing | Just a
+
+-- e.g. for making a safe division
+safeDiv::Int -&amp;gt; Int -&amp;gt; Maybe Int
+safeDiv n d
+	| d /= 0 = Just (n `div`d)
+	| otherwise = Nothing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;computation-with-monads&quot; tabindex=&quot;-1&quot;&gt;Computation with monads&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;-- idea: computation takes a state of type s and transforms it into
+-- a result of type a and a successor state of type s
+data State s a = State (s -&amp;gt; (a,s)) -- here s is just a type, not an argument so in reality s on left hand side doesn&#39;t have to be s on right hand side, but they just have to be the same type!
+
+-- state access: read current value of state without changing it
+get :: State s s
+get = State (&#92;s -&amp;gt; (s,s))
+
+-- state update: write a new state value ignoring the current state
+put :: s -&amp;gt; State s ()
+put t = State (&#92;s -&amp;gt; ((), t))
+
+-- auxiliary function that opens monad and 
+-- runs computation from initial state s0
+runState :: (State s a) -&amp;gt; (s -&amp;gt; (a, s))
+runState (State m) s0 = m s0 -- bc. `(State m)` returns a function (see data State s a) which takes s0 as an argument; I just don&#39;t know yet, why this is not reflected in the data type of runState (why there is not another input)
+
+-- return embeds a value into a stateful computation
+return :: a -&amp;gt; State s a
+return x = State (&#92;s -&amp;gt; (x,s))
+
+-- Bind composes two stateful computations with value binding
+(&amp;gt;&amp;gt;=) :: State s a -&amp;gt; (a -&amp;gt; State s b) -&amp;gt; State s b
+m &amp;gt;&amp;gt;= k = State (&#92;s -&amp;gt; let (x, t) = runState m s 
+						in runState (k x) t)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;application of state monad in &lt;strong&gt;counter&lt;/strong&gt; &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410104944.png&quot; alt=&quot;Pasted image 20240410104944.png&quot; /&gt;
+&lt;ul&gt;
+&lt;li&gt;state monad &lt;strong&gt;encapsulate program composition&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;run program&lt;/strong&gt;: invoke &lt;code&gt;runState tick s0&lt;/code&gt; where &lt;code&gt;s0&lt;/code&gt; is some initial state&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;application of state monad in &lt;strong&gt;tree renaming&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;as reference: &lt;strong&gt;without&lt;/strong&gt; state monad =&amp;gt; ugly plumbing needed to thread &lt;code&gt;state&lt;/code&gt; through two recursive calls &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105359.png&quot; alt=&quot;Pasted image 20240410105359.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;state monad&lt;/strong&gt; takes care of all the plumbing &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105143.png&quot; alt=&quot;Pasted image 20240410105143.png&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;or with more &lt;strong&gt;abstraction&lt;/strong&gt; &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105239.png&quot; alt=&quot;Pasted image 20240410105239.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;input-ouput&quot; tabindex=&quot;-1&quot;&gt;Input/Ouput&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;problematic&lt;/strong&gt; bc. we don&#39;t know what we get as an input from user =&amp;gt; reasoning would no longer be sound &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410110528.png&quot; alt=&quot;Pasted image 20240410110528.png&quot; /&gt;
+&lt;ul&gt;
+&lt;li&gt;bc. result depends on order in which the argument are evaluated&lt;/li&gt;
+&lt;li&gt;I/O-functions have side effects =&amp;gt; state of world ( &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimerN&quot;&gt;#disclaimerN&lt;/a&gt; nice name^^) changes&lt;/li&gt;
+&lt;li&gt;e.g. &lt;code&gt;IO Int&lt;/code&gt; not same as &lt;code&gt;Int&lt;/code&gt; e.g. you cannot subtract bc. &lt;code&gt;IO Int&lt;/code&gt; is monadic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;inputInt :: IO Int
+inputString :: IO String
+outputInt :: Int -&amp;gt; IO ()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;()&lt;/code&gt; is the unit type in Haskell &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/atoms/unit-type/#haskell&quot;&gt;Unit type#Haskell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;basic-actions&quot; tabindex=&quot;-1&quot;&gt;Basic Actions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112144.png&quot; alt=&quot;Pasted image 20240410112144.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sequencing&quot; tabindex=&quot;-1&quot;&gt;Sequencing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112308.png&quot; alt=&quot;Pasted image 20240410112308.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;examples-1&quot; tabindex=&quot;-1&quot;&gt;Examples&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;-- printing string on screen
+putString :: String -&amp;gt; IO ()
+putString &amp;quot;&amp;quot;     = return ()
+putString (x:xs) = do putChar x; putString xs
+
+-- reading string from keyboard
+getString :: IO String
+getString = do c &amp;lt;- getChar
+				if c == ’&#92;n’
+				then return &amp;quot;&amp;quot;
+				else do cs &amp;lt;- getString
+					return (c:cs)
+					
+-- hello world (what else)
+main :: IO ()
+main = do putString &amp;quot;Hi, I am HAL. Who are you?&#92;n&amp;quot;
+name &amp;lt;- getString
+putString (&amp;quot;Hello &amp;quot; ++ name ++ &amp;quot;!&#92;n&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;functors&quot; tabindex=&quot;-1&quot;&gt;Functors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;when you instantiate &lt;code&gt;Monad&lt;/code&gt;, you must instantiate &lt;code&gt;Functor&lt;/code&gt; and &lt;code&gt;Applicative&lt;/code&gt; too&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;class Functor f where
+fmap :: (a -&amp;gt; b) -&amp;gt; f a -&amp;gt; f b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;laws&quot; tabindex=&quot;-1&quot;&gt;Laws&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Functor instances must satisfy two functor laws
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Identity&lt;/strong&gt;: &lt;code&gt;fmap id v = v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Composition&lt;/strong&gt;: &lt;code&gt;fmap f (fmap g v) = fmap (f . g) v&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;operations&quot; tabindex=&quot;-1&quot;&gt;operations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;in applicative functor &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181101.png&quot; alt=&quot;Pasted image 20240411181101.png&quot; /&gt; mimicks function application &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ToDo&quot;&gt;#ToDo&lt;/a&gt; find symbols for LaTex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;class Functor f =&amp;gt; Applicative f where
+pure :: a -&amp;gt; f a
+(&amp;lt;*&amp;gt;) :: f (a -&amp;gt; b) -&amp;gt; f a -&amp;gt; f b -- associates to the left
+
+instance Applicative Maybe where
+pure x = Just x
+Just f &amp;lt;*&amp;gt; Just x = Just (f x)
+_      &amp;lt;*&amp;gt; _      = Nothing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;applicative-functor-laws&quot; tabindex=&quot;-1&quot;&gt;Applicative functor laws&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Identity&lt;/strong&gt; &lt;code&gt;pure id &amp;lt;*&amp;gt; v = v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Homomorphism&lt;/strong&gt; &lt;code&gt;pure f &amp;lt;*&amp;gt; pure x = pure (f x)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Composition&lt;/strong&gt; &lt;code&gt;pure (.) &amp;lt;*&amp;gt; u &amp;lt;*&amp;gt; v &amp;lt;*&amp;gt; w = u &amp;lt;*&amp;gt; (v &amp;lt;*&amp;gt; w)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interchange&lt;/strong&gt; &lt;code&gt;v &amp;lt;*&amp;gt; pure x = pure (&#92;f -&amp;gt; f x) &amp;lt;*&amp;gt; v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fmap&lt;/strong&gt; &lt;code&gt;fmap f v = pure f &amp;lt;*&amp;gt; v&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;canonical implementation for monads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;pure x = return x
+u &amp;lt;*&amp;gt; v = u &amp;gt;&amp;gt;= &#92;f -&amp;gt; v &amp;gt;&amp;gt;= &#92;x -&amp;gt; return (f x)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;applicative functor laws can be derived from monad laws&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;examples-2&quot; tabindex=&quot;-1&quot;&gt;Examples&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;map&lt;/code&gt; function transforms all elements in a structure: type class &lt;code&gt;Functor&lt;/code&gt; can capture this functionality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Haskell&quot;&gt;instance Functor Tree where
+fmap _ Leaf         = Leaf
+fmap f (Node x l r) = Node (f x) (fmap f l) (fmap f r)
+
+-- in console
+&amp;gt; fmap (*2) [0,1,2] = [0,2,4]
+&amp;gt; fmap (*2) (Node 5 Leaf Leaf) = Node 10 Leaf Leaf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;applicative functor examples &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181433.png&quot; alt=&quot;Pasted image 20240411181433.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;resources&quot; tabindex=&quot;-1&quot;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.haskell.org/haskellwiki/Tutorials#Using_monads&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;recommended monad tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/monads/" >
+        </entry>
+        <entry>
+            <title>
                 Type inference
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/minigames/type-inference/</id>
             <content type="html">
                 &lt;h2 id=&quot;formal-type-inference&quot; tabindex=&quot;-1&quot;&gt;Formal type inference&lt;/h2&gt;
@@ -583,7 +814,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 Natural deduction
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/minigames/natural-deduction/</id>
             <content type="html">
                 &lt;h2 id=&quot;natural-deduction&quot; tabindex=&quot;-1&quot;&gt;Natural Deduction&lt;/h2&gt;
@@ -719,7 +950,7 @@ As shorthand, write &lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&qu
                 Evaluation
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/minigames/evaluation/</id>
             <content type="html">
                 &lt;h2 id=&quot;general&quot; tabindex=&quot;-1&quot;&gt;General&lt;/h2&gt;
@@ -763,7 +994,7 @@ To evaluate &lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; styl
                 Mini-Haskell
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/mini-haskell/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -790,7 +1021,7 @@ To evaluate &lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; styl
                 FMFP L9
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l9/</id>
             <content type="html">
                 &lt;h2 id=&quot;type-classes&quot; tabindex=&quot;-1&quot;&gt;Type classes&lt;/h2&gt;
@@ -938,7 +1169,7 @@ showPerson (Person n a) = n ++ &amp;quot; who is &amp;quot; ++ show a ++ &amp;qu
                 FMFP L8
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l8/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/haskell/&quot;&gt;Haskell&lt;/a&gt;&lt;/p&gt;
@@ -951,7 +1182,7 @@ showPerson (Person n a) = n ++ &amp;quot; who is &amp;quot; ++ show a ++ &amp;qu
                 FMFP L7
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l7/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/mini-haskell/&quot;&gt;Mini-Haskell&lt;/a&gt;&lt;/p&gt;
@@ -964,7 +1195,7 @@ showPerson (Person n a) = n ++ &amp;quot; who is &amp;quot; ++ show a ++ &amp;qu
                 FMFP L4
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l4/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/haskell/&quot;&gt;Haskell&lt;/a&gt;&lt;/p&gt;
@@ -977,7 +1208,7 @@ showPerson (Person n a) = n ++ &amp;quot; who is &amp;quot; ++ show a ++ &amp;qu
                 FMFP L3
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;correctness&quot; tabindex=&quot;-1&quot;&gt;Correctness&lt;/h2&gt;
@@ -1036,7 +1267,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L2
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l2/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/minigames/natural-deduction/&quot;&gt;Natural deduction&lt;/a&gt;&lt;/p&gt;
@@ -1049,10 +1280,10 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L14
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l14/</id>
             <content type="html">
-                &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Monads&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/monads/&quot;&gt;Monads&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l14/" >
@@ -1062,10 +1293,10 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L13
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l13/</id>
             <content type="html">
-                &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Monads&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/monads/&quot;&gt;Monads&lt;/a&gt;&lt;/p&gt;
 
             </content>
             <link href="https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l13/" >
@@ -1075,7 +1306,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L12
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l12/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/fmfp-interpreters/&quot;&gt;FMFP Interpreters&lt;/a&gt;&lt;/p&gt;
@@ -1088,7 +1319,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L11
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l11/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/haskell/#lazy-evaluation&quot;&gt;Haskell#Lazy Evaluation&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#remarkN&quot;&gt;#remarkN&lt;/a&gt; maybe  (probably, but don&#39;t know which one exactly^^) this was also done in a previous lecture&lt;/p&gt;
@@ -1105,7 +1336,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L10
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l10/</id>
             <content type="html">
                 &lt;h2 id=&quot;algebraic-data-types&quot; tabindex=&quot;-1&quot;&gt;algebraic data types&lt;/h2&gt;
@@ -1129,7 +1360,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L1
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;functional-programming&quot; tabindex=&quot;-1&quot;&gt;Functional programming&lt;/h2&gt;
@@ -1162,7 +1393,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 Haskell
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/haskell/</id>
             <content type="html">
                 &lt;h3 id=&quot;operators&quot; tabindex=&quot;-1&quot;&gt;operators&lt;/h3&gt;
@@ -1368,7 +1599,7 @@ func1 = do
   putStrLn (&amp;quot;Text: &amp;quot; ++ show (func2 (read n :: Int)))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Monads#Input/Ouput&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/monads/#input-ouput&quot;&gt;Monads#Input/Ouput&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;other&quot; tabindex=&quot;-1&quot;&gt;Other&lt;/h2&gt;
 &lt;h3 id=&quot;shell&quot; tabindex=&quot;-1&quot;&gt;Shell&lt;/h3&gt;
@@ -1443,7 +1674,7 @@ q (p:xs) = q [x | x&amp;lt;-xs, x &amp;lt;= p] ++ [p] ++ q [x | x&amp;lt;-xs, x 
                 FMFP Interpreters
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/fmfp-interpreters/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -1775,7 +2006,7 @@ eager (Lam x t) = Lam x $! (eager t)
                 Unit type
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/atoms/unit-type/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#source&quot;&gt;#source&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#wikipedia&quot;&gt;#wikipedia&lt;/a&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Unit_type&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Unit type&lt;/a&gt;&lt;/p&gt;
@@ -1800,7 +2031,7 @@ eager (Lam x t) = Lam x $! (eager t)
                 Financial Markets
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/financial-markets/</id>
             <content type="html">
                 &lt;h2 id=&quot;some-things&quot; tabindex=&quot;-1&quot;&gt;Some things&lt;/h2&gt;
@@ -1857,7 +2088,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 Decentralised Finance
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/decentralised-finance/</id>
             <content type="html">
                 &lt;h2 id=&quot;promises&quot; tabindex=&quot;-1&quot;&gt;Promises&lt;/h2&gt;
@@ -1921,7 +2152,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L6
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l6/</id>
             <content type="html">
                 &lt;h2 id=&quot;economic-models&quot; tabindex=&quot;-1&quot;&gt;Economic models&lt;/h2&gt;
@@ -2035,7 +2266,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L5 Lending &amp; Stablecoins
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -2253,7 +2484,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L4
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l4/</id>
             <content type="html">
                 &lt;h2 id=&quot;decentralised-exchange&quot; tabindex=&quot;-1&quot;&gt;Decentralised Exchange&lt;/h2&gt;
@@ -2517,7 +2748,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L3
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;df-and-cf-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183404-png-alt-pasted-image-20240312183404-png&quot; tabindex=&quot;-1&quot;&gt;DF and CF &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183404.png&quot; alt=&quot;Pasted image 20240312183404.png&quot; /&gt;&lt;/h2&gt;
@@ -2627,7 +2858,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L2
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/</id>
             <content type="html">
                 &lt;p&gt;&amp;lt;![[Ethereum and DeFi Glossary.pdf]]&lt;/p&gt;
@@ -2689,7 +2920,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L1
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l1/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimer&quot;&gt;#disclaimer&lt;/a&gt; Not examrelevant!&lt;/p&gt;
@@ -2706,7 +2937,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF Definitions
                 
             </title>
-            <updated>2024-04-15T21:09:48Z</updated>
+            <updated>2024-04-15T21:09:53Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-definitions/</id>
             <content type="html">
                 &lt;ul&gt;
