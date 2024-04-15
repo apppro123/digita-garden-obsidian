@@ -636,7 +636,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:06:00.319Z';
+        const searchIndexDate = '2024-04-15T21:06:03.499Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -648,9 +648,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:00.319Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:03.499Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:00.319Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:03.499Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1036,7 +1036,9 @@ p &gt;&gt;= g = Prs (\s -&gt; [ (u,s’’) | (t,s’ ) &lt;- parse p s,
 </code></pre>
 <h3 id="ambiguous-grammars" tabindex="-1">ambiguous grammars</h3>
 <ul>
-<li><strong>Problem:</strong> How should 2-3+4 be parsed? <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194217.png" alt="Pasted image 20240329194217.png"></li>
+<li><strong>Problem:</strong> How should 2-3+4 be parsed? <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194217.png" alt="Pasted image 20240329194217.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/rI3ExQPJmo-391.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/rI3ExQPJmo-391.jpeg">
+      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194217.png" alt="Pasted image 20240329194217.png" width=""></picture></li>
 <li><strong>Solution</strong>
 <ul>
 <li>disambiguate grammar using <strong>associativity</strong> and <strong>precedence</strong></li>
