@@ -854,7 +854,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:09:38.468Z';
+        const searchIndexDate = '2024-04-15T21:09:42.547Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -866,9 +866,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:09:38.468Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:09:42.547Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:09:38.468Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:09:42.547Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1174,7 +1174,9 @@
 <h4 id="natural-deduction-for-propositional-formulae-img-src-img-user-semester4-fmfp-attachments-pasted-20image-2020240305161646-png-alt-pasted-image-20240305161646-png" tabindex="-1">Natural deduction for propositional formulae <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240305161646.png" alt="Pasted image 20240305161646.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bH5BwhSJcP-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bH5BwhSJcP-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bH5BwhSJcP-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bH5BwhSJcP-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240305161646.png" alt="Pasted image 20240305161646.png" width=""></picture></h4>
-<h4 id="derivation-rules-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240223162856-png-alt-pasted-image-20240223162856-png" tabindex="-1">derivation rules<img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240223162856.png" alt="Pasted image 20240223162856.png"></h4>
+<h4 id="derivation-rules-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240223162856-png-alt-pasted-image-20240223162856-png" tabindex="-1">derivation rules<picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240223162856.png" alt="Pasted image 20240223162856.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/SNAvY4wGEu-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/SNAvY4wGEu-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/SNAvY4wGEu-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/SNAvY4wGEu-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240223162856.png" alt="Pasted image 20240223162856.png" width=""></picture></h4>
 <h3 id="first-order-logic" tabindex="-1">First-Order Logic</h3>
 <h4 id="syntax" tabindex="-1">Syntax</h4>
 <ul>
