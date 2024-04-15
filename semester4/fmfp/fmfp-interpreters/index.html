@@ -636,7 +636,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:05:52.394Z';
+        const searchIndexDate = '2024-04-15T21:06:00.319Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -648,9 +648,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:05:52.394Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:00.319Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:05:52.394Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:00.319Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -904,7 +904,9 @@
 <h2 id="mini-haskell-interpreter" tabindex="-1">Mini-Haskell interpreter</h2>
 <h3 id="parsing" tabindex="-1">Parsing</h3>
 <ul>
-<li>parser constructs an <strong>abstract syntax tree</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> AST) <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329175201.png" alt="Pasted image 20240329175201.png">
+<li>parser constructs an <strong>abstract syntax tree</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> AST) <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329175201.png" alt="Pasted image 20240329175201.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/KLDtUga2UH-443.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/KLDtUga2UH-443.jpeg">
+      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329175201.png" alt="Pasted image 20240329175201.png" width=""></picture>
 <ul>
 <li>in Haskell: element of data type</li>
 <li>further processing depend on application but in general: conversion happens between data types e.g.
