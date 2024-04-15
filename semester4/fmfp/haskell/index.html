@@ -647,7 +647,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:08:13.067Z';
+        const searchIndexDate = '2024-04-15T21:08:16.651Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -659,9 +659,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:13.067Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:16.651Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:13.067Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:16.651Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1132,7 +1132,9 @@ func1 = do
 </ul>
 <h3 id="lazy-evaluation" tabindex="-1">Lazy Evaluation</h3>
 <ul>
-<li>Haskell uses <strong>Lazy evaluation</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240220112718.png" alt="Pasted image 20240220112718.png"></li>
+<li>Haskell uses <strong>Lazy evaluation</strong> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240220112718.png" alt="Pasted image 20240220112718.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/BrbYozsxa1-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/BrbYozsxa1-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/BrbYozsxa1-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/BrbYozsxa1-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240220112718.png" alt="Pasted image 20240220112718.png" width=""></picture></li>
 <li>possible problem of lazy evaluation is <strong>duplicated computation</strong>: avoided by simultaneously reducing both occurrences</li>
 <li><strong>Summary</strong>: function arguments are evaluated only when needed and at most once</li>
 </ul>
