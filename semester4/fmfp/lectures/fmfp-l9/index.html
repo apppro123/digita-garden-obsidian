@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FMFP L9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>
+    // Create callout icons
+    window.addEventListener("load", () => {
+        document.querySelectorAll(".callout").forEach((elem) => {
+            const icon = getComputedStyle(elem).getPropertyValue('--callout-icon');
+            const iconName = icon && icon.trim().replace(/^lucide-/, "");
+
+            if (iconName) {
+                const calloutTitle = elem.querySelector(".callout-title");
+
+                if (calloutTitle) {
+                    const calloutIconContainer = document.createElement("div");
+                    const calloutIcon = document.createElement("i");
+
+                    calloutIconContainer.appendChild(calloutIcon);
+                    calloutIcon.setAttribute("icon-name", iconName);
+                    calloutIconContainer.setAttribute("class", "callout-icon");
+                    calloutTitle.insertBefore(calloutIconContainer, calloutTitle.firstChild);
+                }
+            }
+        });
+
+        lucide.createIcons();
+
+        // Collapse callouts
+        Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((elem) => {
+            elem.querySelector('.callout-title').addEventListener("click", (event) => {
+                if (elem.classList.contains("is-collapsed")) {
+                    elem.classList.remove("is-collapsed");
+                } else {
+                    elem.classList.add("is-collapsed");
+                }
+            });
+        });
+    });
+</script>
+
+
+<script src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+
+<script defer="" src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" defer=""></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<link href="/digital-garden-obsidian/styles/digital-garden-base.css" rel="stylesheet">
+    <link href="/digital-garden-obsidian/styles/obsidian-base.css" rel="stylesheet">
+    <link href="/digital-garden-obsidian/styles/_theme.f229fbfb.css" rel="stylesheet">
+
+
+<link href="/digital-garden-obsidian/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/digital-garden-obsidian/favicon.ico" sizes="any">
+<link rel="icon" href="/digital-garden-obsidian/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/digital-garden-obsidian/apple-touch-icon.png">
+<link rel="manifest" href="/digital-garden-obsidian/manifest.webmanifest">
+
+
+
+
+
+<style></style>
+    
+    
+  </head>
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section ">
+    
+    
+    
+      
+    
+    <div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+
+        <div x-show.important="!isDesktop" style="display: none;">
+            <nav class="navbar">
+    <div class="navbar-inner">
+        <span style="font-size: 1.5rem; margin-right: 10px;" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+        
+        <a href="/digital-garden-obsidian/" style="text-decoration: none;">
+            <h1 style="margin: 15px !important;">Digital Garden</h1>
+        </a>
+        
+    </div>
+    
+    
+        <div class="search-button align-icon" onclick="toggleSearch()">
+    <span class="search-icon">
+        <i icon-name="search"></i>
+    </span>
+    <span class="search-text">
+        <span>Search</span>
+        <span style="font-size: 0.6rem; padding: 2px 2px 0 6px; text-align:center; transform: translateY(4px);" class="search-keys">
+            CTRL + K
+        </span>
+    </span>
+</div>
+    
+</nav>
+        </div>
+        
+        <div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none;" class="fullpage-overlay"></div>
+
+      <nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display: none;">
+        
+         <a href="/digital-garden-obsidian/" style="text-decoration: none;">
+               <h1 style="text-align:center;">Digital Garden</h1>
+         </a>
+         
+        
+            <div style="display: flex; justify-content: center;">
+                <div class="search-button align-icon" onclick="toggleSearch()">
+    <span class="search-icon">
+        <i icon-name="search"></i>
+    </span>
+    <span class="search-text">
+        <span>Search</span>
+        <span style="font-size: 0.6rem; padding: 2px 2px 0 6px; text-align:center; transform: translateY(4px);" class="search-keys">
+            CTRL + K
+        </span>
+    </span>
+</div>
+            </div>
+        
+         <div class="folder" x-data="{isOpen: true}">
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">Semester4</span>
+                    </div>
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4/DF')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">DF</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/decentralised-finance/">Decentralised Finance </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-definitions/">DF Definitions </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l1/">DF L1 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l2/">DF L2 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l3/">DF L3 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l4/">DF L4 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/">DF L5 Lending &amp; Stablecoins </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/df-l6/">DF L6 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/financial-markets/">Financial Markets </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4/FMFP')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">FMFP</span>
+                    </div>
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4/FMFP/Atoms')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">Atoms</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/atoms/unit-type/">Unit type </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4/FMFP/Lectures')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">Lectures</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l1/">FMFP L1 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l10/">FMFP L10 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l11/">FMFP L11 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l12/">FMFP L12 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l13/">FMFP L13 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l14/">FMFP L14 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l2/">FMFP L2 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l3/">FMFP L3 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l4/">FMFP L4 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l7/">FMFP L7 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l8/">FMFP L8 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l9/">FMFP L9 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/fmfp-interpreters/">FMFP Interpreters </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/haskell/">Haskell </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4/WS')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">WS</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4/WS/Lectures')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">Lectures</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/lectures/ws-l1/">WS L1 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/lectures/ws-l2/">WS L2 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/lectures/ws-l3/">WS L3 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/lectures/ws-l4/">WS L4 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/lectures/ws-l5/">WS L5 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/lectures/ws-l6/">WS L6 </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/lectures/ws-l7-normalverteilung/">WS L7 Normalverteilung </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">home page </a>
+                </div>
+            
+        </div>
+        
+    </div>
+      </nav>
+    </div>
+
+    
+
+    
+      <div class="search-container" id="globalsearch" onclick="toggleSearch()">
+    <div class="search-box">
+        <input type="search" id="term" placeholder="Start typing...">
+        <div id="search-results"></div>
+        <footer class="search-box-footer">
+            <div class="navigation-hint">
+                <span>Enter to select</span>
+            </div>
+
+            <div class="navigation-hint align-icon">
+                <i icon-name="arrow-up" aria-hidden="true"></i>
+                <i icon-name="arrow-down" aria-hidden="true"></i>
+                <span>to navigate</span>
+            </div>
+
+            <div class="navigation-hint">
+                <span>ESC to close</span>
+            </div>
+
+        </footer>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', init, false);
+    document.addEventListener('DOMContentLoaded', setCorrectShortcut, false);
+
+    window.toggleSearch = function () {
+        if (document.getElementById('globalsearch').classList.contains('active')) {
+            document
+                .getElementById('globalsearch')
+                .classList
+                .remove('active');
+        } else {
+            document
+                .getElementById('globalsearch')
+                .classList
+                .add('active');
+            document
+                .getElementById('term')
+                .focus();
+        }
+    }
+
+    window.toggleTagSearch = function (evt) {
+        console.log(evt.textContent);
+        const term = evt.textContent;
+        if (term) {
+            window
+                .document
+                .getElementById('term')
+                .value = term.trim();
+            window.toggleSearch();
+            window.search();
+        }
+    }
+
+    const loadingSvg = `
+    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+          <circle cx="22" cy="22" r="6" stroke-opacity="0">
+              <animate attributeName="r"
+                   begin="1.5s" dur="3s"
+                   values="6;22"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                   begin="1.5s" dur="3s"
+                   values="1;0" calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-width"
+                   begin="1.5s" dur="3s"
+                   values="2;0" calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="6" stroke-opacity="0">
+              <animate attributeName="r"
+                   begin="3s" dur="3s"
+                   values="6;22"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                   begin="3s" dur="3s"
+                   values="1;0" calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-width"
+                   begin="3s" dur="3s"
+                   values="2;0" calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="8">
+              <animate attributeName="r"
+                   begin="0s" dur="1.5s"
+                   values="6;1;2;3;4;5;6"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+      </g>
+  </svg>`;
+
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function () {
+            var context = this,
+                args = arguments;
+            var later = function () {
+                timeout = null;
+                if (!immediate) 
+                    func.apply(context, args);
+                };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) 
+                func.apply(context, args);
+            };
+    };
+
+    function setCorrectShortcut() {
+        if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
+            document
+                .querySelectorAll(".search-keys")
+                .forEach(x => x.innerHTML = "⌘ + K");
+        }
+    }
+
+    function createIndex(posts) {
+        const encoder = (str) => str
+            .toLowerCase()
+            .split(/([^a-z]|[^\x00-\x7F])/)
+        const contentIndex = new FlexSearch.Document({
+            cache: true,
+            charset: "latin:extra",
+            optimize: true,
+            index: [
+                {
+                    field: "content",
+                    tokenize: "reverse",
+                    encode: encoder
+                }, {
+                    field: "title",
+                    tokenize: "forward",
+                    encode: encoder
+                }, {
+                    field: "tags",
+                    tokenize: "forward",
+                    encode: encoder
+                }
+            ]
+        })
+        posts.forEach((p, idx) => {
+            contentIndex.add({
+                id: idx, title: p.title, content: p.content, tags: p.tags //Change to removeHTML
+            })
+        });
+        return contentIndex;
+    }
+
+    async function init() {
+        //init offline search index
+
+        const searchIndexDate = '2024-04-15T21:09:30.182Z';
+        let shouldFetch = true;
+        if(localStorage.getItem("searchIndex")) {
+            let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
+            if(date === searchIndexDate){
+                shouldFetch = false;
+                let index = createIndex(docs);
+                window.docs = docs
+                window.index = index;
+            }        
+        }
+        if(shouldFetch){
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:09:30.182Z')).json();
+            let index = createIndex(docs);
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:09:30.182Z', docs}));
+            window.docs = docs
+            window.index = index;
+        }
+
+        //open searchmodal when ctrl + k is pressed, cmd + k on mac
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                toggleSearch();
+            }
+            if (e.key === 'Escape') {
+                document
+                    .getElementById('globalsearch')
+                    .classList
+                    .remove('active');
+            }
+
+            //navigate search results with arrow keys
+            if (document.getElementById('globalsearch').classList.contains('active')) {
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    let active = document.querySelector('.searchresult.active');
+                    if (active) {
+                        active
+                            .classList
+                            .remove('active');
+                        if (active.nextElementSibling) {
+                            active
+                                .nextElementSibling
+                                .classList
+                                .add('active');
+                        } else {
+                            document
+                                .querySelector('.searchresult')
+                                .classList
+                                .add('active');
+                        }
+                    } else {
+                        document
+                            .querySelector('.searchresult')
+                            .classList
+                            .add('active');
+                    }
+
+                    let currentActive = document.querySelector('.searchresult.active');
+                    if (currentActive) {
+                        currentActive.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
+                    }
+                }
+                if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    let active = document.querySelector('.searchresult.active');
+                    if (active) {
+                        active
+                            .classList
+                            .remove('active');
+                        if (active.previousElementSibling) {
+                            active
+                                .previousElementSibling
+                                .classList
+                                .add('active');
+                        } else {
+                            document
+                                .querySelectorAll('.searchresult')
+                                .forEach((el) => {
+                                    if (!el.nextElementSibling) {
+                                        el
+                                            .classList
+                                            .add('active');
+                                    }
+                                });
+                        }
+                    } else {
+                        document
+                            .querySelectorAll('.searchresult')
+                            .forEach((el) => {
+                                if (el.nextElementSibling) {
+                                    el
+                                        .classList
+                                        .add('active');
+                                }
+                            });
+                    }
+
+                    let currentActive = document.querySelector('.searchresult.active');
+                    if (currentActive) {
+                        currentActive.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
+                    }
+
+                }
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    let active = document.querySelector('.searchresult.active');
+                    if (active) {
+                        window.location.href = active
+                            .querySelector("a")
+                            .href;
+                    }
+                }
+            }
+        });
+
+        const debouncedSearch = debounce(search, 200, false);
+        field = document.querySelector('#term');
+        field.addEventListener('keydown', (e) => {
+            if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') {
+                debouncedSearch();
+            }
+        });
+        resultsDiv = document.querySelector('#search-results');
+
+        const params = new URL(location.href).searchParams;
+        if (params.get('q')) {
+            field.setAttribute('value', params.get('q'));
+            toggleSearch();
+            search();
+        }
+    }
+    window.lastSearch = '';
+    async function search() {
+        let search = field
+            .value
+            .trim();
+        if (!search) 
+            return;
+        if (search == lastSearch) 
+            return;
+        console.log(`search for ${search}`);
+        window.lastSearch = search;
+
+        resultsDiv.innerHTML = loadingSvg;
+        //let searchRequest = await fetch(`/api/search?term=${encodeURIComponent(search)}`);
+        //let results = await searchRequest.json();
+        let results = offlineSearch(search);
+        let resultsHTML = '';
+        if (!results.length) {
+            let resultParagraph = document.createElement("p");
+            resultParagraph.innerText = `No results for "${search}"`;
+            resultsDiv.innerHTML = '';
+            resultsDiv.appendChild(resultParagraph);
+            return;
+        }
+        resultsHTML += '<div style="max-width:100%;">';
+        // we need to add title, url from ref
+        results.forEach(r => {
+            if(r.tags && r.tags.length > 0){
+                resultsHTML += `<div class="searchresult">
+                    <a class="search-link" href="${r.url}">${r.title}</a>
+                    <div onclick="window.location='${r.url}'">
+                        <div class="header-meta">
+                            <div class="header-tags">
+                                ${r.tags.map(tag=>'<a class="tag" href="JavaScript:Void(0);">#'+tag+'</a>').join("")}
+                            </div>
+                        </div>
+                        ${r.content}
+                    </div>
+                </div>`;
+            } else {
+                resultsHTML += `<div class="searchresult">
+                    <a class="search-link" href="${r.url}">${r.title}</a>
+                    <div onclick="window.location='${r.url}'">
+                        ${r.content}
+                    </div>
+                </div>`;
+            }
+        });
+        resultsHTML += '</div>';
+        resultsDiv.innerHTML = resultsHTML;
+    }
+
+    function truncate(str, size) {
+        //first, remove HTML
+        str = str.replaceAll(/<[^>]*>/g, '');
+        if (str.length < size) 
+            return str;
+        return str.substring(0, size - 3) + '...';
+    }
+
+    function offlineSearch(searchQuery) {
+        let data = window.docs;
+
+        let isTagSearch = searchQuery[0] === "#" && searchQuery.length > 1;
+
+        let searchResults = isTagSearch
+            ? index.search(searchQuery.substring(1), [
+                {
+                    field: "tags"
+                }
+            ])
+            : index.search(searchQuery, [
+                {
+                    field: "title",
+                    limit: 5
+                }, {
+                    field: "content",
+                    weight: 10
+                }
+            ]);
+
+        const getByField = (field) => {
+            const results = searchResults.filter((x) => x.field === field)
+            if (results.length === 0) {
+                return []
+            } else {
+                return [...results[0].result]
+            }
+        }
+        const allIds = new Set([
+            ...getByField("title"),
+            ...getByField("content"),
+            ...getByField("tags")
+        ])
+        const dataIds = [...allIds];
+        const finalResults = dataIds.map((id) => {
+            let result = data[id];
+            result.content = truncate(result.content, 400);
+            result.tags = result
+                .tags
+                .filter((x) => x != "gardenEntry" && x != "note"); //Note is automatically added by 11ty. GardenEntry is used internally to mark the home page
+
+            return result;
+        })
+        return finalResults;
+
+    }
+</script>
+    
+
+    <main class="content cm-s-obsidian ">
+      <header>
+        
+        <div class="header-meta">
+          
+            <div class="header-tags">
+              
+                
+              
+            </div>
+          </div>
+      
+      
+      </header>
+      
+      
+      <h2 id="type-classes" tabindex="-1">Type classes</h2>
+<ul>
+<li><strong>morphism</strong> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319185409.png" alt="Pasted image 20240319185409.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/Bg648Tckjz-434.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/Bg648Tckjz-434.jpeg">
+      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319185409.png" alt="Pasted image 20240319185409.png" width=""></picture>
+<ul>
+<li>monomorphism: just one primitive type</li>
+<li>polymorphism: can take multiple primitive types</li>
+</ul>
+</li>
+<li>type classes <strong>restrict polymorphism</strong> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319185749.png" alt="Pasted image 20240319185749.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/WerdTh4_at-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/WerdTh4_at-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/WerdTh4_at-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/WerdTh4_at-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319185749.png" alt="Pasted image 20240319185749.png" width=""></picture></li>
+</ul>
+<pre><code class="language-Haskell">-- from prelude.hs
+class Eq a where
+	(==) :: a -&gt; a -&gt; Bool
+	(/=) :: a -&gt; a -&gt; Bool
+
+	x /= y = not (x==y) -- thus in the end, a has just to be == comparable
+	-- example with Eq
+	allEqual :: Eq t =&gt; t -&gt; t -&gt; t -&gt; Bool
+
+-- instance example
+instance Eq Bool where
+	True == True = True
+	False == False = True
+	_     == _     = False
+</code></pre>
+<ul>
+<li>elements of class are called <strong>instances</strong>
+<ul>
+<li><code>instance</code> builds instances by &quot;interpreting signature functions&quot;</li>
+<li>instances of primitive types like <code>Int</code> use built-in (primitive) qualities</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-Haskell">class Visible t where
+	stringOf :: t -&gt; String
+	size :: t -&gt; Int
+	
+instance Visible Char where
+	stringOf ch = [ch]
+	size _ = 1
+
+instance Visible Bool where
+	stringOf True = &quot;Wahr&quot;
+	stringOf False = &quot;Falsch&quot;
+	size b = 1
+
+? (stringOf ’e’) ++ &quot;ine &quot; ++ (stringOf True) ++ &quot;e Aussage&quot;
+&quot;eine Wahre Aussage&quot; :: [Char]
+
+instance Visible t =&gt; Visible [t] where
+	stringOf xs = concat (map stringOf xs)
+	size xs = foldr (+) 0 (map size xs)
+	-- stringOf xs ... is not a recursive definition bc. on of them is over `[t]` and the other just over `t`
+
+? size [True,False]
+2 :: Int
+
+? stringOf [True,False]
+&quot;WahrFalsch&quot; :: [Char]
+</code></pre>
+<ul>
+<li>if <code>t</code> is visible then a list of type <code>[t]</code> is also visible =&gt; class <strong>membership</strong> can depend on membership for other types</li>
+</ul>
+<h3 id="derived-classes" tabindex="-1">Derived classes</h3>
+<pre><code class="language-Haskell">class Eq a =&gt; Ord a where
+	(&lt;), (&gt;), (&lt;=), (&gt;=) :: a -&gt; a -&gt; Bool
+	max, min :: a -&gt; a -&gt; a
+	-- implement all operators except (&lt;=)
+	x &lt; y = x &lt;= y &amp;&amp; x /= y
+	x &gt;= y = y &lt;= x
+	x &gt; y = y &lt;= x &amp;&amp; x /= y
+
+max x y | x &lt;= y = y
+		| otherwise = x
+min x y | x &lt;= y = x
+		| otherwise = y
+</code></pre>
+<ul>
+<li>if <code>a</code> belong to <code>Ord</code>, then <code>a</code> must also belong to <code>Eq</code></li>
+<li>functions for <code>Eq</code> are inherited and some new ones must be given</li>
+</ul>
+<h3 id="some-type-classes" tabindex="-1">Some type classes</h3>
+<ul>
+<li><code>Show</code> and <code>Read</code> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190848.png" alt="Pasted image 20240319190848.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/GYikAqw8vS-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/GYikAqw8vS-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/GYikAqw8vS-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/GYikAqw8vS-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190848.png" alt="Pasted image 20240319190848.png" width=""></picture></li>
+<li><code>Foldable</code> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190912.png" alt="Pasted image 20240319190912.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/wuWO7lV8Sh-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/wuWO7lV8Sh-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/wuWO7lV8Sh-680.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/wuWO7lV8Sh-680.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190912.png" alt="Pasted image 20240319190912.png" width=""></picture></li>
+</ul>
+<h3 id="enumeration-types-disjoint-unions" tabindex="-1">Enumeration types (disjoint unions)</h3>
+<pre><code class="language-Haskell">data Season = Spring | Summer | Fall | Winter
+data Month = January | February | March | April | May | June | July | August |September | October | November | December
+
+-- functions can be written using pattern matching
+whichSeason :: Month -&gt; Season
+whichSeason January = Winter
+...
+</code></pre>
+<ul>
+<li>Syntax
+<ul>
+<li>start with keyword <code>data</code></li>
+<li>names different (uniquely named) constructors</li>
+<li>first letter of each constructor must be upper-case</li>
+</ul>
+</li>
+<li>Defines a set: <code>Season = {Spring, Summer, Fall, Winter}</code></li>
+</ul>
+<h3 id="product-types" tabindex="-1">Product types</h3>
+<pre><code class="language-Haskell">data People = Person Name Age
+type Name = String
+type Age = Int
+
+-- Constructors are functions 
+? :type Person
+Person :: Name -&gt; Age -&gt; Peopled
+
+showPerson :: People -&gt; String
+showPerson (Person n a) = n ++ &quot; who is &quot; ++ show a ++ &quot; years old&quot;
+
+? showPerson (Person &quot;Uncle George&quot; 85)
+&quot;Uncle George who is 85 years old&quot; :: [Char]
+</code></pre>
+<ul>
+<li>an element of type <code>People</code> consists of a name <code>n</code> and an age <code>a</code> e.g. <code>Person &quot;Uncle George&quot; 85</code></li>
+</ul>
+<h4 id="product-types-versus-tuples-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319191854-png-alt-pasted-image-20240319191854-png" tabindex="-1">Product types versus tuples <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191854.png" alt="Pasted image 20240319191854.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/-jz9BEGe2M-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/-jz9BEGe2M-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/-jz9BEGe2M-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/-jz9BEGe2M-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191854.png" alt="Pasted image 20240319191854.png" width=""></picture></h4>
+<h4 id="enumeration-and-product-types-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319191929-png-alt-pasted-image-20240319191929-png" tabindex="-1">Enumeration and product types <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191929.png" alt="Pasted image 20240319191929.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bNnHSt4Uqo-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bNnHSt4Uqo-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bNnHSt4Uqo-651.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bNnHSt4Uqo-651.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191929.png" alt="Pasted image 20240319191929.png" width=""></picture></h4>
+<ul>
+<li>general case <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192137.png" alt="Pasted image 20240319192137.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/8wMer9eZbG-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/8wMer9eZbG-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/8wMer9eZbG-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/8wMer9eZbG-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192137.png" alt="Pasted image 20240319192137.png" width=""></picture></li>
+</ul>
+<h4 id="integration-with-classes-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319192008-png-alt-pasted-image-20240319192008-png" tabindex="-1">Integration with classes <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192008.png" alt="Pasted image 20240319192008.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/pnGuCbBvxL-458.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/pnGuCbBvxL-458.jpeg">
+      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192008.png" alt="Pasted image 20240319192008.png" width=""></picture></h4>
+<ul>
+<li>or in some cases, class instances can be automatically <strong>derived</strong> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192047.png" alt="Pasted image 20240319192047.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/GvRxgAA10O-486.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/GvRxgAA10O-486.jpeg">
+      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192047.png" alt="Pasted image 20240319192047.png" width=""></picture></li>
+</ul>
+<h3 id="recursive-types-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319192218-png-alt-pasted-image-20240319192218-png" tabindex="-1">Recursive types <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192218.png" alt="Pasted image 20240319192218.png"></h3>
+<ul>
+<li>recursive functions over data types <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192256.png" alt="Pasted image 20240319192256.png"> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192332.png" alt="Pasted image 20240319192332.png"></li>
+</ul>
+
+      
+      
+    </main>
+
+    
+      <aside>
+      <div class="sidebar">
+            <div class="sidebar-container">
+                  
+                  
+
+                  
+                        
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#type-classes">Type classes</a>
+            
+                <ol>
+                    
+                    <li><a href="#derived-classes">Derived classes</a>
+            		</li>
+
+                    <li><a href="#some-type-classes">Some type classes</a>
+            		</li>
+
+                    <li><a href="#enumeration-types-disjoint-unions">Enumeration types (disjoint unions)</a>
+            		</li>
+
+                    <li><a href="#product-types">Product types</a>
+            
+                <ol>
+                    
+                    <li><a href="#product-types-versus-tuples-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319191854-png-alt-pasted-image-20240319191854-png">Product types versus tuples</a>
+            		</li>
+
+                    <li><a href="#enumeration-and-product-types-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319191929-png-alt-pasted-image-20240319191929-png">Enumeration and product types</a>
+            		</li>
+
+                    <li><a href="#integration-with-classes-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319192008-png-alt-pasted-image-20240319192008-png">Integration with classes</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#recursive-types-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319192218-png-alt-pasted-image-20240319192218-png">Recursive types</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
+                        
+
+                  
+
+                        
+                  
+            </div>
+      </div>
+</aside>
+    
+
+    
+        <script>
+      if (window.location.hash) {
+        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
+      }
+      window.addEventListener('hashchange', (evt) => {
+        const oldParts = evt.oldURL.split("#");
+        if (oldParts[1]) {
+          document.getElementById(oldParts[1]).classList.remove('referred');
+        }
+        const newParts = evt.newURL.split("#");
+        if (newParts[1]) {
+          document.getElementById(newParts[1]).classList.add('referred');
+        }
+      }, false);
+      const url_parts = window.location.href.split("#")
+      const url = url_parts[0];
+      const referrence = url_parts[1];
+      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
+        el.ondblclick = function(evt) {
+          const ref_url = url + '#' + evt.target.id
+          navigator.clipboard.writeText(ref_url);
+      }
+      });
+
+      
+    </script>
+    <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="">
+    TIMESTAMP_FORMAT = "MMM dd, yyyy h:mm a";
+    document.querySelectorAll('.human-date').forEach(function (el) {
+        el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
+      });
+</script>
+    
+    
+    <script>
+lucide.createIcons({
+            attrs: {
+                class: ["svg-icon"]
+            }
+        });
+</script>
+  </body>
+</html>
