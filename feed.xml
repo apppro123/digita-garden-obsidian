@@ -3,14 +3,14 @@
     <title>Digital Garden</title>
     <link href="https://apppro123.github.io/digital-garden-obsidian//feed.xml" rel="self" >
     <link href="https://apppro123.github.io/digital-garden-obsidian/" >
-    <updated>2024-04-15T21:06:25Z</updated>
+    <updated>2024-04-15T21:06:37Z</updated>
     <id>https://apppro123.github.io/digital-garden-obsidian/</id>
         <entry>
             <title>
                 home page
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/</id>
             <content type="html">
                 
@@ -22,7 +22,7 @@
                 WS L7 Normalverteilung
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l7-normalverteilung/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -38,7 +38,7 @@
                 WS L6
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l6/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -104,7 +104,7 @@ Für jedes &lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; style
                 WS L5
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l5/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -193,7 +193,7 @@ Dann ist &lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; style=&
                 WS L4
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l4/</id>
             <content type="html">
                 &lt;p&gt;Beweis zu Satz 2.13&lt;/p&gt;
@@ -282,7 +282,7 @@ Dieser Satz erlaubt es uns, direkt mit Zufallsvariablen zu arbeiten, ohne den Wa
                 WS L3
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l3/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -373,7 +373,7 @@ Eine Folge von Zufallsvariablen &lt;mjx-container class=&quot;MathJax&quot; jax=
                 WS L2
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l2/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -466,7 +466,7 @@ Eine &lt;strong&gt;(reellwertige) Zufallsvariable (Z.V.)&lt;/strong&gt; ist eine
                 WS L1
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/ws/lectures/ws-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;definitions&quot; tabindex=&quot;-1&quot;&gt;Definitions&lt;/h2&gt;
@@ -544,7 +544,7 @@ Allgemein verwenden wir in der Masstheorie folgende Terminologie:&lt;/p&gt;
                 FMFP L9
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l9/</id>
             <content type="html">
                 &lt;h2 id=&quot;type-classes&quot; tabindex=&quot;-1&quot;&gt;Type classes&lt;/h2&gt;
@@ -692,7 +692,7 @@ showPerson (Person n a) = n ++ &amp;quot; who is &amp;quot; ++ show a ++ &amp;qu
                 FMFP L8
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l8/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/haskell/&quot;&gt;Haskell&lt;/a&gt;&lt;/p&gt;
@@ -705,7 +705,7 @@ showPerson (Person n a) = n ++ &amp;quot; who is &amp;quot; ++ show a ++ &amp;qu
                 FMFP L7
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l7/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Mini-Haskell&lt;/a&gt;&lt;/p&gt;
@@ -718,7 +718,7 @@ showPerson (Person n a) = n ++ &amp;quot; who is &amp;quot; ++ show a ++ &amp;qu
                 FMFP L4
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l4/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/haskell/&quot;&gt;Haskell&lt;/a&gt;&lt;/p&gt;
@@ -731,7 +731,7 @@ showPerson (Person n a) = n ++ &amp;quot; who is &amp;quot; ++ show a ++ &amp;qu
                 FMFP L3
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;correctness&quot; tabindex=&quot;-1&quot;&gt;Correctness&lt;/h2&gt;
@@ -790,7 +790,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L2
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l2/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Natural deduction&lt;/a&gt;&lt;/p&gt;
@@ -803,7 +803,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L14
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l14/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Monads&lt;/a&gt;&lt;/p&gt;
@@ -816,7 +816,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L13
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l13/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://apppro123.github.io/404&quot; target=&quot;&quot;&gt;Monads&lt;/a&gt;&lt;/p&gt;
@@ -829,7 +829,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L12
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l12/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/fmfp-interpreters/&quot;&gt;FMFP Interpreters&lt;/a&gt;&lt;/p&gt;
@@ -842,7 +842,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L11
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l11/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://apppro123.github.io/semester4/fmfp/haskell/#lazy-evaluation&quot;&gt;Haskell#Lazy Evaluation&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#remarkN&quot;&gt;#remarkN&lt;/a&gt; maybe  (probably, but don&#39;t know which one exactly^^) this was also done in a previous lecture&lt;/p&gt;
@@ -859,7 +859,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L10
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l10/</id>
             <content type="html">
                 &lt;h2 id=&quot;algebraic-data-types&quot; tabindex=&quot;-1&quot;&gt;algebraic data types&lt;/h2&gt;
@@ -883,7 +883,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 FMFP L1
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l1/</id>
             <content type="html">
                 &lt;h2 id=&quot;functional-programming&quot; tabindex=&quot;-1&quot;&gt;Functional programming&lt;/h2&gt;
@@ -916,7 +916,7 @@ Correctness is rarely obvious =&amp;gt; must be proven&lt;/li&gt;
                 Haskell
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/haskell/</id>
             <content type="html">
                 &lt;h3 id=&quot;operators&quot; tabindex=&quot;-1&quot;&gt;operators&lt;/h3&gt;
@@ -1197,7 +1197,7 @@ q (p:xs) = q [x | x&amp;lt;-xs, x &amp;lt;= p] ++ [p] ++ q [x | x&amp;lt;-xs, x 
                 FMFP Interpreters
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/fmfp-interpreters/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -1529,7 +1529,7 @@ eager (Lam x t) = Lam x $! (eager t)
                 Unit type
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/fmfp/atoms/unit-type/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#source&quot;&gt;#source&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#wikipedia&quot;&gt;#wikipedia&lt;/a&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Unit_type&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Unit type&lt;/a&gt;&lt;/p&gt;
@@ -1554,7 +1554,7 @@ eager (Lam x t) = Lam x $! (eager t)
                 Financial Markets
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/financial-markets/</id>
             <content type="html">
                 &lt;h2 id=&quot;some-things&quot; tabindex=&quot;-1&quot;&gt;Some things&lt;/h2&gt;
@@ -1611,7 +1611,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 Decentralised Finance
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/decentralised-finance/</id>
             <content type="html">
                 &lt;h2 id=&quot;promises&quot; tabindex=&quot;-1&quot;&gt;Promises&lt;/h2&gt;
@@ -1675,7 +1675,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L6
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l6/</id>
             <content type="html">
                 &lt;h2 id=&quot;economic-models&quot; tabindex=&quot;-1&quot;&gt;Economic models&lt;/h2&gt;
@@ -1789,7 +1789,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L5 Lending &amp; Stablecoins
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l5-lending-and-stablecoins/</id>
             <content type="html">
                 &lt;ul&gt;
@@ -2007,7 +2007,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L4
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l4/</id>
             <content type="html">
                 &lt;h2 id=&quot;decentralised-exchange&quot; tabindex=&quot;-1&quot;&gt;Decentralised Exchange&lt;/h2&gt;
@@ -2271,7 +2271,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L3
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l3/</id>
             <content type="html">
                 &lt;h2 id=&quot;df-and-cf-img-src-img-user-semester4-df-attachments-pasted-20image-2020240312183404-png-alt-pasted-image-20240312183404-png&quot; tabindex=&quot;-1&quot;&gt;DF and CF &lt;img src=&quot;https://apppro123.github.io/img/user/Semester4/DF/attachments/Pasted%20image%2020240312183404.png&quot; alt=&quot;Pasted image 20240312183404.png&quot; /&gt;&lt;/h2&gt;
@@ -2381,7 +2381,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L2
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l2/</id>
             <content type="html">
                 &lt;p&gt;&amp;lt;![[Ethereum and DeFi Glossary.pdf]]&lt;/p&gt;
@@ -2443,7 +2443,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF L1
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-l1/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#disclaimer&quot;&gt;#disclaimer&lt;/a&gt; Not examrelevant!&lt;/p&gt;
@@ -2460,7 +2460,7 @@ Overall, the financial market is vulnerable to a wide range of risks, and invest
                 DF Definitions
                 
             </title>
-            <updated>2024-04-15T21:06:10Z</updated>
+            <updated>2024-04-15T21:06:23Z</updated>
             <id>https://apppro123.github.io/digital-garden-obsidian//digital-garden-obsidian/semester4/df/df-definitions/</id>
             <content type="html">
                 &lt;ul&gt;
