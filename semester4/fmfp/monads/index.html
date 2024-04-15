@@ -876,7 +876,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:10:24.079Z';
+        const searchIndexDate = '2024-04-15T21:10:28.314Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -888,9 +888,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:10:24.079Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:10:28.314Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:10:24.079Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:10:28.314Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1254,7 +1254,9 @@ m &gt;&gt;= k = State (\s -&gt; let (x, t) = runState m s
 </ul>
 <h2 id="input-ouput" tabindex="-1">Input/Ouput</h2>
 <ul>
-<li><strong>problematic</strong> bc. we don't know what we get as an input from user =&gt; reasoning would no longer be sound <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410110528.png" alt="Pasted image 20240410110528.png">
+<li><strong>problematic</strong> bc. we don't know what we get as an input from user =&gt; reasoning would no longer be sound <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410110528.png" alt="Pasted image 20240410110528.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/CInGW8_8es-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/CInGW8_8es-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/CInGW8_8es-506.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/CInGW8_8es-506.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410110528.png" alt="Pasted image 20240410110528.png" width=""></picture>
 <ul>
 <li>bc. result depends on order in which the argument are evaluated</li>
 <li>I/O-functions have side effects =&gt; state of world ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#disclaimerN">#disclaimerN</a> nice name^^) changes</li>
