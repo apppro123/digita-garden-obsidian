@@ -800,7 +800,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:06:40.583Z';
+        const searchIndexDate = '2024-04-15T21:06:49.201Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -812,9 +812,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:40.583Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:49.201Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:40.583Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:49.201Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1213,7 +1213,9 @@ showPerson (Person n a) = n ++ &quot; who is &quot; ++ show a ++ &quot; years ol
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/CQS9O-FrBD-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/CQS9O-FrBD-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/CQS9O-FrBD-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192218.png" alt="Pasted image 20240319192218.png" width=""></picture></h3>
 <ul>
-<li>recursive functions over data types <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192256.png" alt="Pasted image 20240319192256.png"> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192332.png" alt="Pasted image 20240319192332.png"></li>
+<li>recursive functions over data types <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192256.png" alt="Pasted image 20240319192256.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/AiZ0c4J9Ii-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/AiZ0c4J9Ii-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/AiZ0c4J9Ii-624.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/AiZ0c4J9Ii-624.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192256.png" alt="Pasted image 20240319192256.png" width=""></picture> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192332.png" alt="Pasted image 20240319192332.png"></li>
 </ul>
 
       
