@@ -690,7 +690,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:08:29.156Z';
+        const searchIndexDate = '2024-04-15T21:08:33.028Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -702,9 +702,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:29.156Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:33.028Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:29.156Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:33.028Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -960,7 +960,9 @@
 </ul>
 </li>
 </ul>
-<h2 id="structural-induction-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240329150618-png-alt-pasted-image-20240329150618-png" tabindex="-1">Structural induction <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240329150618.png" alt="Pasted image 20240329150618.png"></h2>
+<h2 id="structural-induction-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240329150618-png-alt-pasted-image-20240329150618-png" tabindex="-1">Structural induction <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240329150618.png" alt="Pasted image 20240329150618.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/hQoizCz27Z-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/hQoizCz27Z-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/hQoizCz27Z-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/hQoizCz27Z-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240329150618.png" alt="Pasted image 20240329150618.png" width=""></picture></h2>
 
       
       
