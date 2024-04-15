@@ -81,6 +81,23 @@
 	- Theorem Solver (SMT tools aim to solve the satisfiability modulo theories ( #short SMT) problem)
 		- Needs to encode the DeFi model
 		- Apply heuristics for path pruning
+## Sandwich attacks
+1. P1 changes X to Y (value of X decreases and of Y increases)
+2. P2 changes also X to Y (value of X decreases even more and of Y increases more)
+3. P1 changes Y to X (gets more X out bc. Y is more valuable then before)
+### protection
+- **optimised trade execution**
+	- \+ simple
+	- \- limited scope
+- **trusted third party ordering**
+	- \+ efficient
+	- \- no decentralisation
+- **committee ordering**
+	- \+ fairly efficient
+	- \- reduced decentralisation
+- **commit & reveal**
+	- \+ secure
+	- \- costly & delay
 ## Quiz
 - Which of the following properties is NOT a desired property for AMM?
 	- no pool fees \[correct bc. AMM pool should have some fees]
