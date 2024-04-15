@@ -876,7 +876,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:10:20.689Z';
+        const searchIndexDate = '2024-04-15T21:10:24.079Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -888,9 +888,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:10:20.689Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:10:24.079Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:10:20.689Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:10:24.079Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1246,7 +1246,9 @@ m &gt;&gt;= k = State (\s -&gt; let (x, t) = runState m s
 <li><strong>state monad</strong> takes care of all the plumbing <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105143.png" alt="Pasted image 20240410105143.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/a75C26DPSa-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/a75C26DPSa-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/a75C26DPSa-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/a75C26DPSa-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105143.png" alt="Pasted image 20240410105143.png" width=""></picture></li>
-<li>or with more <strong>abstraction</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105239.png" alt="Pasted image 20240410105239.png"></li>
+<li>or with more <strong>abstraction</strong> <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105239.png" alt="Pasted image 20240410105239.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/FOeqtUGImz-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/FOeqtUGImz-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/FOeqtUGImz-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/FOeqtUGImz-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105239.png" alt="Pasted image 20240410105239.png" width=""></picture></li>
 </ul>
 </li>
 </ul>
