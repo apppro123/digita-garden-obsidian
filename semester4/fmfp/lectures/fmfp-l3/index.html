@@ -756,7 +756,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:08:59.907Z';
+        const searchIndexDate = '2024-04-15T21:09:02.616Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -768,9 +768,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:59.907Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:09:02.616Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:59.907Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:09:02.616Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1036,7 +1036,9 @@ Correctness is rarely obvious =&gt; must be proven</li>
 <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240228200253.png" alt="Pasted image 20240228200253.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/vUmw-5J-dL-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/vUmw-5J-dL-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/vUmw-5J-dL-506.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/vUmw-5J-dL-506.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240228200253.png" alt="Pasted image 20240228200253.png" width=""></picture><br>
-<img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240228200206.png" alt="Pasted image 20240228200206.png"></li>
+<picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240228200206.png" alt="Pasted image 20240228200206.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ZAOcVpdnVF-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ZAOcVpdnVF-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ZAOcVpdnVF-681.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ZAOcVpdnVF-681.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240228200206.png" alt="Pasted image 20240228200206.png" width=""></picture></li>
 </ul>
 </li>
 </ul>
@@ -1046,7 +1048,9 @@ Correctness is rarely obvious =&gt; must be proven</li>
 </ul>
 <h4 id="different-reasoning-strategies" tabindex="-1">Different reasoning strategies</h4>
 <ul>
-<li><strong>equational reasoning</strong> bc. functions are equations <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240308102624.png" alt="Pasted image 20240308102624.png"></li>
+<li><strong>equational reasoning</strong> bc. functions are equations <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240308102624.png" alt="Pasted image 20240308102624.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/EuY7ocPfXV-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/EuY7ocPfXV-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/EuY7ocPfXV-627.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/EuY7ocPfXV-627.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240308102624.png" alt="Pasted image 20240308102624.png" width=""></picture></li>
 <li><strong>reasoning by cases</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240308102827.png" alt="Pasted image 20240308102827.png">
 <ul>
 <li>with inference rules
