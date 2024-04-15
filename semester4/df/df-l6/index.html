@@ -270,6 +270,70 @@
                     
                         
     
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4/FMFP')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">FMFP</span>
+                    </div>
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Semester4/FMFP/Atoms')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;" icon-name="chevron-down"></i>
+                    <i x-show="!isOpen" icon-name="chevron-right"></i>
+                    <span class="foldername">Atoms</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/atoms/unit-type/">Unit type </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/fmfp-interpreters/">FMFP Interpreters </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
     
                     
                         
@@ -572,7 +636,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:05:48.769Z';
+        const searchIndexDate = '2024-04-15T21:05:52.394Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -584,9 +648,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:05:48.769Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:05:52.394Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:05:48.769Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:05:52.394Z', docs}));
             window.docs = docs
             window.index = index;
         }
