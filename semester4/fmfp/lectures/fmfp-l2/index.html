@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>home page</title>
+    <title>FMFP L2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -80,6 +80,7 @@
     
   </head>
   <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section ">
+    
     
     
       
@@ -399,7 +400,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l2/">FMFP L2 </a>
+                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/lectures/fmfp-l2/">FMFP L2 </a>
                 </div>
             
         </div>
@@ -582,7 +583,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">home page </a>
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/">home page </a>
                 </div>
             
         </div>
@@ -592,6 +593,7 @@
     </div>
 
     
+
     
       <div class="search-container" id="globalsearch" onclick="toggleSearch()">
     <div class="search-box">
@@ -996,27 +998,25 @@
     }
 </script>
     
+
     <main class="content cm-s-obsidian ">
       <header>
-      
-
-      <div class="header-meta">
         
-          <div class="header-tags">
-            
+        <div class="header-meta">
+          
+            <div class="header-tags">
               
-            
+                
               
-            
+            </div>
           </div>
-        
-      </div>
       
       
       </header>
       
       
-      
+      <p><a class="internal-link is-unresolved" href="/digital-garden-obsidian/404" target="">Natural deduction</a></p>
+
       
       
     </main>
@@ -1042,6 +1042,39 @@
     
 
     
+        <script>
+      if (window.location.hash) {
+        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
+      }
+      window.addEventListener('hashchange', (evt) => {
+        const oldParts = evt.oldURL.split("#");
+        if (oldParts[1]) {
+          document.getElementById(oldParts[1]).classList.remove('referred');
+        }
+        const newParts = evt.newURL.split("#");
+        if (newParts[1]) {
+          document.getElementById(newParts[1]).classList.add('referred');
+        }
+      }, false);
+      const url_parts = window.location.href.split("#")
+      const url = url_parts[0];
+      const referrence = url_parts[1];
+      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
+        el.ondblclick = function(evt) {
+          const ref_url = url + '#' + evt.target.id
+          navigator.clipboard.writeText(ref_url);
+      }
+      });
+
+      
+    </script>
+    <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="">
+    TIMESTAMP_FORMAT = "MMM dd, yyyy h:mm a";
+    document.querySelectorAll('.human-date').forEach(function (el) {
+        el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
+      });
+</script>
     
     
     <script>
@@ -1051,5 +1084,5 @@ lucide.createIcons({
             }
         });
 </script>
-    </body>
-  </html>
+  </body>
+</html>
