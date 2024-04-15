@@ -876,7 +876,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:10:28.314Z';
+        const searchIndexDate = '2024-04-15T21:10:38.033Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -888,9 +888,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:10:28.314Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:10:38.033Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:10:28.314Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:10:38.033Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1273,11 +1273,15 @@ outputInt :: Int -&gt; IO ()
 </ul>
 <h3 id="basic-actions" tabindex="-1">Basic Actions</h3>
 <ul>
-<li><img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112144.png" alt="Pasted image 20240410112144.png"></li>
+<li><picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112144.png" alt="Pasted image 20240410112144.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/_eixk1_asF-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/_eixk1_asF-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/_eixk1_asF-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/_eixk1_asF-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112144.png" alt="Pasted image 20240410112144.png" width=""></picture></li>
 </ul>
 <h3 id="sequencing" tabindex="-1">Sequencing</h3>
 <ul>
-<li><img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112308.png" alt="Pasted image 20240410112308.png"></li>
+<li><picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112308.png" alt="Pasted image 20240410112308.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/F9O7RE9jyW-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/F9O7RE9jyW-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/F9O7RE9jyW-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/F9O7RE9jyW-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112308.png" alt="Pasted image 20240410112308.png" width=""></picture></li>
 </ul>
 <h3 id="examples-1" tabindex="-1">Examples</h3>
 <pre><code class="language-Haskell">-- printing string on screen
@@ -1317,7 +1321,9 @@ fmap :: (a -&gt; b) -&gt; f a -&gt; f b
 </ul>
 <h3 id="operations" tabindex="-1">operations</h3>
 <ul>
-<li>in applicative functor <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181101.png" alt="Pasted image 20240411181101.png"> mimicks function application <a class="tag" onclick="toggleTagSearch(this)" data-content="#ToDo">#ToDo</a> find symbols for LaTex</li>
+<li>in applicative functor <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181101.png" alt="Pasted image 20240411181101.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/VLjLJihMz1-58.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/VLjLJihMz1-58.jpeg">
+      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181101.png" alt="Pasted image 20240411181101.png" width=""></picture> mimicks function application <a class="tag" onclick="toggleTagSearch(this)" data-content="#ToDo">#ToDo</a> find symbols for LaTex</li>
 </ul>
 <pre><code class="language-Haskell">class Functor f =&gt; Applicative f where
 pure :: a -&gt; f a
@@ -1358,7 +1364,9 @@ fmap f (Node x l r) = Node (f x) (fmap f l) (fmap f r)
 &gt; fmap (*2) (Node 5 Leaf Leaf) = Node 10 Leaf Leaf
 </code></pre>
 <ul>
-<li>applicative functor examples <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181433.png" alt="Pasted image 20240411181433.png"></li>
+<li>applicative functor examples <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181433.png" alt="Pasted image 20240411181433.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bmHGLj9Z8Q-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bmHGLj9Z8Q-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bmHGLj9Z8Q-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bmHGLj9Z8Q-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181433.png" alt="Pasted image 20240411181433.png" width=""></picture></li>
 </ul>
 <h2 id="resources" tabindex="-1">Resources</h2>
 <ul>
