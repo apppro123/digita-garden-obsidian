@@ -647,7 +647,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:08:00.772Z';
+        const searchIndexDate = '2024-04-15T21:08:03.655Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -659,9 +659,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:00.772Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:03.655Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:00.772Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:03.655Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -987,7 +987,9 @@
 <li>e.g. <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329105908.png" alt="Pasted image 20240329105908.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/7D0k-AnwRn-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/7D0k-AnwRn-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/7D0k-AnwRn-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/7D0k-AnwRn-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329105908.png" alt="Pasted image 20240329105908.png" width=""></picture></li>
-<li><strong>implementation</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329105948.png" alt="Pasted image 20240329105948.png"></li>
+<li><strong>implementation</strong> <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329105948.png" alt="Pasted image 20240329105948.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/Ad28wnJODV-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/Ad28wnJODV-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/Ad28wnJODV-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/Ad28wnJODV-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329105948.png" alt="Pasted image 20240329105948.png" width=""></picture></li>
 </ul>
 <h3 id="own-types" tabindex="-1">Own types</h3>
 <ul>
