@@ -800,7 +800,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:09:30.182Z';
+        const searchIndexDate = '2024-04-15T21:09:32.683Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -812,9 +812,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:09:30.182Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:09:32.683Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:09:30.182Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:09:32.683Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1146,12 +1146,8 @@ min x y | x &lt;= y = x
 </ul>
 <h3 id="some-type-classes" tabindex="-1">Some type classes</h3>
 <ul>
-<li><code>Show</code> and <code>Read</code> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190848.png" alt="Pasted image 20240319190848.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/GYikAqw8vS-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/GYikAqw8vS-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/GYikAqw8vS-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/GYikAqw8vS-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190848.png" alt="Pasted image 20240319190848.png" width=""></picture></li>
-<li><code>Foldable</code> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190912.png" alt="Pasted image 20240319190912.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/wuWO7lV8Sh-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/wuWO7lV8Sh-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/wuWO7lV8Sh-680.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/wuWO7lV8Sh-680.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190912.png" alt="Pasted image 20240319190912.png" width=""></picture></li>
+<li><code>Show</code> and <code>Read</code> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190848.png" alt="Pasted image 20240319190848.png"></li>
+<li><code>Foldable</code> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319190912.png" alt="Pasted image 20240319190912.png"></li>
 </ul>
 <h3 id="enumeration-types-disjoint-unions" tabindex="-1">Enumeration types (disjoint unions)</h3>
 <pre><code class="language-Haskell">data Season = Spring | Summer | Fall | Winter
@@ -1190,24 +1186,14 @@ showPerson (Person n a) = n ++ &quot; who is &quot; ++ show a ++ &quot; years ol
 <ul>
 <li>an element of type <code>People</code> consists of a name <code>n</code> and an age <code>a</code> e.g. <code>Person &quot;Uncle George&quot; 85</code></li>
 </ul>
-<h4 id="product-types-versus-tuples-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319191854-png-alt-pasted-image-20240319191854-png" tabindex="-1">Product types versus tuples <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191854.png" alt="Pasted image 20240319191854.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/-jz9BEGe2M-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/-jz9BEGe2M-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/-jz9BEGe2M-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/-jz9BEGe2M-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191854.png" alt="Pasted image 20240319191854.png" width=""></picture></h4>
-<h4 id="enumeration-and-product-types-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319191929-png-alt-pasted-image-20240319191929-png" tabindex="-1">Enumeration and product types <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191929.png" alt="Pasted image 20240319191929.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bNnHSt4Uqo-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bNnHSt4Uqo-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bNnHSt4Uqo-651.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bNnHSt4Uqo-651.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191929.png" alt="Pasted image 20240319191929.png" width=""></picture></h4>
+<h4 id="product-types-versus-tuples-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319191854-png-alt-pasted-image-20240319191854-png" tabindex="-1">Product types versus tuples <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191854.png" alt="Pasted image 20240319191854.png"></h4>
+<h4 id="enumeration-and-product-types-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319191929-png-alt-pasted-image-20240319191929-png" tabindex="-1">Enumeration and product types <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319191929.png" alt="Pasted image 20240319191929.png"></h4>
 <ul>
-<li>general case <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192137.png" alt="Pasted image 20240319192137.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/8wMer9eZbG-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/8wMer9eZbG-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/8wMer9eZbG-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/8wMer9eZbG-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192137.png" alt="Pasted image 20240319192137.png" width=""></picture></li>
+<li>general case <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192137.png" alt="Pasted image 20240319192137.png"></li>
 </ul>
-<h4 id="integration-with-classes-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319192008-png-alt-pasted-image-20240319192008-png" tabindex="-1">Integration with classes <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192008.png" alt="Pasted image 20240319192008.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/pnGuCbBvxL-458.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/pnGuCbBvxL-458.jpeg">
-      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192008.png" alt="Pasted image 20240319192008.png" width=""></picture></h4>
+<h4 id="integration-with-classes-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319192008-png-alt-pasted-image-20240319192008-png" tabindex="-1">Integration with classes <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192008.png" alt="Pasted image 20240319192008.png"></h4>
 <ul>
-<li>or in some cases, class instances can be automatically <strong>derived</strong> <picture src="/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192047.png" alt="Pasted image 20240319192047.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/GvRxgAA10O-486.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/GvRxgAA10O-486.jpeg">
-      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192047.png" alt="Pasted image 20240319192047.png" width=""></picture></li>
+<li>or in some cases, class instances can be automatically <strong>derived</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192047.png" alt="Pasted image 20240319192047.png"></li>
 </ul>
 <h3 id="recursive-types-img-src-img-user-semester4-fmfp-lectures-attachments-pasted-20image-2020240319192218-png-alt-pasted-image-20240319192218-png" tabindex="-1">Recursive types <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/Lectures/attachments/Pasted%20image%2020240319192218.png" alt="Pasted image 20240319192218.png"></h3>
 <ul>
