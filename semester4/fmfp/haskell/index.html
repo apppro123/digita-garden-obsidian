@@ -647,7 +647,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:08:16.651Z';
+        const searchIndexDate = '2024-04-15T21:08:20.782Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -659,9 +659,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:16.651Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:20.782Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:16.651Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:20.782Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1140,8 +1140,12 @@ func1 = do
 </ul>
 <h4 id="cool-applications" tabindex="-1">Cool applications</h4>
 <ul>
-<li>compute with <strong>infinite data</strong> in <strong>finite time</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329151246.png" alt="Pasted image 20240329151246.png"></li>
-<li>implementation of <strong>sieve of Eratosthenes</strong>  <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329151339.png" alt="Pasted image 20240329151339.png"></li>
+<li>compute with <strong>infinite data</strong> in <strong>finite time</strong> <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329151246.png" alt="Pasted image 20240329151246.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/vguoQPxFZ4-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/vguoQPxFZ4-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/vguoQPxFZ4-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/vguoQPxFZ4-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329151246.png" alt="Pasted image 20240329151246.png" width=""></picture></li>
+<li>implementation of <strong>sieve of Eratosthenes</strong>  <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329151339.png" alt="Pasted image 20240329151339.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/2snzbpqmvc-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/2snzbpqmvc-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/2snzbpqmvc-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/2snzbpqmvc-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329151339.png" alt="Pasted image 20240329151339.png" width=""></picture></li>
 </ul>
 <h3 id="2-d-layout" tabindex="-1">2D layout</h3>
 <ul>
