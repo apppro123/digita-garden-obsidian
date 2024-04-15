@@ -811,7 +811,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:07:08.669Z';
+        const searchIndexDate = '2024-04-15T21:07:11.496Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -823,9 +823,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:07:08.669Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:07:11.496Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:07:08.669Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:07:11.496Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1093,7 +1093,9 @@
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/TBjgp2I-IH-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/TBjgp2I-IH-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240314184654.png" alt="Pasted image 20240314184654.png" width=""></picture></h3>
 <h4 id="type-inference-failures" tabindex="-1">type inference failures</h4>
 <ul>
-<li><img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240314184816.png" alt="Pasted image 20240314184816.png"></li>
+<li><picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240314184816.png" alt="Pasted image 20240314184816.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/NYFnWfhCXs-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/NYFnWfhCXs-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/NYFnWfhCXs-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/NYFnWfhCXs-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240314184816.png" alt="Pasted image 20240314184816.png" width=""></picture></li>
 <li><strong>Self application</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240314184747.png" alt="Pasted image 20240314184747.png"></li>
 <li></li>
 </ul>
