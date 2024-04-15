@@ -326,6 +326,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/haskell/">Haskell </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -636,7 +647,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:07:50.586Z';
+        const searchIndexDate = '2024-04-15T21:07:54.528Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -648,9 +659,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:07:50.586Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:07:54.528Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:07:50.586Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:07:54.528Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1240,7 +1251,9 @@ eager (Ap t t’) = case r of
 		  r’ = eager t’
 eager (Lam x t) = Lam x $! (eager t)
 </code></pre>
-<h3 id="more-on-haskell-and-interpreters-img-src-img-user-semester4-fmfp-attachments-pasted-20image-2020240330091131-png-alt-pasted-image-20240330091131-png" tabindex="-1">More on Haskell and interpreters <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240330091131.png" alt="Pasted image 20240330091131.png"></h3>
+<h3 id="more-on-haskell-and-interpreters-img-src-img-user-semester4-fmfp-attachments-pasted-20image-2020240330091131-png-alt-pasted-image-20240330091131-png" tabindex="-1">More on Haskell and interpreters <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240330091131.png" alt="Pasted image 20240330091131.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/_Q-5eSNg8T-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/_Q-5eSNg8T-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/_Q-5eSNg8T-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/_Q-5eSNg8T-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240330091131.png" alt="Pasted image 20240330091131.png" width=""></picture></h3>
 
       
       
