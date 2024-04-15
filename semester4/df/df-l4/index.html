@@ -572,7 +572,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:05:18.836Z';
+        const searchIndexDate = '2024-04-15T21:05:21.436Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -584,9 +584,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:05:18.836Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:05:21.436Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:05:18.836Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:05:21.436Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1027,6 +1027,39 @@
 </ul>
 </li>
 </ul>
+<h2 id="sandwich-attacks" tabindex="-1">Sandwich attacks</h2>
+<ol>
+<li>P1 changes X to Y (value of X decreases and of Y increases)</li>
+<li>P2 changes also X to Y (value of X decreases even more and of Y increases more)</li>
+<li>P1 changes Y to X (gets more X out bc. Y is more valuable then before)</li>
+</ol>
+<h3 id="protection" tabindex="-1">protection</h3>
+<ul>
+<li><strong>optimised trade execution</strong>
+<ul>
+<li>+ simple</li>
+<li>- limited scope</li>
+</ul>
+</li>
+<li><strong>trusted third party ordering</strong>
+<ul>
+<li>+ efficient</li>
+<li>- no decentralisation</li>
+</ul>
+</li>
+<li><strong>committee ordering</strong>
+<ul>
+<li>+ fairly efficient</li>
+<li>- reduced decentralisation</li>
+</ul>
+</li>
+<li><strong>commit &amp; reveal</strong>
+<ul>
+<li>+ secure</li>
+<li>- costly &amp; delay</li>
+</ul>
+</li>
+</ul>
 <h2 id="quiz" tabindex="-1">Quiz</h2>
 <ul>
 <li>Which of the following properties is NOT a desired property for AMM?
@@ -1124,6 +1157,15 @@
                     <li><a href="#amm-arbitrage">AMM arbitrage</a>
             		</li>
                 </ol>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#sandwich-attacks">Sandwich attacks</a>
+            
+                <ol>
+                    
+                    <li><a href="#protection">protection</a>
             		</li>
                 </ol>
             		</li>
