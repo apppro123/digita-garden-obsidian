@@ -647,7 +647,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:08:03.655Z';
+        const searchIndexDate = '2024-04-15T21:08:09.760Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -659,9 +659,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:03.655Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:08:09.760Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:03.655Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:08:09.760Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1086,7 +1086,9 @@ f x = x*x
 do it yourself, but becomes simple and natural with practice.”<br>
 - G. Hutton, Programming in Haskell</p>
 </blockquote>
-<p><img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240308133744.png" alt="Pasted image 20240308133744.png"></p>
+<p><picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240308133744.png" alt="Pasted image 20240308133744.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/MkW1kBayvF-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/MkW1kBayvF-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/MkW1kBayvF-683.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/MkW1kBayvF-683.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240308133744.png" alt="Pasted image 20240308133744.png" width=""></picture></p>
 <h3 id="higher-order-functions" tabindex="-1">Higher-order functions</h3>
 <ul>
 <li>just higher order, if function takes function(s) as input <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240308203127.png" alt="Pasted image 20240308203127.png"></li>
