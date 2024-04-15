@@ -636,7 +636,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T21:06:03.499Z';
+        const searchIndexDate = '2024-04-15T21:06:09.563Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -648,9 +648,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:03.499Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T21:06:09.563Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:03.499Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T21:06:09.563Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1046,7 +1046,9 @@ p &gt;&gt;= g = Prs (\s -&gt; [ (u,s’’) | (t,s’ ) &lt;- parse p s,
 <li><strong>careful</strong>: left-recursive grammars lead to non-terminating recursion</li>
 </ul>
 </li>
-<li><strong>Concrete</strong> <img src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194547.png" alt="Pasted image 20240329194547.png">
+<li><strong>Concrete</strong> <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194547.png" alt="Pasted image 20240329194547.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/09seLqXcAX-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/09seLqXcAX-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/09seLqXcAX-671.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/09seLqXcAX-671.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240329194547.png" alt="Pasted image 20240329194547.png" width=""></picture>
 <ul>
 <li>parse repeated operation/atom pairs after initial atom</li>
 <li>obtain left associativity using <strong>fold-left</strong> over list of these pairs</li>
