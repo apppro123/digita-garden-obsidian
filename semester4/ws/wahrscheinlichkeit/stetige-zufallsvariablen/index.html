@@ -765,6 +765,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/ws-definitionen-notationen/">WS Definitionen, Notationen </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -952,7 +963,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-16T21:45:26.256Z';
+        const searchIndexDate = '2024-04-16T21:45:31.428Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -964,9 +975,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T21:45:26.256Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T21:45:31.428Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T21:45:26.256Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T21:45:31.428Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1265,13 +1276,21 @@ In anderen Worten, es gilt <mjx-container class="MathJax" jax="SVG" style="direc
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/-B97bw1xxe-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/-B97bw1xxe-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/-B97bw1xxe-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175236.png" alt="Pasted image 20240402175236.png" width=""></picture>
 <ul>
-<li>Intuition: <img src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175453.png" alt="Pasted image 20240402175453.png"></li>
-<li>Eigenschaften: <img src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175518.png" alt="Pasted image 20240402175518.png"></li>
+<li>Intuition: <picture src="/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175453.png" alt="Pasted image 20240402175453.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/BLQNUUxvFO-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/BLQNUUxvFO-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/BLQNUUxvFO-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/BLQNUUxvFO-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175453.png" alt="Pasted image 20240402175453.png" width=""></picture></li>
+<li>Eigenschaften: <picture src="/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175518.png" alt="Pasted image 20240402175518.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/KLPiYMr4A9-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/KLPiYMr4A9-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/KLPiYMr4A9-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/KLPiYMr4A9-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175518.png" alt="Pasted image 20240402175518.png" width=""></picture></li>
 </ul>
 </li>
-<li><a class="tag" onclick="toggleTagSearch(this)" data-content="#Example">#Example</a> 3.45 <strong>Cauchy-Verteilung</strong>: <img src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175559.png" alt="Pasted image 20240402175559.png">
+<li><a class="tag" onclick="toggleTagSearch(this)" data-content="#Example">#Example</a> 3.45 <strong>Cauchy-Verteilung</strong>: <picture src="/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175559.png" alt="Pasted image 20240402175559.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/wzEJvNKveL-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/wzEJvNKveL-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/wzEJvNKveL-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/wzEJvNKveL-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175559.png" alt="Pasted image 20240402175559.png" width=""></picture>
 <ul>
-<li><img src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175615.png" alt="Pasted image 20240402175615.png"></li>
+<li><picture src="/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175615.png" alt="Pasted image 20240402175615.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/b1j0_kJXn2-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/b1j0_kJXn2-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/b1j0_kJXn2-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/b1j0_kJXn2-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175615.png" alt="Pasted image 20240402175615.png" width=""></picture></li>
 </ul>
 </li>
 </ul>
