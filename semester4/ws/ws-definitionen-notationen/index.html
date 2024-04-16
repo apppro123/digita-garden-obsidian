@@ -963,7 +963,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-16T21:45:31.428Z';
+        const searchIndexDate = '2024-04-16T21:45:37.191Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -975,9 +975,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T21:45:31.428Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T21:45:37.191Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T21:45:31.428Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T21:45:37.191Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1222,7 +1222,9 @@
       </header>
       
       
-      <p><img src="/digital-garden-obsidian/img/user/Semester4/WS/attachments/Pasted%20image%2020240306133918.png" alt="Pasted image 20240306133918.png"></p>
+      <p><picture src="/img/user/Semester4/WS/attachments/Pasted%20image%2020240306133918.png" alt="Pasted image 20240306133918.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/5x4EcUu7vx-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/5x4EcUu7vx-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/5x4EcUu7vx-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/5x4EcUu7vx-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/attachments/Pasted%20image%2020240306133918.png" alt="Pasted image 20240306133918.png" width=""></picture></p>
 
       
       
