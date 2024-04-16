@@ -726,6 +726,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/wahrscheinlichkeit/stetige-zufallsvariablen/">Stetige Zufallsvariablen </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -941,7 +952,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-16T21:45:16.775Z';
+        const searchIndexDate = '2024-04-16T21:45:21.449Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -953,9 +964,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T21:45:16.775Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-16T21:45:21.449Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T21:45:16.775Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-16T21:45:21.449Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1267,7 +1278,7 @@ Für jedes <mjx-container class="MathJax" jax="SVG" style="direction: ltr; posit
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/3y6o-yDEGH-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/3y6o-yDEGH-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/Lectures/attachments/Pasted%20image%2020240402171959.png" alt="Pasted image 20240402171959.png" width=""></picture></li>
 </ul>
 </div></div>
-<p><a class="internal-link is-unresolved" href="/digital-garden-obsidian/404" target="">Stetige Zufallsvariablen</a></p>
+<p><a class="internal-link" target="" data-note-icon="" href="/digital-garden-obsidian/semester4/ws/wahrscheinlichkeit/stetige-zufallsvariablen/">Stetige Zufallsvariablen</a></p>
 
       
       
