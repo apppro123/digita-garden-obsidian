@@ -60,3 +60,4 @@
 >Eine Folge von Zufallsvariablen $X_{1},X_{2}$ heisst
 >- **unabhängig** falls $X_{1},\dots,X_{n}$ für alle $n\in\mathbb{N}$ unabhängig sind.
 >- **unabhängig und identisch verteilt** ( #short u.i.v.) ( #english independent and identically distributed ( #short i.i.d.)) falls sie unabhängig ist und die Zufallsvariablen dieselbe Verteilungsfunktion haben d.h. für alle $k,l\in\mathbb{N}$ gilt $F_{X_{k}}=F_{X_{l}}$
+
