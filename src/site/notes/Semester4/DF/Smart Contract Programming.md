@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/semester4/df/smart-contract-programming/"}
 ---
 
-
 ## Ethereum
 - **content**: address, balance, code, memory on the VM
 - **transactions**
