@@ -16,3 +16,8 @@
 	- Herleitung: Für jeden der $m$ Plätze sind jeweils $n$ Elemente zur Auswahl.
 ### Example
 - ![Pasted image 20240311072045.png](/img/user/Semester4/WS/attachments/Pasted%20image%2020240311072045.png)
+## Standardnormalverteilung
+#short #wikipedia [Standardnormalverteilungstabelle](https://de.wikipedia.org/wiki/Standardnormalverteilungstabelle)
+- negative Werte: $\phi(-x)=1-\phi(x)$
+### Standardnormalverteilungstabelle
+- ![Pasted image 20240421174555.png](/img/user/Semester4/WS/attachments/Pasted%20image%2020240421174555.png)
