@@ -1050,7 +1050,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-28T21:28:58.264Z';
+        const searchIndexDate = '2024-05-28T21:29:01.528Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1062,9 +1062,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:28:58.264Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:29:01.528Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:28:58.264Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:29:01.528Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1336,9 +1336,13 @@
 <li><strong>frontrunning</strong> <picture src="/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240524155126.png" alt="Pasted image 20240524155126.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/LXfvhosWys-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/LXfvhosWys-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/LXfvhosWys-692.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/LXfvhosWys-692.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240524155126.png" alt="Pasted image 20240524155126.png" width=""></picture></li>
-<li><strong>sandwiching</strong> <img src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240524155219.png" alt="Pasted image 20240524155219.png">
+<li><strong>sandwiching</strong> <picture src="/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240524155219.png" alt="Pasted image 20240524155219.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/XDNSGxssMb-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/XDNSGxssMb-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/XDNSGxssMb-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/XDNSGxssMb-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240524155219.png" alt="Pasted image 20240524155219.png" width=""></picture>
 <ul>
-<li>sandwiching = bad execution<img src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240525160137.png" alt="Pasted image 20240525160137.png">
+<li>sandwiching = bad execution<picture src="/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240525160137.png" alt="Pasted image 20240525160137.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/DE0Ak-ZJUH-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/DE0Ak-ZJUH-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/DE0Ak-ZJUH-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/DE0Ak-ZJUH-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240525160137.png" alt="Pasted image 20240525160137.png" width=""></picture>
 <ul>
 <li>because bots go to the edge of the possible to maximise profit</li>
 </ul>
