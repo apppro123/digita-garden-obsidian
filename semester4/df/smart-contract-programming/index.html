@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WS Definitionen, Notationen</title>
+    <title>Smart Contract Programming</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -266,7 +266,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/smart-contract-programming/">Smart Contract Programming </a>
+                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/smart-contract-programming/">Smart Contract Programming </a>
                 </div>
             
         </div>
@@ -780,7 +780,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/ws-definitionen-notationen/">WS Definitionen, Notationen </a>
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/ws/ws-definitionen-notationen/">WS Definitionen, Notationen </a>
                 </div>
             
         </div>
@@ -1233,9 +1233,30 @@
       </header>
       
       
-      <p><picture src="/img/user/Semester4/WS/attachments/Pasted%20image%2020240306133918.png" alt="Pasted image 20240306133918.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/5x4EcUu7vx-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/5x4EcUu7vx-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/5x4EcUu7vx-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/5x4EcUu7vx-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/attachments/Pasted%20image%2020240306133918.png" alt="Pasted image 20240306133918.png" width=""></picture></p>
+      <h2 id="ethereum" tabindex="-1">Ethereum</h2>
+<ul>
+<li><strong>content</strong>: address, balance, code, memory on the VM</li>
+<li><strong>transactions</strong>
+<ul>
+<li><strong>direct transfer of Ether</strong>: sender, receiver, amount/Ether, maybe some input (text saved to the blockchain), signed with private key of sender, gas price
+<ul>
+<li>to contracts: sender, receiver = contract address, amount/Ether, signed with private key of sender, gas price</li>
+</ul>
+</li>
+<li><strong>contract creation</strong>: sender, receiver = 0x0..0, amound/Ether, input = code of the contract being created (bytecode), signed with the private key of the sender, gas price =&gt; creates new address for contract and stores code, memory, money at that address</li>
+<li><strong>contract function call</strong>: sender, receiver = contract address, possible some amount/Ether, input = functionName(input1, input2, ...), signed with private key of sender, gas price</li>
+</ul>
+</li>
+</ul>
+<h3 id="solidity" tabindex="-1">Solidity</h3>
+<ul>
+<li>object(contract)-oriented language</li>
+<li>constructor function</li>
+</ul>
+<h4 id="variables" tabindex="-1">Variables</h4>
+<ul>
+<li>public, private</li>
+</ul>
 
       
       
@@ -1250,6 +1271,35 @@
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#ethereum">Ethereum</a>
+            
+                <ol>
+                    
+                    <li><a href="#solidity">Solidity</a>
+            
+                <ol>
+                    
+                    <li><a href="#variables">Variables</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   
