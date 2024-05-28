@@ -1,0 +1,52 @@
+---
+{"dg-publish":true,"permalink":"/semester4/df/lectures/df-l8-mev-programming/"}
+---
+
+- Maximal extractable value #short MEV
+- Value extractable from transactions by block producers through:
+	- Including
+	- Excluding
+	- Reordering
+- default transaction ordering is per gas paid (first the one with highest gas)
+- priority gas auctions
+	- public bids
+	- all-pay auction
+		- losers pay too (wastes blockspace)
+## Making money
+- **atomic arbitrage** e.g. automated by a bot over two different exchanges
+- **frontrunning** ![Pasted image 20240524155126.png](/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240524155126.png)
+- **sandwiching** ![Pasted image 20240524155219.png](/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240524155219.png)
+	- sandwiching = bad execution![Pasted image 20240525160137.png](/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240525160137.png)
+		- because bots go to the edge of the possible to maximise profit
+- **consensus instability** by having very powerful miners ![Pasted image 20240525160605.png](/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240525160605.png)
+- **uncle bandit attacks** ![Pasted image 20240527111258.png](/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240527111258.png)
+## Quiz
+- What type of language is Solidity?
+	- scripting language
+	- object oriented language \[correct]
+	- low level language
+	- transaction stack language
+- MyContract defines a smart contract that ![Pasted image 20240524111929.png](/img/user/Semester4/DF/attachments/Pasted%20image%2020240524111929.png)
+	- stores a number and allows anyone to read and modify it
+	- stores a number and allows only the contract owner to read and modify it
+	- allows anyone to become the owner and read and modify the number
+	- allows anyone to read the number but only the contract owner can modify it. \[correct]
+- Which of the following functions do not modify state?
+	- using selfdestruct
+	- sending Ether via calls
+	- reading from state variables \[correct]
+	- calling any function not marked pure or view
+- What are the required functions that must be implemented by an ERC20-compliant token?
+	- make(), pay(), checkBalance(), grant(), receiveTokens()
+	- buy(), withdraw(), getTokens(), allow(), deposit()
+	- create(), send(), getBalance(), authorize(), receive()
+	- mint(), transfer(), balanceOf(), approve(), transferFrom() \[correct]
+- What is the purpose of a fallback function in a smart contract?
+	- to replace all function calls when there is an out of gas error
+	- to provide a default function that is called when no other function matches the function call \[correct]
+	- to handle errors that occur during contract execution
+	- to prevent reentrancy attacks by pausing execution until the current function call completes
+- What value does the mystery function return on input 7?
+	- 13
+- What is the max. number of bits an integer can have in Solidity?
+	- 256
