@@ -15,7 +15,8 @@
 	- typically, lower fees than buying individual stocks
 	- EFT types: bond, stock, industry, commodity, currency, inverse, etc
 	- e.g. SPDR S&P 500 ETF tracks the S&P 500 index
-- **decentralised autonomous organisation** ( #short DAO): e.g. [[Semester4/DF/DF L6#MakerDAO ! Pasted image 20240405232329.png\|MakerDAO]]
+- **decentralised autonomous organisation** ( #short DAO): e.g. [[Semester4/DF/Lectures/DF L6#MakerDAO ! Pasted image 20240405232329.png\|MakerDAO]])
+- **address verification service** ( #short AVS): to prevent fraud by detecting suspicious transactions (e.g. for credit cards)
 ### Lending
 - **collateral**: assets that serve as a security deposit
 - **Over-collateralisation**: Borrower has to provide value(collateral assets) > value(granted loan)
