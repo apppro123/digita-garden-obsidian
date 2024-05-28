@@ -15,7 +15,10 @@
 >Gegeben: Zufallsvariable $X$
 >$X$ hat eine negativbinomaile Verteilung mit Parameter $r\in\mathbb{N}$ und $p\in[0,1]$, wir schreiben $X\in \operatorname{NBin}(r,p)$, wenn für alle $k\in\{r,r+1,r+2,\dots\}$ gilt:
 >$$\mathbb{P}[X=k]=\pmatrix{k-1\\r-1}p^{r}(1-p)^{k-r}$$
->Das ist eine Verallgemeinerung der geometrischen Verteilung und beschreibt die Wartezeit bis zum r -ten Erfolg in einer unendlichen Folge von Bernoulli-Experimenten. Die geometrische Verteilung erhält man als Spezialfall für $r=1$
+>- Das ist eine Verallgemeinerung der geometrischen Verteilung, welche durch $r=1$ erhältlich ist.
+>- Intuition: Warten auf den $r$-ten Erfolg, wobei die W'keit, dass es genau $k$ Versuche braucht, aus zwei Teilen zusammensetzt
+>	1. W'keit, dass in den ersten $k-1$ Versuchen genau $r-1$ Erfolge eingetroffen sind
+>	2. W'keit, dass $k$-ter Versuch ein Erfolg ist
 
 >[!info] #Theorem 3.27 
 >Gegeben: unendliche Folge von unabhängigen Bernoulli-Zufallsvariablen $X_{1},X_{2}$ mit Parameter $p$
@@ -29,17 +32,20 @@
 > $$\mathbb{P}[X=k]=\frac{\pmatrix{r\\k}\pmatrix{n-r\\m-k}}{\pmatrix{n\\m}}$$
 > Diese Gewichtsfunktion kommt wie folgt zustande
 > #Theorem 3.30 Seien in einer Urne $n$ Gegenstände, davon $r$ vom Typ $1$ und $n-r$ vom Typ $2$. Es werden $m$ Gegenstände ohne Zurücklegen gezogen. Sei $X$ nun die Anzahl der gezogenen Gegenstände vom Typ $1$. Dann ist $X$ hypergeometrisch mit den Parametern von oben verteilt.
+> - #remark TA
+> 	- Zähler: Anzahl Arten genau $k$ Gegenstände von Typ $1$ und $m-k$ von Typ 2 zu ziehen.
+> 	- Nenner: Anzahl Arten $m$ Gegenstände zu ziehen.
 > >[!info]- Beweis
 > >![Pasted image 20240402164835.png](/img/user/Semester4/WS/Lectures/attachments/Pasted%20image%2020240402164835.png)
 > 
 > #Example 3.31 Lotto 
 > Im Schweizer Lotto, wo 6 aus 42 zahlen richtig getippt werden sollen, ist die Anzahl der richtigen getippten Zahlen bei einem einzelnen Tipp hypergeometrisch verteilt mit Parametern $n=42,r=6,m=6$. ![Pasted image 20240402165017.png](/img/user/Semester4/WS/Lectures/attachments/Pasted%20image%2020240402165017.png)
 
->[!info] Poisson-Verteilung
+>[!info] **Poisson-Verteilung**
 >Gegeben: positive reelle Zahl $\lambda>0$
 >Eine Zufallsvariable $X$ heisst Poisson-verteilt mit Parameter $\lambda$, wir schreiben $X\sim\operatorname{Poisson}(\lambda)$, wenn sie Werte $\mathbb{N}$ annimt und für alle $k\in\mathbb{N}_{0}$ gilt
 >$$\mathbb{P}[X=k]=\frac{\lambda^{k}}{k!}e^{-\lambda}$$ 
-
+> - Gebrauch: Die Poisson-Verteilung approximiert dei Binomialverteilung für grosse $n$. Das ist nützlich, da die Gewichtsfunktion der Poissonverteilung deutlich einfacher zu berechnen ist.
  >[!info] #Theorem 3.34 **Poisson-Approximation der Binomialverteilung**
  >Gegeben: $\lambda>0$ 
  >Für jedes $n\geq 1$ betrachten wir $n$ Zufallsvariablen $X_{n}\sim\operatorname{Bin}(n,\lambda)$. Sei $N\sim \operatorname{Poisson}(\lambda)$. Dann gilt für alle $k\in\mathbb{N}$
