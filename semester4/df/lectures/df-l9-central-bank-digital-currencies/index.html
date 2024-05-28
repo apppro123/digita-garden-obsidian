@@ -1105,7 +1105,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-28T21:27:19.144Z';
+        const searchIndexDate = '2024-05-28T21:27:26.898Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1117,9 +1117,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:27:19.144Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:27:26.898Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:27:19.144Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:27:26.898Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1436,7 +1436,9 @@ is an electronic form of the national currency available to the public</p>
 <li>Infrastructure: How is access provided by CB?</li>
 </ul>
 </li>
-<li>monetary system with retail CBDC <img src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240527115743.png" alt="Pasted image 20240527115743.png">
+<li>monetary system with retail CBDC <picture src="/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240527115743.png" alt="Pasted image 20240527115743.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/HsvNSEopFj-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/HsvNSEopFj-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/HsvNSEopFj-680.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/HsvNSEopFj-680.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240527115743.png" alt="Pasted image 20240527115743.png" width=""></picture>
 <ul>
 <li>different types of CBDC (with multiple tiers) <img src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240528081915.png" alt="Pasted image 20240528081915.png"></li>
 </ul>
