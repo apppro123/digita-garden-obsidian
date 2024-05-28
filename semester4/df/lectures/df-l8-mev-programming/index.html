@@ -1050,7 +1050,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-28T21:29:05.573Z';
+        const searchIndexDate = '2024-05-28T21:29:12.477Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1062,9 +1062,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:29:05.573Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:29:12.477Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:29:05.573Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:29:12.477Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1352,9 +1352,7 @@
 <li><strong>consensus instability</strong> by having very powerful miners <picture src="/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240525160605.png" alt="Pasted image 20240525160605.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/2Mh7OjJz3d-500.webp" type="image/webp">
       <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/2Mh7OjJz3d-500.jpeg">
       <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/2Mh7OjJz3d-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/2Mh7OjJz3d-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240525160605.png" alt="Pasted image 20240525160605.png" width=""></picture></li>
-<li><strong>uncle bandit attacks</strong> <picture src="/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240527111258.png" alt="Pasted image 20240527111258.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/gDIraELsGd-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/gDIraELsGd-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/gDIraELsGd-692.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/gDIraELsGd-692.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240527111258.png" alt="Pasted image 20240527111258.png" width=""></picture></li>
+<li><strong>uncle bandit attacks</strong> <img src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240527111258.png" alt="Pasted image 20240527111258.png"></li>
 </ul>
 <h2 id="quiz" tabindex="-1">Quiz</h2>
 <ul>
