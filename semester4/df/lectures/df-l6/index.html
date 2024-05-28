@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Monads</title>
+    <title>DF L6</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -248,7 +248,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/lectures/df-l6/">DF L6 </a>
+                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/df/lectures/df-l6/">DF L6 </a>
                 </div>
             
         </div>
@@ -679,7 +679,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/monads/">Monads </a>
+                <div @click.stop="" class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden-obsidian/semester4/fmfp/monads/">Monads </a>
                 </div>
             
         </div>
@@ -1342,242 +1342,113 @@
       </header>
       
       
-      <ul>
-<li><a class="tag" onclick="toggleTagSearch(this)" data-content="#Idea">#Idea</a> separate values from computation producing the values
+      <h2 id="economic-models" tabindex="-1">Economic models</h2>
 <ul>
-<li><code>f :: a -&gt; b</code> ordinary function, returns value of type <code>b</code></li>
-<li><code>f :: a -&gt; M b</code> <strong>monadic</strong> function, returns computation <code>M b</code>
+<li><strong>represents</strong> (often simplifies) an economic process</li>
+<li><strong>contains</strong> <a class="internal-link" target="" data-note-icon="" href="/digital-garden-obsidian/semester4/df/lectures/df-l6/#variables"><a class="tag" onclick="toggleTagSearch(this)" data-content="#Variables">#Variables</a></a></li>
+<li>logical/quantitative <strong>relationships</strong> between variables</li>
+<li>example: inflation
 <ul>
-<li><code>M</code> is a <strong>type constructor</strong> satisfying certain properties (monad laws)</li>
-<li>by varying <code>M</code>, we can model different notions of computation</li>
+<li>measuring inflation requires a behaviour model bc. it depends on behaviour of individuals e.g. what/how much food they buy =&gt; how money is used</li>
+<li>differentiate relative vs. inflation price change</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>Monad is a <strong>type constructor</strong> in the monad type class</li>
-<li><strong>imagine</strong> a monad as a container which &quot;wraps&quot; a value</li>
-<li>explains side-effects in a functional context and helps designing controlled side-effects
+<h3 id="variables" tabindex="-1">Variables</h3>
 <ul>
-<li>fine-grained control of side effects possible</li>
-<li>can model computational effects that are not present in imperative languages</li>
+<li>Interest rate(s) in CeFi and DeFi</li>
+<li>cryptocurrency price</li>
+<li>collateral ratio</li>
+<li>DeFi protocol fees</li>
+<li>blockchain transaction fees</li>
+<li>number of users</li>
+<li>blockchain transaction throughput</li>
+<li>...</li>
+</ul>
+<h4 id="exogenous-vs-endogenous" tabindex="-1">Exogenous vs. endogenous</h4>
+<ul>
+<li><strong>Exogenous</strong> variable == <strong>outside</strong> force
+<ul>
+<li>determined outside model, imposed on model</li>
+<li>e.g. in MakerDAO, asset price of collateral (e.g. ETH), is independent of the MakerDAO system</li>
 </ul>
 </li>
+<li><strong>Endogenous</strong> variable == <strong>inside</strong> the model</li>
 </ul>
-<h2 id="properties" tabindex="-1">Properties</h2>
+<h2 id="stablecooins" tabindex="-1">Stablecooins</h2>
+<h3 id="types" tabindex="-1">Types</h3>
 <ul>
-<li>every monad supports 2 <strong>basic operations</strong>
+<li><strong>Types</strong>
 <ul>
-<li><strong>embedding a value</strong> into a computation</li>
-<li><strong>composing computations</strong></li>
-</ul>
-</li>
-</ul>
-<pre><code class="language-Haskell">class Monad m where
-	-- return and bind are mathematical core
-	return :: a -&gt; m a
-	(&gt;&gt;=) :: m a -&gt; (a -&gt; m b) -&gt; m b -- bind
-	
-	-- shortcut for convenience, when second computatin
-	-- doesn't depend on result of first
-	(&gt;&gt;) :: m a -&gt; m b -&gt; m b
-	m1 &gt;&gt; m2 = m1 &gt;&gt;= (\_ -&gt; m2)
-	
-	-- not partof mathematical concept of a monad
-	-- called on pattern matching error in do-notation
-	fail :: String -&gt; m a
-
--- instances
-instance Monad Maybe where
-	return x       = Just x
-	Nothing &gt;&gt;= _  = Nothing
-	(Just x) &gt;&gt;= f = f x
-</code></pre>
-<h3 id="monad-laws" tabindex="-1">Monad laws</h3>
-<p>Monad operations must satisfy</p>
-<ul>
-<li>(1) <code>return x &gt;&gt;= f = f x</code> <strong>left unit</strong></li>
-<li>(2) <code>m &gt;&gt;= return = m</code> <strong>right unit</strong></li>
-<li>(3) <code>(m &gt;&gt;= f) &gt;&gt;= g = m &gt;&gt;= (\x -&gt; (f x &gt;&gt;= g))</code> <strong>associativity</strong></li>
-</ul>
-<h2 id="examples" tabindex="-1">Examples</h2>
-<h3 id="monad" tabindex="-1">monad</h3>
-<pre><code class="language-Haskell">data Maybe a = Nothing | Just a
-
--- e.g. for making a safe division
-safeDiv::Int -&gt; Int -&gt; Maybe Int
-safeDiv n d
-	| d /= 0 = Just (n `div`d)
-	| otherwise = Nothing
-</code></pre>
-<h3 id="computation-with-monads" tabindex="-1">Computation with monads</h3>
-<pre><code class="language-Haskell">-- idea: computation takes a state of type s and transforms it into
--- a result of type a and a successor state of type s
-data State s a = State (s -&gt; (a,s)) -- here s is just a type, not an argument so in reality s on left hand side doesn't have to be s on right hand side, but they just have to be the same type!
-
--- state access: read current value of state without changing it
-get :: State s s
-get = State (\s -&gt; (s,s))
-
--- state update: write a new state value ignoring the current state
-put :: s -&gt; State s ()
-put t = State (\s -&gt; ((), t))
-
--- auxiliary function that opens monad and 
--- runs computation from initial state s0
-runState :: (State s a) -&gt; (s -&gt; (a, s))
-runState (State m) s0 = m s0 -- bc. `(State m)` returns a function (see data State s a) which takes s0 as an argument; I just don't know yet, why this is not reflected in the data type of runState (why there is not another input)
-
--- return embeds a value into a stateful computation
-return :: a -&gt; State s a
-return x = State (\s -&gt; (x,s))
-
--- Bind composes two stateful computations with value binding
-(&gt;&gt;=) :: State s a -&gt; (a -&gt; State s b) -&gt; State s b
-m &gt;&gt;= k = State (\s -&gt; let (x, t) = runState m s 
-						in runState (k x) t)
-</code></pre>
-<ul>
-<li>application of state monad in <strong>counter</strong> <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410104944.png" alt="Pasted image 20240410104944.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/b42bWEzHkD-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/b42bWEzHkD-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/b42bWEzHkD-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/b42bWEzHkD-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410104944.png" alt="Pasted image 20240410104944.png" width=""></picture>
-<ul>
-<li>state monad <strong>encapsulate program composition</strong></li>
-<li><strong>run program</strong>: invoke <code>runState tick s0</code> where <code>s0</code> is some initial state</li>
-</ul>
-</li>
-<li>application of state monad in <strong>tree renaming</strong>
-<ul>
-<li>as reference: <strong>without</strong> state monad =&gt; ugly plumbing needed to thread <code>state</code> through two recursive calls <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105359.png" alt="Pasted image 20240410105359.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/zYB_tUmKkS-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/zYB_tUmKkS-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/zYB_tUmKkS-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/zYB_tUmKkS-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105359.png" alt="Pasted image 20240410105359.png" width=""></picture></li>
-<li><strong>state monad</strong> takes care of all the plumbing <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105143.png" alt="Pasted image 20240410105143.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/a75C26DPSa-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/a75C26DPSa-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/a75C26DPSa-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/a75C26DPSa-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105143.png" alt="Pasted image 20240410105143.png" width=""></picture></li>
-<li>or with more <strong>abstraction</strong> <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105239.png" alt="Pasted image 20240410105239.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/FOeqtUGImz-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/FOeqtUGImz-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/FOeqtUGImz-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/FOeqtUGImz-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410105239.png" alt="Pasted image 20240410105239.png" width=""></picture></li>
+<li><strong>Reserved-based</strong> e.g. USDC by a bank</li>
+<li><strong>collateral-based</strong>: e.g. MakerDAO</li>
+<li><strong>algorithmic</strong> e.g. AMPL</li>
 </ul>
 </li>
 </ul>
-<h2 id="input-ouput" tabindex="-1">Input/Ouput</h2>
+<h4 id="maker-dao-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405232329-png-alt-pasted-image-20240405232329-png" tabindex="-1">MakerDAO <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232329.png" alt="Pasted image 20240405232329.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/UmnJfLyJ8v-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/UmnJfLyJ8v-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/UmnJfLyJ8v-587.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/UmnJfLyJ8v-587.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232329.png" alt="Pasted image 20240405232329.png" width=""></picture></h4>
 <ul>
-<li><strong>problematic</strong> bc. we don't know what we get as an input from user =&gt; reasoning would no longer be sound <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410110528.png" alt="Pasted image 20240410110528.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/CInGW8_8es-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/CInGW8_8es-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/CInGW8_8es-506.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/CInGW8_8es-506.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410110528.png" alt="Pasted image 20240410110528.png" width=""></picture>
+<li>to be profitable: assumption that ETH goes up and you can get even more with this DAI =&gt; with drawn DAI get even more ETH =&gt; later change back and have more in all</li>
+</ul>
+<h4 id="ampleforth" tabindex="-1">Ampleforth</h4>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> AMPL</p>
 <ul>
-<li>bc. result depends on order in which the argument are evaluated</li>
-<li>I/O-functions have side effects =&gt; state of world ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#disclaimerN">#disclaimerN</a> nice name^^) changes</li>
-<li>e.g. <code>IO Int</code> not same as <code>Int</code> e.g. you cannot subtract bc. <code>IO Int</code> is monadic</li>
+<li><picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png" alt="Pasted image 20240405232646.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-568.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/62GjiFagWG-568.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232646.png" alt="Pasted image 20240405232646.png" width=""></picture></li>
+<li>systemic implications <a class="tag" onclick="toggleTagSearch(this)" data-content="#ToDo">#ToDo</a> don't know yet</li>
+</ul>
+<h4 id="usdc-and-usdt" tabindex="-1">USDC and USDT</h4>
+<ul>
+<li>destroys coins <picture src="/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png" alt="Pasted image 20240405232749.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-568.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/ioy8vJtnoW-568.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/attachments/Pasted%20image%2020240405232749.png" alt="Pasted image 20240405232749.png" width=""></picture><br>
+<a class="internal-link" target="" data-note-icon="" href="/digital-garden-obsidian/semester4/df/decentralised-finance/#bank-run">Decentralised Finance#Bank run</a></li>
+</ul>
+<h2 id="quiz" tabindex="-1">Quiz</h2>
+<ul>
+<li>Which stable coin is the most stable? ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#remarkN">#remarkN</a> atm)
+<ul>
+<li>USDC [correct]</li>
+<li>DAI</li>
+<li>AMPL</li>
+<li>ETH</li>
 </ul>
 </li>
-</ul>
-<pre><code class="language-Haskell">inputInt :: IO Int
-inputString :: IO String
-outputInt :: Int -&gt; IO ()
-</code></pre>
+<li>Which of the following statements is False?
 <ul>
-<li><code>()</code> is the unit type in Haskell <a class="internal-link" target="" data-note-icon="" href="/digital-garden-obsidian/semester4/fmfp/atoms/unit-type/#haskell">Unit type#Haskell</a></li>
+<li>Several algorithmic stablecoins have depegged.</li>
+<li>DAI is a collateral based stablecoin, where e.g. ETH is used as collateral</li>
+<li>WBTC token prices should be pegged to BTC price</li>
+<li>ETH is more stable than USDC [correct]</li>
 </ul>
-<h3 id="basic-actions" tabindex="-1">Basic Actions</h3>
-<ul>
-<li><picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112144.png" alt="Pasted image 20240410112144.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/_eixk1_asF-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/_eixk1_asF-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/_eixk1_asF-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/_eixk1_asF-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112144.png" alt="Pasted image 20240410112144.png" width=""></picture></li>
-</ul>
-<h3 id="sequencing" tabindex="-1">Sequencing</h3>
-<ul>
-<li><picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112308.png" alt="Pasted image 20240410112308.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/F9O7RE9jyW-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/F9O7RE9jyW-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/F9O7RE9jyW-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/F9O7RE9jyW-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240410112308.png" alt="Pasted image 20240410112308.png" width=""></picture></li>
-</ul>
-<h3 id="examples-1" tabindex="-1">Examples</h3>
-<pre><code class="language-Haskell">-- printing string on screen
-putString :: String -&gt; IO ()
-putString &quot;&quot;     = return ()
-putString (x:xs) = do putChar x; putString xs
-
--- reading string from keyboard
-getString :: IO String
-getString = do c &lt;- getChar
-				if c == ’\n’
-				then return &quot;&quot;
-				else do cs &lt;- getString
-					return (c:cs)
-					
--- hello world (what else)
-main :: IO ()
-main = do putString &quot;Hi, I am HAL. Who are you?\n&quot;
-name &lt;- getString
-putString (&quot;Hello &quot; ++ name ++ &quot;!\n&quot;)
-</code></pre>
-<h2 id="functors" tabindex="-1">Functors</h2>
-<ul>
-<li>when you instantiate <code>Monad</code>, you must instantiate <code>Functor</code> and <code>Applicative</code> too</li>
-</ul>
-<pre><code class="language-Haskell">class Functor f where
-fmap :: (a -&gt; b) -&gt; f a -&gt; f b
-</code></pre>
-<h3 id="laws" tabindex="-1">Laws</h3>
-<ul>
-<li>Functor instances must satisfy two functor laws
-<ol>
-<li><strong>Identity</strong>: <code>fmap id v = v</code></li>
-<li><strong>Composition</strong>: <code>fmap f (fmap g v) = fmap (f . g) v</code></li>
-</ol>
 </li>
-</ul>
-<h3 id="operations" tabindex="-1">operations</h3>
+<li>What happens in AMPL system when 1 AMPL is worth less than 1 USD
 <ul>
-<li>in applicative functor <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181101.png" alt="Pasted image 20240411181101.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/VLjLJihMz1-58.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/VLjLJihMz1-58.jpeg">
-      <img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181101.png" alt="Pasted image 20240411181101.png" width=""></picture> mimicks function application <a class="tag" onclick="toggleTagSearch(this)" data-content="#ToDo">#ToDo</a> find symbols for LaTex</li>
+<li>The supply of AMPL is increase (expansion)</li>
+<li>The supply of AMPL is decreased (contraction) [correct: if AMPL is more scarce, it should be worth more =&gt; less difference to USD]</li>
+<li>no action is taken (equilibrium)</li>
+<li>additional collateral is required</li>
 </ul>
-<pre><code class="language-Haskell">class Functor f =&gt; Applicative f where
-pure :: a -&gt; f a
-(&lt;*&gt;) :: f (a -&gt; b) -&gt; f a -&gt; f b -- associates to the left
-
-instance Applicative Maybe where
-pure x = Just x
-Just f &lt;*&gt; Just x = Just (f x)
-_      &lt;*&gt; _      = Nothing
-</code></pre>
-<h4 id="applicative-functor-laws" tabindex="-1">Applicative functor laws</h4>
-<ol>
-<li><strong>Identity</strong> <code>pure id &lt;*&gt; v = v</code></li>
-<li><strong>Homomorphism</strong> <code>pure f &lt;*&gt; pure x = pure (f x)</code></li>
-<li><strong>Composition</strong> <code>pure (.) &lt;*&gt; u &lt;*&gt; v &lt;*&gt; w = u &lt;*&gt; (v &lt;*&gt; w)</code></li>
-<li><strong>Interchange</strong> <code>v &lt;*&gt; pure x = pure (\f -&gt; f x) &lt;*&gt; v</code></li>
-<li><strong>fmap</strong> <code>fmap f v = pure f &lt;*&gt; v</code></li>
-</ol>
+</li>
+<li>How does the AMPL stablecoin reduce or increase the account balances of the token holders?
 <ul>
-<li>canonical implementation for monads</li>
+<li>The ERC20 contract controls the balances and can modify them. [correct]</li>
+<li>The ERC71 contract controls the balances and can modify them.</li>
+<li>every user must individually approve each account balance change before rebalancing</li>
+<li>AMPL rebalances the token supply through arbitrage with USDC.</li>
 </ul>
-<pre><code class="language-Haskell">pure x = return x
-u &lt;*&gt; v = u &gt;&gt;= \f -&gt; v &gt;&gt;= \x -&gt; return (f x)
-</code></pre>
+</li>
+<li>If the reserve ratio of a bank is 0.2 and the total money deposited by bank customers is $500,000, how much money is held by the bank?
 <ul>
-<li>applicative functor laws can be derived from monad laws</li>
+<li>$100,000 [correct bc. 0.2 = 100'000/500'000 or 0.2 * 500'000 = 100'000]</li>
+<li>$250,000</li>
+<li>$400,000</li>
+<li>$1,000,000</li>
 </ul>
-<h3 id="examples-2" tabindex="-1">Examples</h3>
-<ul>
-<li><code>map</code> function transforms all elements in a structure: type class <code>Functor</code> can capture this functionality</li>
-</ul>
-<pre><code class="language-Haskell">instance Functor Tree where
-fmap _ Leaf         = Leaf
-fmap f (Node x l r) = Node (f x) (fmap f l) (fmap f r)
-
--- in console
-&gt; fmap (*2) [0,1,2] = [0,2,4]
-&gt; fmap (*2) (Node 5 Leaf Leaf) = Node 10 Leaf Leaf
-</code></pre>
-<ul>
-<li>applicative functor examples <picture src="/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181433.png" alt="Pasted image 20240411181433.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bmHGLj9Z8Q-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bmHGLj9Z8Q-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bmHGLj9Z8Q-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bmHGLj9Z8Q-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/FMFP/attachments/Pasted%20image%2020240411181433.png" alt="Pasted image 20240411181433.png" width=""></picture></li>
-</ul>
-<h2 id="resources" tabindex="-1">Resources</h2>
-<ul>
-<li><a href="http://www.haskell.org/haskellwiki/Tutorials#Using_monads" target="_blank" class="external-link">recommended monad tutorials</a></li>
+</li>
 </ul>
 
       
@@ -1604,64 +1475,43 @@ fmap f (Node x l r) = Node (f x) (fmap f l) (fmap f r)
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#properties">Properties</a>
+                    <li><a href="#economic-models">Economic models</a>
             
                 <ol>
                     
-                    <li><a href="#monad-laws">Monad laws</a>
+                    <li><a href="#variables">Variables</a>
+            
+                <ol>
+                    
+                    <li><a href="#exogenous-vs-endogenous">Exogenous vs. endogenous</a>
+            		</li>
+                </ol>
             		</li>
                 </ol>
             		</li>
 
-                    <li><a href="#examples">Examples</a>
+                    <li><a href="#stablecooins">Stablecooins</a>
             
                 <ol>
                     
-                    <li><a href="#monad">monad</a>
+                    <li><a href="#types">Types</a>
+            
+                <ol>
+                    
+                    <li><a href="#maker-dao-img-src-img-user-semester4-df-attachments-pasted-20image-2020240405232329-png-alt-pasted-image-20240405232329-png">MakerDAO</a>
             		</li>
 
-                    <li><a href="#computation-with-monads">Computation with monads</a>
+                    <li><a href="#ampleforth">Ampleforth</a>
+            		</li>
+
+                    <li><a href="#usdc-and-usdt">USDC and USDT</a>
+            		</li>
+                </ol>
             		</li>
                 </ol>
             		</li>
 
-                    <li><a href="#input-ouput">Input/Ouput</a>
-            
-                <ol>
-                    
-                    <li><a href="#basic-actions">Basic Actions</a>
-            		</li>
-
-                    <li><a href="#sequencing">Sequencing</a>
-            		</li>
-
-                    <li><a href="#examples-1">Examples</a>
-            		</li>
-                </ol>
-            		</li>
-
-                    <li><a href="#functors">Functors</a>
-            
-                <ol>
-                    
-                    <li><a href="#laws">Laws</a>
-            		</li>
-
-                    <li><a href="#operations">operations</a>
-            
-                <ol>
-                    
-                    <li><a href="#applicative-functor-laws">Applicative functor laws</a>
-            		</li>
-                </ol>
-            		</li>
-
-                    <li><a href="#examples-2">Examples</a>
-            		</li>
-                </ol>
-            		</li>
-
-                    <li><a href="#resources">Resources</a>
+                    <li><a href="#quiz">Quiz</a>
             		</li>
                 </ol>
             </nav>
