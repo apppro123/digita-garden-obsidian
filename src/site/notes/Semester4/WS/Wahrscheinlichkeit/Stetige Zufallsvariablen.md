@@ -6,8 +6,9 @@
 > Eine Zufallsvariable $X:\Omega\to \mathbb{R}$ heisst **stetig**, wenn eine nicht-negative Funktion $f_{X}:\mathbb{R}\to \mathbb{R}_{+}$ existiert, sodass die Verteilungsfunktion $F_{X}$ dargestellt werden kann als
 > $$F_{X}(x)=\int\limits_{-\infty}^{x} f_{X}(t) \, dt $$
 > Wir nennen $f_{X}$ die Dichte(-funktion) von $X$ ( #english probability density function ( #short pdf)).
-> - **Intuition**: Der "Wert" $f_{X}(t)dt$ ist die Wahrscheinlichkeit, dass $X$ Werte im Intervall $[t,t+dt]$ annimmt.
->   Die Terminologie "stetig" ergibt sich aus der Tatsache, dass die Gleichung oben impliziert, dass $F_{X}$ eine stetige Funktion ist. Insbesondere gilt für alle $x\in\mathbb{R}$ laut Satz 3.3, $\mathbb{P}[X=x]=0$
+> - **Intuition**: Der "Wert" $f_{X}(t)dt$ ist die Wahrscheinlichkeit, dass $X$ Werte im Intervall $[t,t+dt]$ annimmt. 
+>   Als absolute Grösse ist das nicht sehr vielsagend, wir können aber so W'keiten vergleichen z.B. falls $f_{X}(x_{0})=2f_{X}(x_{1})$ interpretieren wir als "es ist doppelt so wahrscheinlich, dass $X$ in der Nähe von $x_{0}$ ist, wie dass $X$ in der Nähe von $x_{1}$ ist."
+> - Die Terminologie "stetig" ergibt sich aus der Tatsache, dass die Gleichung oben impliziert, dass $F_{X}$ eine stetige Funktion ist. Insbesondere gilt für alle $x\in\mathbb{R}$ laut Satz 3.3, $\mathbb{P}[X=x]=0$
 
 >[!info] #Def 3.38 **Stückweise stetig differenzierbare Funktion**
 >- Im Kontext von $\mathbb{R}$ wird oft gesagt, dass ein Objekt eine Eigenschaft **stückweise** ( #english piecewise) erfüllt, wenn sie die Eigenschaft auf einer Partition des Definitionsbereichs erfüllt.
@@ -34,8 +35,8 @@
 > 	 - Einfache **Merkregel**: Um vom diskreten zum stetigen Fall zu kommen, kann die Kombination (Summe, Gewichtsfunktion) systematisch durch (Integral, Dichtefunktion) ersetzt werden.
 
 ## Beispiele
-- #Example 3.41 Gleichverteilung: ![Pasted image 20240402174928.png](/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402174928.png)
-	- Intuition: Die Gleichverteilung auf einem Intervall $[a,b]$ ist ein Modell für die zufällige Wahl eines Punktes in $[a,b]$.
+- #Example 3.41 **Gleichverteilung:** ![Pasted image 20240402174928.png](/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402174928.png)
+	- Intuition: Wählt zufällig einen Punkt in $[a,b]$.
 	- Eigenschaften: ![Pasted image 20240402175210.png](/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175210.png)
 - #Example 3.43 **Exponentialverteilung** ![Pasted image 20240402175236.png](/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175236.png)
 	- Intuition: ![Pasted image 20240402175453.png](/img/user/Semester4/WS/Wahrscheinlichkeit/attachments/Pasted%20image%2020240402175453.png)
