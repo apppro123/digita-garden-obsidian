@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/semester4/fmfp/minigames/evaluation/"}
 ---
 
-
 ## General
 - infix functions e.g. `1+2 = (+) 1 2` where `+` is infix
 	- and for `(+a) b = b + a = (+)b a`, `a` is the second argument and the following a
