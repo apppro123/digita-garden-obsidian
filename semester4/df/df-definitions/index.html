@@ -974,7 +974,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-28T21:21:31.298Z';
+        const searchIndexDate = '2024-05-28T21:22:22.281Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -986,9 +986,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:21:31.298Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:22:22.281Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:21:31.298Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:22:22.281Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1255,7 +1255,8 @@
 <li>e.g. SPDR S&amp;P 500 ETF tracks the S&amp;P 500 index</li>
 </ul>
 </li>
-<li><strong>decentralised autonomous organisation</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> DAO): e.g. <a class="internal-link" target="" data-note-icon="" href="/digital-garden-obsidian/semester4/df/df-l6/#maker-dao-pasted-image-20240405232329-png">MakerDAO</a></li>
+<li><strong>decentralised autonomous organisation</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> DAO): e.g. <a class="internal-link is-unresolved" href="/digital-garden-obsidian/404" target="">MakerDAO</a>)</li>
+<li><strong>address verification service</strong> ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> AVS): to prevent fraud by detecting suspicious transactions (e.g. for credit cards)</li>
 </ul>
 <h3 id="lending" tabindex="-1">Lending</h3>
 <ul>
