@@ -974,7 +974,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-28T21:22:30.517Z';
+        const searchIndexDate = '2024-05-28T21:22:35.191Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -986,9 +986,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:22:30.517Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-28T21:22:35.191Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:22:30.517Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-28T21:22:35.191Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1272,9 +1272,7 @@
 </ul>
 <h3 id="standardnormalverteilungstabelle" tabindex="-1">Standardnormalverteilungstabelle</h3>
 <ul>
-<li><picture src="/img/user/Semester4/WS/attachments/Pasted%20image%2020240421174555.png" alt="Pasted image 20240421174555.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/Jo6sZoPcc4-500.webp" type="image/webp">
-      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/Jo6sZoPcc4-500.jpeg">
-      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/Jo6sZoPcc4-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/Jo6sZoPcc4-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/WS/attachments/Pasted%20image%2020240421174555.png" alt="Pasted image 20240421174555.png" width=""></picture></li>
+<li><img src="/digital-garden-obsidian/img/user/Semester4/WS/attachments/Pasted%20image%2020240421174555.png" alt="Pasted image 20240421174555.png"></li>
 </ul>
 
       
