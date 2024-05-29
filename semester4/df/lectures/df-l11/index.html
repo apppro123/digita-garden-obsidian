@@ -1061,7 +1061,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-29T08:27:14.758Z';
+        const searchIndexDate = '2024-05-29T08:27:19.310Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1073,9 +1073,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-29T08:27:14.758Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-29T08:27:19.310Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-29T08:27:14.758Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-29T08:27:19.310Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1357,7 +1357,9 @@
 <ul>
 <li>can draw and push on data availability system ( <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> DA system) (bigger/more data/states than centre has =&gt; data can be passed over time without going through centre)</li>
 <li>fungible with own state</li>
-<li>341 of these cores: <img src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240529093009.png" alt="Pasted image 20240529093009.png"></li>
+<li>341 of these cores: <picture src="/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240529093009.png" alt="Pasted image 20240529093009.png"><source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bDLG0NyiWq-500.webp" type="image/webp">
+      <source media="(max-width:480px)" srcset="/digital-garden-obsidian/img/optimized/bDLG0NyiWq-500.jpeg">
+      <source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bDLG0NyiWq-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/digital-garden-obsidian/img/optimized/bDLG0NyiWq-700.jpeg"><img class="" src="/digital-garden-obsidian/img/user/Semester4/DF/Lectures/attachments/Pasted%20image%2020240529093009.png" alt="Pasted image 20240529093009.png" width=""></picture></li>
 </ul>
 </li>
 <li>centre (similar to CPU core): as fast as fastest blockchain today's on it's own
