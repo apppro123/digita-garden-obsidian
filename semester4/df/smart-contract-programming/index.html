@@ -79,7 +79,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section ">
+  
     
     
     
@@ -1061,7 +1061,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-29T08:27:19.310Z';
+        const searchIndexDate = '2024-05-29T18:57:10.461Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1073,9 +1073,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-29T08:27:19.310Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-29T18:57:10.461Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-29T08:27:19.310Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-29T18:57:10.461Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1304,7 +1304,7 @@
 </script>
     
 
-    <main class="content cm-s-obsidian ">
+    
       <header>
         
         <div class="header-meta">
@@ -1341,13 +1341,102 @@
 <li>constructor function</li>
 </ul>
 <h4 id="variables" tabindex="-1">Variables</h4>
+
+<li><strong>visibility</strong>: public, private</li>
+<li><strong>types</strong>: int, uint, bytes32, string, address (20 bytes long)
 <ul>
-<li>public, private</li>
+<li>arrays e.g. <code>uint[] public integers;</code>
+<ul>
+<li>insert item <code>integers.push(0);</code></li>
+<li>access item <code>integers[1];</code></li>
+<li>get length: <code>integers.length;</code></li>
 </ul>
+</li>
+<li>structure e.g. <code>struct Point {uint x; uint y;}</code>
+<ul>
+<li>initialise `Point public origin = Point(0,1);</li>
+</ul>
+</li>
+<li>Tuples e.g. <code>(uint x, uint y) = (1,2);</code></li>
+<li>Enum for associating a number to a string e.g. <code>enum Directions { Top, Right, Bottom, Left }</code> where <code>uint(Directions.Top) == 0</code></li>
+<li>mapping is like a table but index can be any built-in type <code>mapping(builtin_type =&gt; value_type)</code> e.g. <code>mapping(address =&gt; uint) public ledger;</code>
+<ul>
+<li>accessing and writing is similar to an array <code>ledger[key];</code> and <code>ledger[key] = value;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<strong>declaration</strong>: `   = ;
+
+<h4 id="functions" tabindex="-1">Functions</h4>
+<ul>
+<li><strong>visibility</strong>: public, private, external (function can just be called from outside, not inside of contract), internal (not exposed to outside of contract, similar to private but differ in inheritance)</li>
+<li><strong>state mutability</strong>: view (if function doesn't modify state), pure (if function doesn't modify nor access variables)</li>
+<li><strong>require</strong> keyword allows to make assertion and if they fail, execution is stopped and contract state is restored <code>require(&lt;boolean expression=&quot;&quot;&gt;);</code></li>
+<li><strong>modifier</strong> is a pretreatment applied to a function code</li>
+</ul>
+<pre><code class="language-Solidity">// formal syntax
+modifier &lt;name&gt;([arg1, arg2, ...]) {
+  [require(&lt;e&gt;);]* // all the requirements
+
+  _; // means that the function code will be inserted here
+
+  // I didn't write anything here, but in the future you might see some useful applications
+}
+
+// example
+modifier securityCheck(bytes32 _password) {
+  require(_password == &quot;Super Super Muffin&quot;);
+  _;
+}
+
+function eat(bytes32 _password) public securityCheck(_password) {
+  bite = bite + 1;
+}
+</code></pre>
+<ul>
+<li><strong>declaration</strong>: <code>function &lt;name&gt; ([arg1, arg2, ...]) &lt;visibility&gt; [mutability] [modifier1, modifier2, ...] [returns ([ret1, ret2, ...])] ;</code></li>
+</ul>
+<pre><code class="language-Solidity">pragma solidity
+{ <a class="tag" onclick="toggleTagSearch(this)" data-content="#0">#0</a>}
+.4.24;
+
+contract PichuMuffin {
+  uint public fans = 0;
+
+  // Now you know that this function is really simple
+  function like() public {
+    fans = fans + 1;
+  }
+
+  // welcome back, old friend
+  function isBestMuffin() public pure returns (bool) {
+    return true;
+  }
+  
+  // I've already made this function for you ;)
+  function notZero(uint number) internal pure returns (bool) {
+    return number != 0;
+  }
+  
+  // This function returns a boolean
+  function isRecommended() public view returns (bool) {
+    return ;
+  }
+}
+</code></pre>
+<h4 id="objects" tabindex="-1">objects</h4>
+<ul>
+<li><strong>msg</strong> stores information about caller/sender e.g. <code>msg.value</code> is amount of currency that was sent</li>
+<li><strong>address</strong> e.g.</li>
+</ul>
+<pre><code class="language-Solidity">address a = 0x0
+uint balanceA = a.balance
+</code></pre>
 
       
       
-    </main>
+    
 
     
       <aside>
@@ -1378,6 +1467,12 @@
                 <ol>
                     
                     <li><a href="#variables">Variables</a>
+            		</li>
+
+                    <li><a href="#functions">Functions</a>
+            		</li>
+
+                    <li><a href="#objects">objects</a>
             		</li>
                 </ol>
             		</li>
@@ -1441,5 +1536,6 @@ lucide.createIcons({
             }
         });
 </script>
-  </body>
+  
+
 </html>
