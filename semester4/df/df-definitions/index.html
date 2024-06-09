@@ -1061,7 +1061,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-06-09T21:32:54.231Z';
+        const searchIndexDate = '2024-06-09T21:33:17.495Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1073,9 +1073,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-06-09T21:32:54.231Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-06-09T21:33:17.495Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-09T21:32:54.231Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-06-09T21:33:17.495Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1375,6 +1375,7 @@
 </li>
 <li><strong>Close Factor</strong> <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> CF: the maximum proportion of the debt that is allowed to be repaid in a single fixed spread liquidation<br>
 𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐷𝑒𝑏𝑡 𝑡𝑜 𝑅𝑒𝑝𝑎𝑦 &lt; 𝐶𝐹 × 𝑇𝑜𝑡𝑎𝑙 𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐷𝑒𝑏𝑡𝑠</li>
+<li><strong>proposer-builder separation</strong> <a class="tag" onclick="toggleTagSearch(this)" data-content="#short">#short</a> PBS</li>
 </ul>
 
       
