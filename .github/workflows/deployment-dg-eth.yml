@@ -1,4 +1,4 @@
-name: Deployment
+name: Deployment Digital Garden ETH
 
 on:
   push:
@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            cd /path/to/webroot/of/mywebsite
+            cd /homepage/digital-garden
             git checkout -qf master
