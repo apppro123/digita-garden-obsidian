@@ -20,4 +20,4 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
             cd /homepage/digital-garden
-            git checkout -qf master
+            git checkout -qf gh-pages
