@@ -3,7 +3,7 @@ name: Deployment Digital Garden ETH
 on:
   push:
     branches:
-      - gh-pages
+      - main
 
 jobs:
   deployment:
