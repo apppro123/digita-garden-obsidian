@@ -33,3 +33,4 @@
 	- 𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐶𝑜𝑙𝑙𝑎𝑡𝑒𝑟𝑎𝑙 𝑡𝑜 𝐶𝑙𝑎𝑖𝑚 = 𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐷𝑒𝑏𝑡 𝑡𝑜 𝑅𝑒𝑝𝑎𝑦 × (1 + 𝐿𝑆)
 - **Close Factor** #short CF: the maximum proportion of the debt that is allowed to be repaid in a single fixed spread liquidation
 	𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐷𝑒𝑏𝑡 𝑡𝑜 𝑅𝑒𝑝𝑎𝑦 < 𝐶𝐹 × 𝑇𝑜𝑡𝑎𝑙 𝑉𝑎𝑙𝑢𝑒 𝑜𝑓 𝐷𝑒𝑏𝑡𝑠
+- **proposer-builder separation** #short PBS
